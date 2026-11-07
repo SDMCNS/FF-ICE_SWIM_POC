@@ -17,7 +17,7 @@
 
 > [!IMPORTANT]
 > ### ⚠️ Proof of Concept (PoC) Notice
-> This repository is an open-source **Proof of Concept (PoC)** and research reference implementation, certified, or production-grade Air Traffic Management (ATM) system. 
+> This repository is an open-source **Proof of Concept (PoC)** and research reference implementation, **NOT** an enterprise-ready, certified, or production-grade Air Traffic Management (ATM) system. 
 >
 > Its purpose is to demonstrate the technical viability, architecture, and mathematical mechanics of:
 > * **ICAO Doc 9965** (FF-ICE/R Release 1 Planning & Release 2 Execution)
@@ -25,6 +25,10 @@
 > * **FIXM Core v4.2+** XML and JSON dual-representation schemas
 > * **ICAO Doc 9643** (Simultaneous Operations on Parallel Runways - SOIR)
 > * Pre-departure 4D strategic deconfliction and multi-traffic optimization
+> * Automated flight plan lifecycle management & background active trajectory pruning
+>
+> **Do NOT use this system for live operational flight dispatch, actual aerial navigation, or safety-critical air traffic control.**
+
 
 
 ---
@@ -149,6 +153,11 @@ flowchart TD
 ### 5. Central GUFI Registry Demonstration Service
 * Demonstration node for ICAO Doc 9965 Central Register principles.
 * Centrally coordinates and allocates authoritative GUFIs (`/api/v1/registry/gufi/allocate`) with anti-collision guarantees across distributed clients prior to global SWIM federation.
+
+### 6. Automated Flight Plan Lifecycle & Background Active Trajectory Pruning
+* **Upcoming vs. In-Flight Trajectory Filtering:** In actual ATM environments, real-time radar telemetry isn't always fed to the pre-tactical planning register. By default, `GET /api/v1/ffice/plans` only lists flight plans that are **UPCOMING** ($T_{\text{now}} < \text{EOBT}$) or **LIKELY IN-FLIGHT** ($\text{EOBT} \le T_{\text{now}} \le \text{ETA} + 45\text{ min}$ arrival taxi-in buffer).
+* **Continuous Background Sweeper:** An asynchronous background worker continuously monitors SQLite persistence, automatically transitioning completed flights ($T_{\text{now}} > \text{ETA} + 45\text{ min}$) to `COMPLETED` and no-shows ($T_{\text{now}} > \text{EOBT} + 120\text{ min}$) to `EXPIRED`.
+* **Historical Audit Inquiries:** Complete historical trajectories remain fully preserved and queryable on demand via `GET /api/v1/ffice/plans?include_expired=true` or via the web console's *"Show Completed / Expired Plans"* toggle.
 
 ---
 

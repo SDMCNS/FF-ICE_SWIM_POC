@@ -160,7 +160,49 @@ Returns JSON or FIXM XML based on content negotiation with assigned immutable GU
 
 ---
 
-### 3.3 Topological Graph Shortest Path Routing
+### 3.3 List Filed Flight Plans (Active & Historical Lifecycle Filtering)
+**`GET /api/v1/ffice/plans`**
+
+Queries filed flight plans with automatic lifecycle pruning. By default, returns only upcoming and likely in-flight plans. Old landed flights and stale no-shows are pruned to `COMPLETED` and `EXPIRED`.
+
+#### Query Parameters
+- `active_only` (bool, default `true`): Restricts results to upcoming flights ($T_{\text{now}} < \text{EOBT}$) and likely in-flight flights ($\text{EOBT} \le T_{\text{now}} \le \text{ETA} + 45\text{ min}$).
+- `include_expired` (bool, default `false`): When `true`, overrides active-only pruning and returns all historical, completed, and expired records.
+- `callsign` (string, optional): Case-insensitive substring filter.
+- `departure` (string, optional): 4-letter ICAO departure aerodrome.
+- `arrival` (string, optional): 4-letter ICAO destination aerodrome.
+- `status` (string, optional): Exact status filter (`FILED`, `AGREED`, `ACTIVE`, `COMPLETED`, `EXPIRED`, `CANCELLED`).
+
+#### Response Injections
+Each returned flight plan JSON includes real-time operational indicators:
+- `operationalStatus`: `"UPCOMING"` | `"IN_FLIGHT"` | `"COMPLETED"` | `"EXPIRED"` | `"CANCELLED"`
+- `isUpcoming`: `boolean`
+- `isLikelyInFlight`: `boolean`
+
+---
+
+### 3.4 Trigger Background Lifecycle Sweep
+**`POST /api/v1/ffice/plans/sweep`**
+
+Manually triggers the background lifecycle audit against SQLite persistence. Transitions landed flights past the 45-minute arrival taxi buffer to `COMPLETED` and unprogressive flights past 120 minutes from EOBT to `EXPIRED`.
+
+#### Response (200 OK)
+```json
+{
+  "status": "SUCCESS",
+  "message": "Swept 3 flight plans (2 completed, 1 expired).",
+  "swept": {
+    "completed": 2,
+    "expired": 1,
+    "totalSwept": 3
+  },
+  "timestamp": "2026-11-07T15:00:00Z"
+}
+```
+
+---
+
+### 3.5 Topological Graph Shortest Path Routing
 **`POST /api/v1/route/shortest-path`**
 
 Calculates the $A^*$ shortest airway path across the 1,061-node navigation graph.

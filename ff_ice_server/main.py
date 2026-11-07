@@ -4,6 +4,8 @@ Integrates SQLite Database Persistence, 4D Strategic Deconfliction, and Static F
 """
 import os
 import json
+import asyncio
+from contextlib import asynccontextmanager
 from datetime import datetime, timezone, date, timedelta
 from typing import Optional, List, Dict, Any
 
@@ -48,17 +50,58 @@ from .config_loader import (
     get_runway_physical_strip_id,
     get_airport_physical_strips
 )
+from .plan_lifecycle import (
+    determine_operational_status,
+    is_plan_active,
+    sweep_expired_flight_plans,
+    background_sweeper_loop,
+    ETA_BUFFER_MINUTES,
+    EOBT_EXPIRED_MINUTES
+)
 
 # Initialize Database and AeroStore
 DB_PATH = os.environ.get("FF_ICE_DB", "ff_ice.db")
 engine, SessionLocal = init_db(DB_PATH)
 aero_store = AeroDataStore(base_dir=os.path.abspath("."))
 
+_sweeper_stop_event = asyncio.Event()
+_sweeper_task = None
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """
+    FastAPI Lifespan Context Manager.
+    Starts background sweeper task on startup to prune old plans from active listings.
+    Gracefully stops the sweeper task on shutdown.
+    """
+    global _sweeper_task
+    try:
+        with SessionLocal() as db:
+            sweep_expired_flight_plans(db)
+    except Exception as e:
+        print(f"[Lifespan] Initial plan sweep failed: {e}")
+
+    _sweeper_stop_event.clear()
+    _sweeper_task = asyncio.create_task(
+        background_sweeper_loop(SessionLocal, _sweeper_stop_event, interval_seconds=30)
+    )
+    try:
+        yield
+    finally:
+        _sweeper_stop_event.set()
+        if _sweeper_task:
+            try:
+                await asyncio.wait_for(_sweeper_task, timeout=3.0)
+            except Exception:
+                pass
+
 app = FastAPI(
     title="SWIM FF-ICE Flight Planning & 4D Deconfliction Information Service",
     version="2.0.0",
-    description="ICAO Doc 9965 & FIXM v4.2+ compliant System-Wide Information Management (SWIM) flight planning, 4D trajectory advisory, and strategic deconfliction service with SQLite database persistence."
+    description="ICAO Doc 9965 & FIXM v4.2+ compliant System-Wide Information Management (SWIM) flight planning, 4D trajectory advisory, and strategic deconfliction service with SQLite database persistence.",
+    lifespan=lifespan
 )
+
 
 app.add_middleware(
     CORSMiddleware,
@@ -230,8 +273,29 @@ def get_swim_status(db: Session = Depends(get_db)):
     """
     Operational metrics and capability status for SWIM consumers.
     """
+    now_utc = datetime.now(timezone.utc).replace(tzinfo=None)
+    cutoff = now_utc - timedelta(minutes=ETA_BUFFER_MINUTES)
+
     total_plans = db.query(FlightPlanModel).count()
-    active_plans = db.query(FlightPlanModel).filter(FlightPlanModel.status == "FILED").count()
+    active_plans = db.query(FlightPlanModel).filter(
+        FlightPlanModel.status.in_(["FILED", "AGREED", "ACTIVE"]),
+        FlightPlanModel.eta >= cutoff
+    ).count()
+    upcoming_plans = db.query(FlightPlanModel).filter(
+        FlightPlanModel.status.in_(["FILED", "AGREED", "ACTIVE"]),
+        FlightPlanModel.eobt > now_utc
+    ).count()
+    inflight_plans = db.query(FlightPlanModel).filter(
+        FlightPlanModel.status.in_(["FILED", "AGREED", "ACTIVE"]),
+        FlightPlanModel.eobt <= now_utc,
+        FlightPlanModel.eta >= cutoff
+    ).count()
+    completed_plans = db.query(FlightPlanModel).filter(
+        FlightPlanModel.status == "COMPLETED"
+    ).count()
+    expired_plans = db.query(FlightPlanModel).filter(
+        FlightPlanModel.status == "EXPIRED"
+    ).count()
     conflicts_logged = db.query(ConflictRecordModel).count()
     ops = get_airport_operations()
     gufis = list_central_gufis(limit=1000)
@@ -242,8 +306,17 @@ def get_swim_status(db: Session = Depends(get_db)):
         "statistics": {
             "totalPlans": total_plans,
             "activeFiledPlans": active_plans,
+            "upcomingPlans": upcoming_plans,
+            "inFlightPlans": inflight_plans,
+            "completedPlans": completed_plans,
+            "expiredPlans": expired_plans,
             "conflictsLogged": conflicts_logged,
             "centrallyAllocatedGufis": len(gufis)
+        },
+        "lifecyclePolicy": {
+            "etaBufferMinutes": ETA_BUFFER_MINUTES,
+            "eobtExpiredMinutes": EOBT_EXPIRED_MINUTES,
+            "backgroundSweeperRunning": True
         },
         "airportsConfigured": len(ops),
         "runwayModesSupported": [
@@ -939,8 +1012,22 @@ def list_plans(
     departure: Optional[str] = None,
     arrival: Optional[str] = None,
     status_filter: Optional[str] = Query(None, alias="status"),
+    active_only: bool = Query(True, description="Only list upcoming and active in-flight plans (default True)"),
+    include_expired: bool = Query(False, description="Include completed or expired historical plans"),
     db: Session = Depends(get_db)
 ):
+    """
+    List filed flight plans with automatic lifecycle pruning.
+    By default (active_only=True), only returns flight plans that are upcoming
+    (now < EOBT) or likely still in flight (EOBT <= now <= ETA + 45min).
+    Old completed flights (> ETA + 45min) and no-shows (> EOBT + 120min) are pruned.
+    """
+    # Run immediate lifecycle sweep to ensure fresh state
+    sweep_expired_flight_plans(db)
+
+    now_utc = datetime.now(timezone.utc).replace(tzinfo=None)
+    cutoff = now_utc - timedelta(minutes=ETA_BUFFER_MINUTES)
+
     query = db.query(FlightPlanModel)
     if callsign:
         query = query.filter(FlightPlanModel.callsign.ilike(f"%{callsign}%"))
@@ -948,16 +1035,44 @@ def list_plans(
         query = query.filter(FlightPlanModel.departure_icao == departure.upper())
     if arrival:
         query = query.filter(FlightPlanModel.arrival_icao == arrival.upper())
+
     if status_filter:
         query = query.filter(FlightPlanModel.status == status_filter.upper())
+    elif active_only and not include_expired:
+        # User requested: only upcoming or likely still in flight
+        query = query.filter(
+            FlightPlanModel.status.in_(["FILED", "AGREED", "ACTIVE"]),
+            FlightPlanModel.eta >= cutoff
+        )
 
     results = []
     for p in query.order_by(FlightPlanModel.created_at.desc()).all():
         try:
-            results.append(json.loads(p.fixm_json))
+            d = json.loads(p.fixm_json)
+            # Decorate with real-time operational status
+            op_phase = determine_operational_status(p, now_utc)
+            d["operationalStatus"] = op_phase
+            d["isLikelyInFlight"] = (op_phase == "IN_FLIGHT")
+            d["isUpcoming"] = (op_phase == "UPCOMING")
+            results.append(d)
         except Exception:
             pass
     return results
+
+@app.post("/api/v1/ffice/plans/sweep", summary="Trigger Background Plan Lifecycle Sweep")
+def sweep_plans_endpoint(db: Session = Depends(get_db)):
+    """
+    Manually triggers the background sweeper to transition stale or completed
+    flight plans to COMPLETED or EXPIRED.
+    """
+    result = sweep_expired_flight_plans(db)
+    return {
+        "status": "SUCCESS",
+        "message": f"Swept {result['totalSwept']} flight plans ({result['completed']} completed, {result['expired']} expired).",
+        "swept": result,
+        "timestamp": datetime.now(timezone.utc).isoformat() + "Z"
+    }
+
 
 @app.get("/api/v1/ffice/plans/{gufi}", summary="Retrieve Flight Plan by GUFI")
 def get_plan(gufi: str, request: Request, db: Session = Depends(get_db)):

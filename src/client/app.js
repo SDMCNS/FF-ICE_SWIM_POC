@@ -538,7 +538,27 @@ function setupEventListeners() {
   if (btnOpenConflicts) {
     btnOpenConflicts.addEventListener('click', openConflictsMapModal);
   }
+
+  // Filed Plans Lifecycle & Pruning Controls
+  const chkShowAll = document.getElementById('chkShowAllPlans');
+  if (chkShowAll) {
+    chkShowAll.addEventListener('change', () => refreshFiledPlans());
+  }
+  const btnRefreshFiled = document.getElementById('btnRefreshPlans');
+  if (btnRefreshFiled) {
+    btnRefreshFiled.addEventListener('click', () => refreshFiledPlans());
+  }
+  const btnSweepStale = document.getElementById('btnSweepStalePlans');
+  if (btnSweepStale) {
+    btnSweepStale.addEventListener('click', () => sweepStalePlansNow());
+  }
+
+  // Automated background poll for filed plans every 30 seconds
+  setInterval(() => {
+    refreshFiledPlans();
+  }, 30000);
 }
+
 
 async function updateRunwayOptions(airportIcao, selectId) {
   const select = document.getElementById(selectId);
@@ -1600,37 +1620,91 @@ async function fileFlightPlan() {
 
 async function refreshFiledPlans() {
   try {
-    const plans = await fetch('/api/v1/ffice/plans').then(r => r.json());
+    const chkShowAll = document.getElementById('chkShowAllPlans');
+    const includeExpired = chkShowAll ? chkShowAll.checked : false;
+    const url = `/api/v1/ffice/plans?active_only=${!includeExpired}&include_expired=${includeExpired}`;
+    const plans = await fetch(url).then(r => r.json());
     gFiledPlans = plans;
-    document.getElementById('filedCount').textContent = plans.length;
+
+    const summaryEl = document.getElementById('filedFilterSummary');
+    if (summaryEl) {
+      summaryEl.textContent = includeExpired ? 'All Plans (Including Completed / Expired)' : 'Upcoming & In-Flight Plans Only';
+    }
+
+    const filedCountEl = document.getElementById('filedCount');
+    if (filedCountEl) filedCountEl.textContent = plans.length;
+    const activeCountEl = document.getElementById('filedActiveCount');
+    if (activeCountEl) {
+      const activeCount = plans.filter(p => p.operationalStatus === 'UPCOMING' || p.operationalStatus === 'IN_FLIGHT').length;
+      activeCountEl.textContent = activeCount;
+    }
 
     const tbody = document.getElementById('filedTableBody');
     tbody.innerHTML = '';
 
-    if (plans.length === 0) {
-      tbody.innerHTML = '<tr><td colspan="7" class="text-center">No flight plans filed yet.</td></tr>';
+    if (!plans || plans.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="9" class="text-center" style="padding: 24px; color: var(--text-muted);">No upcoming or in-flight flight plans found. Check "Show Completed / Expired Plans" to view historical logs.</td></tr>';
       return;
     }
 
     for (const p of plans) {
       const tr = document.createElement('tr');
+      const opPhase = p.operationalStatus || (p.status === 'CANCELLED' ? 'CANCELLED' : 'ACTIVE');
+
+      let badgeHtml = '';
+      if (opPhase === 'UPCOMING') {
+        badgeHtml = '<span class="swim-badge badge-upcoming">🟢 UPCOMING</span>';
+      } else if (opPhase === 'IN_FLIGHT') {
+        badgeHtml = '<span class="swim-badge badge-inflight">✈️ IN-FLIGHT</span>';
+      } else if (opPhase === 'COMPLETED') {
+        badgeHtml = '<span class="swim-badge badge-completed">🏁 COMPLETED</span>';
+      } else if (opPhase === 'EXPIRED') {
+        badgeHtml = '<span class="swim-badge badge-expired">⚠️ EXPIRED</span>';
+      } else if (opPhase === 'CANCELLED') {
+        badgeHtml = '<span class="swim-badge badge-cancelled">❌ CANCELLED</span>';
+      } else {
+        badgeHtml = `<span class="swim-badge">${opPhase}</span>`;
+      }
+
+      const eobtStr = p.departure?.estimatedOffBlockTime ? p.departure.estimatedOffBlockTime.substring(11, 16) + 'Z' : 'N/A';
+      const etaStr = p.arrival?.estimatedTimeOfArrival ? p.arrival.estimatedTimeOfArrival.substring(11, 16) + 'Z' : 'N/A';
+      const canCancel = (p.status !== 'CANCELLED' && opPhase !== 'COMPLETED' && opPhase !== 'EXPIRED');
+
       tr.innerHTML = `
-        <td><code>${p.gufi.substring(0, 8)}...</code></td>
-        <td><span class="swim-badge">${p.status}</span></td>
-        <td><strong>${p.flightIdentification.aircraftIdentification}</strong></td>
-        <td>${p.departure.aerodrome} &rarr; ${p.arrival.aerodrome}</td>
-        <td>${p.departure.estimatedOffBlockTime.substring(11, 16)} UTC</td>
-        <td>${p.enRoute.cruisingLevel}</td>
+        <td><code title="${p.gufi}">${p.gufi.substring(0, 8)}...</code></td>
+        <td>${badgeHtml}</td>
+        <td><span class="swim-badge" style="font-size: 0.72rem;">${p.status}</span></td>
+        <td><strong>${p.flightIdentification?.aircraftIdentification || 'N/A'}</strong> <span style="font-size:0.75rem; color:var(--text-muted)">(${p.aircraft?.aircraftType || ''})</span></td>
+        <td>${p.departure?.aerodrome || ''} &rarr; ${p.arrival?.aerodrome || ''}</td>
+        <td>${eobtStr}</td>
+        <td>${etaStr}</td>
+        <td>${p.enRoute?.cruisingLevel || ''}</td>
         <td>
-          <button class="btn-link" onclick="cancelFiledPlan('${p.gufi}')">Cancel</button>
+          ${canCancel ? `<button class="btn-link" onclick="cancelFiledPlan('${p.gufi}')" style="color:var(--accent-red,#ef4444); cursor:pointer;">Cancel</button>` : '<span style="color:var(--text-muted); font-size:0.8rem;">Archived</span>'}
         </td>
       `;
       tbody.appendChild(tr);
     }
   } catch (err) {
-    console.error(err);
+    console.error('Failed to refresh filed plans:', err);
   }
 }
+
+async function sweepStalePlansNow() {
+  try {
+    const btn = document.getElementById('btnSweepStalePlans');
+    if (btn) btn.disabled = true;
+    const res = await fetch('/api/v1/ffice/plans/sweep', { method: 'POST' }).then(r => r.json());
+    alert(`🧹 Background Lifecycle Audit Finished!\n\n${res.message}`);
+    await refreshFiledPlans();
+  } catch (err) {
+    alert(`Failed to run background sweep: ${err.message}`);
+  } finally {
+    const btn = document.getElementById('btnSweepStalePlans');
+    if (btn) btn.disabled = false;
+  }
+}
+
 
 window.cancelFiledPlan = async function(gufi) {
   if (!confirm(`Are you sure you want to cancel plan ${gufi}?`)) return;

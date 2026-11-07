@@ -343,25 +343,40 @@
 
       <!-- Tab 5: Filed Plans -->
       <div id="tabFiled" class="tab-content">
+        <div class="filed-filter-toolbar">
+          <div class="filed-filter-left">
+            <span>📡 <strong id="filedFilterSummary">Upcoming & In-Flight Plans</strong> (<span id="filedActiveCount">0</span> active)</span>
+            <label style="display: inline-flex; align-items: center; gap: 6px; cursor: pointer; color: var(--text-muted); margin-left: 12px;">
+              <input type="checkbox" id="chkShowAllPlans" style="cursor: pointer;"> Show Completed / Expired Plans
+            </label>
+          </div>
+          <div class="filed-filter-right">
+            <button type="button" class="btn-secondary" id="btnSweepStalePlans" title="Trigger background lifecycle audit and prune completed/no-show flights">🧹 Prune Stale</button>
+            <button type="button" class="btn-secondary" id="btnRefreshPlans" title="Refresh filed plans list">🔄 Refresh</button>
+          </div>
+        </div>
         <div class="table-container">
           <table class="points-table">
             <thead>
               <tr>
                 <th>GUFI</th>
+                <th>Phase</th>
                 <th>Status</th>
                 <th>Callsign</th>
                 <th>Route</th>
                 <th>EOBT</th>
+                <th>ETA</th>
                 <th>Cruise FL</th>
                 <th>Actions</th>
               </tr>
             </thead>
             <tbody id="filedTableBody">
-              <tr><td colspan="7" class="text-center">No flight plans filed yet.</td></tr>
+              <tr><td colspan="9" class="text-center">No flight plans filed yet.</td></tr>
             </tbody>
           </table>
         </div>
       </div>
+
     </section>
   </main>
 

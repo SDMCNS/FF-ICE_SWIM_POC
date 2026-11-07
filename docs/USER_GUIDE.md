@@ -2,7 +2,7 @@
 ## Interactive Manual for 4D Flight Planning, Airspace Deconfliction, and Airport Slot Management
 
 > **Repository:** [SDMCNS/FF-ICE_SWIM_POC](https://github.com/SDMCNS/FF-ICE_SWIM_POC)  
-> **Notice:** Open-Source Proof of Concept (PoC) for research and evaluation. Not for operational flight control.  
+> **Notice:** Open-Source Proof of Concept (PoC) for research and evaluation.  
 > **Target Audience:** Flight Dispatchers, Commercial Pilots, Aviation Researchers, and Software Engineers.  
 > **Interface:** Interactive Web Dispatch Console (`http://localhost:3000`).  
 

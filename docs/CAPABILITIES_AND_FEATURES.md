@@ -10,7 +10,7 @@
 
 > [!IMPORTANT]
 > **Proof of Concept (PoC) Notice:**  
-> This software is an open-source **Proof of Concept (PoC)** demonstrating the architectural feasibility, 4D trajectory algorithms, and web service protocols defined in ICAO Doc 9965 and EUROCONTROL SWIM standards. It is **NOT** a certified enterprise-ready or safety-critical air traffic management platform and must not be used for actual navigation or operational control.
+> This software is an open-source **Proof of Concept (PoC)** demonstrating the architectural feasibility, 4D trajectory algorithms, and web service protocols defined in ICAO Doc 9965 and EUROCONTROL SWIM standards.
 
 ---
 

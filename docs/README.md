@@ -3,7 +3,8 @@
 Welcome to the **FF-ICE (Flight and Flow Information for a Collaborative Environment)** System-Wide Information Management Proof of Concept documentation library.
 
 > **GitHub Repository:** [SDMCNS/FF-ICE_SWIM_POC](https://github.com/SDMCNS/FF-ICE_SWIM_POC)  
-> **Notice:** This project is an open-source **Proof of Concept (PoC)** demonstrating the architectural principles and operational algorithms of ICAO Doc 9965, FIXM Core v4.2+, and SWIM Yellow Profile services. It is **NOT** a certified enterprise-ready or production ATM system.
+> **Notice:** This project is an open-source **Proof of Concept (PoC)** demonstrating the architectural principles and operational algorithms of ICAO Doc 9965, FIXM Core v4.2+, and SWIM Yellow Profile services.
+
 
 ---
 

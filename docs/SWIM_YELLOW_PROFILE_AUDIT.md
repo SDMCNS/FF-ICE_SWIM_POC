@@ -1,7 +1,7 @@
 # SWIM Yellow Profile Compliance Audit & Service Delivery Architecture (PoC)
 
 > **Repository:** [SDMCNS/FF-ICE_SWIM_POC](https://github.com/SDMCNS/FF-ICE_SWIM_POC)  
-> **Notice:** Open-Source Proof of Concept (PoC) & Research Audit. Not a certified enterprise deployment.  
+> **Notice:** Open-Source Proof of Concept (PoC) & Research Audit.  
 > **Document Status:** Architectural Feasibility & Standards Review  
 > **Applicable Specifications:** ICAO Doc 10039, EUROCONTROL TI-Profile Yellow v2.0, ICAO Doc 9965 (FF-ICE/R), ICAO Doc 9643 (SOIR), ICAO Doc 4444 (PANS-ATM), FIXM v4.2+ / iFIXM Core Schema, RFC 7807.  
 > **Service Identification:** `urn:swim:service:ffice:flight-planning:v1`  

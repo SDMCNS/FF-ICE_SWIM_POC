@@ -17,7 +17,8 @@
 
 > [!IMPORTANT]
 > ### ⚠️ Proof of Concept (PoC) Notice
-> This repository is an open-source **Proof of Concept (PoC)** and research reference implementation, certified, or production-grade Air Traffic Management (ATM) system. 
+> This repository is an open-source **Proof of Concept (PoC)** and research reference implementation.
+ 
 >
 > Its purpose is to demonstrate the technical viability, architecture, and mathematical mechanics of:
 > * **ICAO Doc 9965** (FF-ICE/R Release 1 Planning & Release 2 Execution)

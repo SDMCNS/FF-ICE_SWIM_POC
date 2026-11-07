@@ -17,7 +17,7 @@
 
 > [!IMPORTANT]
 > ### ⚠️ Proof of Concept (PoC) Notice
-> This repository is an open-source **Proof of Concept (PoC)** and research reference implementation, **NOT** an enterprise-ready, certified, or production-grade Air Traffic Management (ATM) system. 
+> This repository is an open-source **Proof of Concept (PoC)** and research reference implementation, certified, or production-grade Air Traffic Management (ATM) system. 
 >
 > Its purpose is to demonstrate the technical viability, architecture, and mathematical mechanics of:
 > * **ICAO Doc 9965** (FF-ICE/R Release 1 Planning & Release 2 Execution)
@@ -25,8 +25,7 @@
 > * **FIXM Core v4.2+** XML and JSON dual-representation schemas
 > * **ICAO Doc 9643** (Simultaneous Operations on Parallel Runways - SOIR)
 > * Pre-departure 4D strategic deconfliction and multi-traffic optimization
->
-> **Do NOT use this system for live operational flight dispatch, actual aerial navigation, or safety-critical air traffic control.**
+
 
 ---
 

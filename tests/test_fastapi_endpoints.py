@@ -24,6 +24,15 @@ class TestFastApiSwimEndpoints(unittest.TestCase):
             except Exception:
                 pass
 
+    def setUp(self):
+        from ff_ice_server.database import FlightPlanModel, TrajectoryPointModel, ConflictRecordModel
+        from ff_ice_server.main import SessionLocal
+        with SessionLocal() as db:
+            db.query(ConflictRecordModel).delete()
+            db.query(TrajectoryPointModel).delete()
+            db.query(FlightPlanModel).delete()
+            db.commit()
+
     def test_01_openapi_and_docs(self):
         print("\n--- Testing OpenAPI & Docs ---")
         res = self.client.get("/openapi.json")
@@ -99,15 +108,16 @@ class TestFastApiSwimEndpoints(unittest.TestCase):
         self.assertIn("<fx:Flight", xml_res.text)
         print(f"[PASS] Retrieved plan via FIXM XML Accept header: {len(xml_res.text)} bytes")
 
-        # 3. File Flight 2 (Conflicting BAW456, 2 mins later on same route & FL)
-        plan_conflict = dict(plan_json)
+        # 3. File Flight 2 (Conflicting BAW456, 1 min later on same route & FL)
+        import copy
+        plan_conflict = copy.deepcopy(plan_json)
         plan_conflict["flightIdentification"] = {"aircraftIdentification": "BAW456"}
-        plan_conflict["departure"] = {"aerodrome": "EGLL", "runway": "27R", "elevationFeet": 83, "estimatedOffBlockTime": "2026-11-07T16:02:00Z"}
-        plan_conflict["arrival"] = {"aerodrome": "EIDW", "runway": "28L", "elevationFeet": 243, "estimatedTimeOfArrival": "2026-11-07T16:40:00Z"}
+        plan_conflict["departure"] = {"aerodrome": "EGLL", "runway": "27R", "elevationFeet": 83, "estimatedOffBlockTime": "2026-11-07T16:01:00Z"}
+        plan_conflict["arrival"] = {"aerodrome": "EIDW", "runway": "28L", "elevationFeet": 243, "estimatedTimeOfArrival": "2026-11-07T16:39:00Z"}
         plan_conflict["trajectory"]["points4D"] = [
-            {"pointType": "DEPARTURE", "identifier": "EGLL", "coordinates": {"latitude": 51.47, "longitude": -0.46}, "altitudeFeet": 83, "flightLevel": 1, "cumulativeDistanceNm": 0.0, "groundSpeedKnots": 320, "estimatedTimestamp": "2026-11-07T16:02:00Z"},
-            {"pointType": "WAYPOINT", "identifier": "LIPGO", "coordinates": {"latitude": 53.06, "longitude": -5.50}, "altitudeFeet": 28000, "flightLevel": 280, "cumulativeDistanceNm": 208.0, "groundSpeedKnots": 450, "estimatedTimestamp": "2026-11-07T16:27:00Z"},
-            {"pointType": "DESTINATION", "identifier": "EIDW", "coordinates": {"latitude": 53.42, "longitude": -6.27}, "altitudeFeet": 243, "flightLevel": 2, "cumulativeDistanceNm": 243.1, "groundSpeedKnots": 290, "estimatedTimestamp": "2026-11-07T16:40:00Z"}
+            {"pointType": "DEPARTURE", "identifier": "EGLL", "coordinates": {"latitude": 51.47, "longitude": -0.46}, "altitudeFeet": 83, "flightLevel": 1, "cumulativeDistanceNm": 0.0, "groundSpeedKnots": 320, "estimatedTimestamp": "2026-11-07T16:01:00Z"},
+            {"pointType": "WAYPOINT", "identifier": "LIPGO", "coordinates": {"latitude": 53.06, "longitude": -5.50}, "altitudeFeet": 28000, "flightLevel": 280, "cumulativeDistanceNm": 208.0, "groundSpeedKnots": 450, "estimatedTimestamp": "2026-11-07T16:26:00Z"},
+            {"pointType": "DESTINATION", "identifier": "EIDW", "coordinates": {"latitude": 53.42, "longitude": -6.27}, "altitudeFeet": 243, "flightLevel": 2, "cumulativeDistanceNm": 243.1, "groundSpeedKnots": 290, "estimatedTimestamp": "2026-11-07T16:39:00Z"}
         ]
         res_conf = self.client.post("/api/v1/ffice/plans", json=plan_conflict)
         self.assertEqual(res_conf.status_code, 201)

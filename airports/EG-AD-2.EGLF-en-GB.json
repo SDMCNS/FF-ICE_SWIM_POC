@@ -1,0 +1,64 @@
+{
+  "aerodrome": "Farnborough Airport (EGLF)",
+  "icao_code": "EGLF",
+  "arp_coordinates": {
+    "latitude": "511631N",
+    "longitude": "0004639W"
+  },
+  "elevation": "238 FT",
+  "magnetic_variation": "1.14°E",
+  "runways": [
+    {
+      "designation": "06",
+      "true_bearing": "062.02°",
+      "dimensions": "2440 x 45"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "242.03°",
+      "dimensions": "2440 x 45"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "2000",
+      "dimensions": "2060"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "2063",
+      "dimensions": "2123"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "1809",
+      "dimensions": "1869"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "1828",
+      "dimensions": "1888"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "Coded centre-line with five crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31222.eng;99 900 Light intensity high",
+      "dimensions": "Green Light intensity high With elevated wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31502.eng;418"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "Coded centre-line with five crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31223.eng;100 900 Light intensity high",
+      "dimensions": "Green Light intensity high With elevated wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31503.eng;419"
+    }
+  ],
+  "communication_frequencies": [
+    {
+      "service": "RADAR",
+      "details": "FARNBOROUGH CTR 1 512112N 0004247W thence anti-clockwise by the arc of a circle radius 12 N centred on 512812N 0002713W to 512103N 0004236W - 512035N 0003959W - 511520N 0003639W - 511035N 0005054W - 511705N 0005508W - 512112N 0004247W Upper limit: 3500 Lower limit: S  FARNBOROUGH English 6000 FT - Mon-Fri 0700-2200 (0600-2100); Sat, Sun and PH 0800-2000 (0700-1900).VFR/SVFR transit of Farnborough CTR 1 & 2 to be requested on Farnborough Radar frequency 133.440 MHz.A portion of the Blackbushe ATZ is within the CTR, and operates as a Blackbushe Local Flying Area (LFA). Aircraft operate within this not above 2000 FT AMSL when in communication with Blackbushe information on 122.305 MHz.To operate UAS above 400 FT AGL within this area, UAS operators are required to notify NATS via the NATS Non-Standard Flight (NSF) Portal. UAS operators are required to notify NATS at least 14 days before the date of each activity.TAIRSPACE;ANNOTATION:48541.eng;4374",
+      "frequency": "133.440"
+    },
+    {
+      "service": "RADAR",
+      "details": "FARNBOROUGH CTR 2 512035N 0003959W - 512013N 0003800W - 511520N 0003639W - 512035N 0003959W Upper limit: 2500 Lower limit: S  FARNBOROUGH English 6000 FT - Mon-Fri 0700-2200 (0600-2100); Sat, Sun and PH 0800-2000 (0700-1900).VFR/SVFR transit of Farnborough CTR 1 & 2 to be requested on Farnborough Radar frequency 133.440 MHz.To operate UAS above 400 FT AGL within this area, UAS operators are required to notify NATS via the NATS Non-Standard Flight (NSF) Portal. UAS operators are required to notify NATS at least 14 days before the date of each activity.TAIRSPACE;ANNOTATION:50141.eng;3244",
+      "frequency": "133.440"
+    }
+  ]
+}

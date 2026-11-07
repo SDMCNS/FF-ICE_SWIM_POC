@@ -1,0 +1,98 @@
+{
+  "aerodrome": "London Gatwick Airport (EGKK)",
+  "icao_code": "EGKK",
+  "arp_coordinates": {
+    "latitude": "510853N",
+    "longitude": "0001125W"
+  },
+  "elevation": "203 FT",
+  "magnetic_variation": "1.33°E",
+  "runways": [
+    {
+      "designation": "08",
+      "true_bearing": "077.63°",
+      "dimensions": "2561 x 45"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "257.65°",
+      "dimensions": "2561 x 45"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "077.63°",
+      "dimensions": "3317 x 45"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "257.65°",
+      "dimensions": "3317 x 45"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "3159",
+      "dimensions": "3311"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "3255",
+      "dimensions": "3399"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "2937",
+      "dimensions": "3088"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "2772",
+      "dimensions": "2924"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "3146",
+      "dimensions": "3290"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "2891",
+      "dimensions": "3035"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "2460",
+      "dimensions": "2604"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "2561",
+      "dimensions": "3040"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "2515",
+      "dimensions": "2657"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "Centreline with one crossbar.TRWY_DIRECTION_ALS;ANNOTATION:31214.eng;91 420 Light intensity high",
+      "dimensions": "Green Light intensity high With green wingbars.Runway Threshold Identification Lights (RTILS) - 2 synchronised flashing white lights,one at each end of the THR bar. Visible in the approach sector only.TRWY_DIRECTION_LGT_SYS;ANNOTATION:31361.eng;201"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "Centreline with one crossbar.TRWY_DIRECTION_ALS;ANNOTATION:31215.eng;92 420 Light intensity high",
+      "dimensions": "Green Light intensity high With green wingbars.Runway Threshold Identification Lights (RTILS) - 2 synchronised flashing white lights,one at each end of the THR bar. Visible in the approach sector only.TRWY_DIRECTION_LGT_SYS;ANNOTATION:31360.eng;200"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "Coded centreline with five crossbars.Supplementary lighting inner 300 M.TRWY_DIRECTION_ALS;ANNOTATION:31224.eng;101 914 Light intensity high",
+      "dimensions": "Green Light intensity high With green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31517.eng;435"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "Coded centreline with five crossbars.Supplementary lighting inner 300 M.TRWY_DIRECTION_ALS;ANNOTATION:31225.eng;102 914 Light intensity high",
+      "dimensions": "Green Light intensity high With green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31518.eng;436"
+    }
+  ],
+  "communication_frequencies": []
+}

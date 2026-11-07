@@ -1,0 +1,63 @@
+{
+  "aerodrome": "Denham Aerodrome (EGLD)",
+  "icao_code": "EGLD",
+  "arp_coordinates": {
+    "latitude": "513518N",
+    "longitude": "0003047W"
+  },
+  "elevation": "249 FT",
+  "magnetic_variation": "1.20°E",
+  "runways": [
+    {
+      "designation": "06",
+      "true_bearing": "059.21°",
+      "dimensions": "775 x 18"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "239.22°",
+      "dimensions": "775 x 18"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "118.11°",
+      "dimensions": "546 x 18"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "298.11°",
+      "dimensions": "546 x 18"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "686",
+      "dimensions": "686"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "728",
+      "dimensions": "728"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "363",
+      "dimensions": "363"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "432",
+      "dimensions": "432"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "-",
+      "dimensions": "Light intensity low Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31511.eng;425"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "-",
+      "dimensions": "Light intensity low Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31510.eng;424"
+    }
+  ],
+  "communication_frequencies": []
+}

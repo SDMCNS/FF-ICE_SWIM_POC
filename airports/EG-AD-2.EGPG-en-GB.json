@@ -1,0 +1,43 @@
+{
+  "aerodrome": "Cumbernauld Airport (EGPG)",
+  "icao_code": "EGPG",
+  "arp_coordinates": {
+    "latitude": "555829N",
+    "longitude": "0035832W"
+  },
+  "elevation": "348 FT",
+  "magnetic_variation": "0.48°W",
+  "runways": [
+    {
+      "designation": "07",
+      "true_bearing": "072.53°",
+      "dimensions": "819 x 23"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "252.54°",
+      "dimensions": "819 x 23"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "819",
+      "dimensions": "932"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "819",
+      "dimensions": "920"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "-",
+      "dimensions": "Light intensity low Green bar at thresholdTRWY_DIRECTION_LGT_SYS;ANNOTATION:31652.eng;596"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "Basic 'T' Bar.TRWY_DIRECTION_ALS;ANNOTATION:31169.eng;46 - Light intensity high",
+      "dimensions": "Light intensity low Green bar at thresholdTRWY_DIRECTION_LGT_SYS;ANNOTATION:31419.eng;278"
+    }
+  ],
+  "communication_frequencies": []
+}

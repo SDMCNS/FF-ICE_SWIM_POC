@@ -1,0 +1,78 @@
+{
+  "aerodrome": "Blackpool Airport (EGNH)",
+  "icao_code": "EGNH",
+  "arp_coordinates": {
+    "latitude": "534618N",
+    "longitude": "0030143W"
+  },
+  "elevation": "34 FT",
+  "magnetic_variation": "0.14°E",
+  "runways": [
+    {
+      "designation": "10",
+      "true_bearing": "094.63°",
+      "dimensions": "1868 x 45"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "274.66°",
+      "dimensions": "1868 x 45"
+    },
+    {
+      "designation": "13",
+      "true_bearing": "127.30°",
+      "dimensions": "998 x 24"
+    },
+    {
+      "designation": "31",
+      "true_bearing": "307.31°",
+      "dimensions": "998 x 24"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "1868",
+      "dimensions": "2170"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "1868",
+      "dimensions": "2129"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "1452",
+      "dimensions": "1754"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "1017",
+      "dimensions": "1319"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "866",
+      "dimensions": "1127"
+    },
+    {
+      "designation": "13",
+      "true_bearing": "998",
+      "dimensions": "1077"
+    },
+    {
+      "designation": "31",
+      "true_bearing": "852",
+      "dimensions": "852"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "Centre-line with one crossbar.TRWY_DIRECTION_ALS;ANNOTATION:31238.eng;115 300 Light intensity high",
+      "dimensions": "Green Light intensity high Bi-directional with green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31522.eng;442"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "Centre-line with three crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31239.eng;116 450 Light intensity high",
+      "dimensions": "Green Light intensity high Elev bi-directional with green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31521.eng;441"
+    }
+  ],
+  "communication_frequencies": []
+}

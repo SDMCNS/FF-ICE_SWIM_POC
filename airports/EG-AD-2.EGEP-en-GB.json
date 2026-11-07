@@ -1,0 +1,93 @@
+{
+  "aerodrome": "Papa Westray Airport (EGEP)",
+  "icao_code": "EGEP",
+  "arp_coordinates": {
+    "latitude": "592104N",
+    "longitude": "0025401W"
+  },
+  "elevation": "92 FT",
+  "magnetic_variation": "0.46°W",
+  "runways": [
+    {
+      "designation": "03",
+      "true_bearing": "028.20°",
+      "dimensions": "527 x 18"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "208.20°",
+      "dimensions": "527 x 18"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "058.16°",
+      "dimensions": "293 x 18"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "238.16°",
+      "dimensions": "293 x 18"
+    },
+    {
+      "designation": "17",
+      "true_bearing": "170.37°",
+      "dimensions": "406 x 30"
+    },
+    {
+      "designation": "35",
+      "true_bearing": "350.37°",
+      "dimensions": "406 x 30"
+    },
+    {
+      "designation": "03",
+      "true_bearing": "497",
+      "dimensions": "497"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "527",
+      "dimensions": "527"
+    },
+    {
+      "designation": "17",
+      "true_bearing": "367",
+      "dimensions": "367"
+    },
+    {
+      "designation": "35",
+      "true_bearing": "352",
+      "dimensions": "352"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "252",
+      "dimensions": "252"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "283",
+      "dimensions": "283"
+    },
+    {
+      "designation": "03",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    },
+    {
+      "designation": "17",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    },
+    {
+      "designation": "35",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    }
+  ],
+  "communication_frequencies": []
+}

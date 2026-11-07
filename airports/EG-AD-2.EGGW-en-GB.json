@@ -1,0 +1,73 @@
+{
+  "aerodrome": "London Luton Airport (EGGW)",
+  "icao_code": "EGGW",
+  "arp_coordinates": {
+    "latitude": "515229N",
+    "longitude": "0002206W"
+  },
+  "elevation": "527 FT",
+  "magnetic_variation": "1.23°E",
+  "runways": [
+    {
+      "designation": "07",
+      "true_bearing": "074.38°",
+      "dimensions": "2162 x 45"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "254.40°",
+      "dimensions": "2162 x 45"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "2162",
+      "dimensions": "3243"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "2162",
+      "dimensions": "3243"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "1982",
+      "dimensions": "2973"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "1688",
+      "dimensions": "2532"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "1132",
+      "dimensions": "1698"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "1982",
+      "dimensions": "2973"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "1771",
+      "dimensions": "2657"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "1053",
+      "dimensions": "1580"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "Coded centre-line with three crossbars.Supplementary lighting inner 240 M.TRWY_DIRECTION_ALS;ANNOTATION:31244.eng;121 427 Light intensity high",
+      "dimensions": "Green Flush uni-directional with elev green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31688.eng;627"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "Coded centre-line with five crossbars.Supplementary lighting inner 240 M.TRWY_DIRECTION_ALS;ANNOTATION:31245.eng;122 844 Light intensity high",
+      "dimensions": "Green Flush uni-directional with elev green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31690.eng;628"
+    }
+  ],
+  "communication_frequencies": []
+}

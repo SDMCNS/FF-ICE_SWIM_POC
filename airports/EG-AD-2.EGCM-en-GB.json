@@ -1,0 +1,58 @@
+{
+  "aerodrome": "Leeds East Airport (EGCM)",
+  "icao_code": "EGCM",
+  "arp_coordinates": {
+    "latitude": "535004N",
+    "longitude": "0011144W"
+  },
+  "elevation": "29 FT",
+  "magnetic_variation": "0.79°E",
+  "runways": [
+    {
+      "designation": "06",
+      "true_bearing": "054.67°",
+      "dimensions": "1826 x 45"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "234.68°",
+      "dimensions": "1826 x 45"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "1799",
+      "dimensions": "1799"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "1711",
+      "dimensions": "1711"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "1184",
+      "dimensions": "1184"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "921",
+      "dimensions": "921"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "810",
+      "dimensions": "810"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "Centre-line with two crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31174.eng;51 300 Light intensity high",
+      "dimensions": "Green Light intensity high bi-directional with green wingbars.TRWY_DIRECTION_LGT_SYS;ANNOTATION:31810.eng;796"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "Centre-line with five crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31173.eng;50 900 Light intensity high",
+      "dimensions": "Green Light intensity high bi-directional with green wingbars.TRWY_DIRECTION_LGT_SYS;ANNOTATION:31811.eng;799"
+    }
+  ],
+  "communication_frequencies": []
+}

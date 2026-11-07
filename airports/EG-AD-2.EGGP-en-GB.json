@@ -1,0 +1,53 @@
+{
+  "aerodrome": "Liverpool John Lennon Airport (EGGP)",
+  "icao_code": "EGGP",
+  "arp_coordinates": {
+    "latitude": "532001N",
+    "longitude": "0025059W"
+  },
+  "elevation": "81 FT",
+  "magnetic_variation": "0.25°E",
+  "runways": [
+    {
+      "designation": "09",
+      "true_bearing": "085.60°",
+      "dimensions": "2286 x 46"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "265.62°",
+      "dimensions": "2286 x 46"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "2163",
+      "dimensions": "2364"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "2286",
+      "dimensions": "3429"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "1990",
+      "dimensions": "2191"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "2066",
+      "dimensions": "3099"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "Coded centre-line with five crossbars.Two consecutive centre-line lights missing from Runway 09 approach lights, between second and third crossbars, 360 M from threshold.TRWY_DIRECTION_ALS;ANNOTATION:31198.eng;75 914 Light intensity high",
+      "dimensions": "Green Light intensity high With green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31293.eng;110"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "Coded centre-line with five crossbars.Supplementary lighting inner 300 M.TRWY_DIRECTION_ALS;ANNOTATION:31197.eng;74 914 Light intensity high",
+      "dimensions": "Green Light intensity high With green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31296.eng;113"
+    }
+  ],
+  "communication_frequencies": []
+}

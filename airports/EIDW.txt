@@ -1,0 +1,384 @@
+{
+  "aerodrome_identifier": "EIDW",
+  "name": "Dublin International",
+  "geographical_and_administrative_data": {
+    "arp_coordinates": "532517N 0061612W",
+    "arp_site": "Midpoint RWY 10R/28L",
+    "direction_and_distance_from_city": "10 KM (5.4 NM) N of Dublin",
+    "elevation_reference_temperature_mean_low": "243 ft AMSL / 19.7°C (Max Temp) 0.1°C (MNM Temp)",
+    "geoid_undulation": "184 ft",
+    "magnetic_variation": "1° W (2025) / 11’ decreasing",
+    "operator_contact": {
+      "name": "Resource Allocation Unit / Airport Duty Manager",
+      "address": "Dublin Airport",
+      "telephone": "+353 1 944 5228",
+      "url": "www.dublinairport.com",
+      "email": "POD@dublinairport.com",
+      "afs": null
+    },
+    "types_of_traffic_permitted": "IFR/VFR"
+  },
+  "operational_hours": {
+    "ad_operator": "H24",
+    "customs_and_immigration": "Customs/Irish Immigration: H24, Department of Agriculture: H24, US CBP: 0700-1700 by prior negotiation",
+    "health_and_sanitation": "H24",
+    "ais_briefing_office": "See Remarks",
+    "ais_reporting_office": "H24",
+    "met_briefing_office": "H24",
+    "fuelling": "H24",
+    "handling": "H24",
+    "security": "H24",
+    "de_icing": "H24",
+    "remarks": "Airport closed on 25th December. Exact hours advised by NOTAM."
+  },
+  "handling_services_and_facilities": {
+    "cargo_handling": "Available from IAG Cargo, Swissport Cargo and WFS",
+    "fuel_oil_types": "JET A1 / Oil Grades: 100, 100W, 100U, 100E, 120, W80, E80, Turbo Oils 750, 390, 2380",
+    "fuelling_facilities_capacity": "JET A1 H24 No limitations. Hydrant fuelling on Pier 1 and Pier 4 stands, bowser on others.",
+    "de_icing_facilities": "On request from Swissport and Aer Lingus",
+    "hangar_space": "On request from Dublin Aerospace and Aer Lingus",
+    "repair_facilities": "Repair facilities from Dublin Aerospace",
+    "remarks": "Mandatory ground handling. Various handlers available."
+  },
+  "rescue_and_fire_fighting_services": {
+    "standard_category": "CAT 9",
+    "augmented_category": "CAT 9",
+    "rescue_equipment": "Emergency lighting and other equipment adequate to meet Category 9 requirements",
+    "removal_of_disabled_aircraft": "Up to Code C aircraft (nosewheel recovery up to Code E)"
+  },
+  "aprons_and_taxiways": {
+    "apron_surface_strength": "Surface: CONC Strength: PCR 700/R/C/W/U",
+    "taxiways": [
+      {
+        "designation": "A",
+        "width": "23 M",
+        "surface": "ASPH",
+        "strength": "PCR 970/R/C/W/U"
+      },
+      {
+        "designation": "B1",
+        "width": "24 M",
+        "surface": "CONC",
+        "strength": "PCR 1210/R/B/W/T"
+      },
+      {
+        "designation": "B2",
+        "width": "24 M",
+        "surface": "CONC",
+        "strength": "PCR 970/R/B/W/T"
+      },
+      {
+        "designation": "C",
+        "width": "23 M",
+        "surface": "CONC",
+        "strength": "PCR 1080/R/C/W/T"
+      },
+      {
+        "designation": "E1",
+        "width": "23 M",
+        "surface": "CONC/ASPH",
+        "strength": "PCR 1970/F/B/X/T"
+      },
+      {
+        "designation": "E2",
+        "width": "32 M",
+        "surface": "CONC/ASPH",
+        "strength": "PCR 1010/R/B/W/T"
+      }
+    ]
+  },
+  "runway_physical_characteristics": [
+    {
+      "designation": "10R",
+      "true_bearing": "095.24°",
+      "dimensions": "2637 x 45 M",
+      "strength_and_surface": "PCR 910/R/B/W/T ASPH",
+      "thr_coordinates": "532520.75N 0061724.27W",
+      "rwy_end_coordinates": "532512.94N 0061502.08W",
+      "thr_elevation": "243 ft",
+      "tdz_elevation": "NIL",
+      "slope": "Slope of 0.47%"
+    },
+    {
+      "designation": "28L",
+      "true_bearing": "275.27°",
+      "dimensions": "2637 x 45 M",
+      "strength_and_surface": "PCR 910/R/B/W/T ASPH",
+      "thr_coordinates": "532512.94N 0061502.08W",
+      "rwy_end_coordinates": "532520.75N 0061724.27W",
+      "thr_elevation": "203 ft",
+      "tdz_elevation": "NIL",
+      "slope": "Slope of 0.47%"
+    },
+    {
+      "designation": "10L",
+      "true_bearing": "095.25°",
+      "dimensions": "3109 x 45 M",
+      "strength_and_surface": "PCR 1140/R/C/W/T CONC",
+      "thr_coordinates": "532613.79N 0061650.22W",
+      "rwy_end_coordinates": "532605.39N 0061417.60W",
+      "thr_elevation": "235 ft",
+      "tdz_elevation": "NIL",
+      "slope": "Slope of 0.18%"
+    },
+    {
+      "designation": "28R",
+      "true_bearing": "275.28°",
+      "dimensions": "3109 x 45 M",
+      "strength_and_surface": "PCR 1140/R/C/W/T CONC",
+      "thr_coordinates": "532606.73N 0061441.87W",
+      "rwy_end_coordinates": "532614.62N 0061705.32W",
+      "thr_elevation": "213 ft",
+      "tdz_elevation": "NIL",
+      "slope": "Slope of 0.18%"
+    },
+    {
+      "designation": "16",
+      "true_bearing": "156.59°",
+      "dimensions": "2072 x 45 M",
+      "strength_and_surface": "PCR 3020/F/B/W/T ASPH",
+      "thr_coordinates": "532613.16N 0061543.12W",
+      "rwy_end_coordinates": "532511.66N 0061458.54W",
+      "thr_elevation": "218 ft",
+      "tdz_elevation": "NIL",
+      "slope": "Slope up to 1.1%"
+    },
+    {
+      "designation": "34",
+      "true_bearing": "336.60°",
+      "dimensions": "2072 x 45 M",
+      "strength_and_surface": "PCR 3020/F/B/W/T ASPH",
+      "thr_coordinates": "532511.66N 0061458.54W",
+      "rwy_end_coordinates": "532613.16N 0061543.12W",
+      "thr_elevation": "202 ft",
+      "tdz_elevation": "NIL",
+      "slope": "Slope up to 1.1%"
+    }
+  ],
+  "declared_distances": [
+    {
+      "rwy": "10R",
+      "tora": 2637,
+      "toda": 2850,
+      "asda": 2728,
+      "lda": 2637
+    },
+    {
+      "rwy": "28L",
+      "tora": 2637,
+      "toda": 2850,
+      "asda": 2693,
+      "lda": 2637
+    },
+    {
+      "rwy": "10L",
+      "tora": 3109,
+      "toda": 3169,
+      "asda": 3109,
+      "lda": 2829
+    },
+    {
+      "rwy": "28R",
+      "tora": 3109,
+      "toda": 3169,
+      "asda": 3109,
+      "lda": 2659
+    },
+    {
+      "rwy": "16",
+      "tora": 2072,
+      "toda": 2255,
+      "asda": 2072,
+      "lda": 2072
+    },
+    {
+      "rwy": "34",
+      "tora": 2072,
+      "toda": 2133,
+      "asda": 2072,
+      "lda": 2072
+    }
+  ],
+  "approach_and_runway_lighting": [
+    {
+      "rwy": "10R",
+      "apch_lgt": "CAT II/III 900M LIH",
+      "thr_lgt": "Green LIH",
+      "papi": "Both sides / 3° MEHT 20M",
+      "centre_line_lgt": "900M, 30M, LIH",
+      "edge_lgt": "2637M, 60M, White/Yellow, LIH"
+    },
+    {
+      "rwy": "28L",
+      "apch_lgt": "CAT II/III 900M LIH",
+      "thr_lgt": "Green LIH",
+      "papi": "Both sides / 3° MEHT 21M",
+      "centre_line_lgt": "900M, 30M, LIH",
+      "edge_lgt": "2637M, 60M, White/Yellow, LIH"
+    },
+    {
+      "rwy": "10L",
+      "apch_lgt": "CAT II/III 900M LIH",
+      "thr_lgt": "Green LIH",
+      "papi": "Both sides / 3° MEHT 17.6M",
+      "centre_line_lgt": "900M, 30M, LIH",
+      "edge_lgt": "3109M, 60M, White/Yellow, LIH"
+    },
+    {
+      "rwy": "28R",
+      "apch_lgt": "CAT II/III 900M LIH",
+      "thr_lgt": "Green LIH",
+      "papi": "Right side only 3° MEHT 16.8M",
+      "centre_line_lgt": "900M, 30M, LIH",
+      "edge_lgt": "3109M, 60M, White/Yellow, LIH"
+    },
+    {
+      "rwy": "16",
+      "apch_lgt": "CAT I 910M LIH",
+      "thr_lgt": "Green LIH",
+      "papi": "Both sides / 3° MEHT 19M",
+      "centre_line_lgt": "Nil",
+      "edge_lgt": "2073M, 60M, White/Yellow, LIH"
+    },
+    {
+      "rwy": "34",
+      "apch_lgt": "SALS 426M LIL",
+      "thr_lgt": "Green LIL",
+      "papi": "Both sides / 3° MEHT 20M",
+      "centre_line_lgt": "Nil",
+      "edge_lgt": "2073M, 60M, White/Yellow, LIH"
+    }
+  ],
+  "ats_communications_facilities": [
+    {
+      "service": "Delivery",
+      "call_sign": "Dublin Delivery",
+      "frequency": "122.985 MHz",
+      "hours": "0600-1800"
+    },
+    {
+      "service": "GND",
+      "call_sign": "Dublin Ground",
+      "frequency": "121.800 MHz, 125.885 MHz, 130.790 MHz",
+      "hours": "H24"
+    },
+    {
+      "service": "TWR",
+      "call_sign": "Dublin Tower",
+      "frequency": "118.600 MHz, 124.680 MHz, 128.800 MHz, 119.805 MHz",
+      "hours": "H24"
+    },
+    {
+      "service": "APP",
+      "call_sign": "Dublin Approach",
+      "frequency": "121.100 MHz, 119.555 MHz, 133.280 MHz, 119.930 MHz",
+      "hours": "H24"
+    },
+    {
+      "service": "ACC",
+      "call_sign": "Dublin Control",
+      "frequency": "129.180 MHz, 135.655 MHz, 132.580 MHz, 124.650 MHz",
+      "hours": "H24"
+    },
+    {
+      "service": "ATIS",
+      "call_sign": "Dublin Information Arrival",
+      "frequency": "124.530 MHz, 129.640 MHz",
+      "hours": "0515-2200"
+    }
+  ],
+  "radio_navigation_and_landing_aids": [
+    {
+      "type": "DVOR/DME",
+      "id": "DUB",
+      "frequency": "114.9 MHz",
+      "hours": "H24",
+      "coordinates": "532957.8N 0061825.6W",
+      "elevation": "200ft"
+    },
+    {
+      "type": "ILS LOC RWY 10R (CAT III)",
+      "id": "IDE",
+      "frequency": "108.9 MHz",
+      "hours": "H24",
+      "coordinates": "532511.8N 0061440.9W"
+    },
+    {
+      "type": "ILS GP RWY 10R",
+      "frequency": "329.3 MHz",
+      "hours": "H24",
+      "coordinates": "532515.5N 0061705.5W"
+    },
+    {
+      "type": "ILS LOC RWY 28L (CAT III)",
+      "id": "IDW",
+      "frequency": "111.35 MHz",
+      "hours": "H24",
+      "coordinates": "532521.8N 0061743.6W"
+    },
+    {
+      "type": "ILS GP RWY 28L",
+      "frequency": "332.15 MHz",
+      "hours": "H24",
+      "coordinates": "532509.6N 0061518.4W"
+    },
+    {
+      "type": "ILS LOC RWY 10L (CAT III)",
+      "id": "INDL",
+      "frequency": "109.55 MHz",
+      "hours": "H24",
+      "coordinates": "532604.5N 0061401.4W"
+    },
+    {
+      "type": "ILS GP RWY 10L",
+      "frequency": "332.45 MHz",
+      "hours": "H24",
+      "coordinates": "532616.9N 0061630.2W"
+    },
+    {
+      "type": "ILS LOC RWY 28R (CAT III)",
+      "id": "INDR",
+      "frequency": "110.15 MHz",
+      "hours": "H24",
+      "coordinates": "532615.5N 0061721.6W"
+    },
+    {
+      "type": "ILS GP RWY 28R",
+      "frequency": "334.25 MHz",
+      "hours": "H24",
+      "coordinates": "532611.9N 0061458.7W"
+    },
+    {
+      "type": "ILS LOC RWY 16 (CAT I)",
+      "id": "IAC",
+      "frequency": "111.5 MHz",
+      "hours": "H24",
+      "coordinates": "532505.7N 0061454.3W"
+    },
+    {
+      "type": "ILS GP RWY 16",
+      "frequency": "332.9 MHz",
+      "hours": "H24",
+      "coordinates": "532602.7N 0061543.2W"
+    }
+  ],
+  "ais_airspace": {
+    "designation": "Dublin Control Zone",
+    "lateral_limits": "Complex arc boundary centered around 532621N 0061508W",
+    "vertical_limits": "5000 ft",
+    "airspace_classification": "C",
+    "transition_altitude": "5000 ft"
+  },
+  "local_regulations": [
+    "Mandatory ground handling for all aircraft.",
+    "Specific taxiway and wingspan restrictions apply across various aprons and taxiways (e.g., TWY K, N4, S3 restricted for certain codes/wingspans).",
+    "Parallel runways (10R-28L and 10L-28R) preferred over crosswind runway 16-34.",
+    "High Intensity Runway Operations (HIRO) valid between 0600-2400HR local time."
+  ],
+  "noise_abatement_procedures": [
+    "Strict compliance with SIDs mandatory.",
+    "Specific NADP2 climb procedures for Cat C, D aircraft.",
+    "Reverse thrust restrictions between 2300-0600HR Local Time.",
+    "Environmental corridors established for departing/arriving jet aircraft."
+  ]
+}

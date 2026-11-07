@@ -1,0 +1,656 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AirportOperationsAndRunwayCapacityConfig",
+  "description": "Runway operational modes, physical concrete strip modeling, parallel vs single runway capacity configurations, taxi-out/in times, and wake separation buffers conforming to ICAO Doc 4444 and ICAO Doc 9643 (SOIR).",
+  "defaultOperations": {
+    "defaultMode": "MIXED_MODE_SINGLE",
+    "defaultTaxiOutMinutes": 10,
+    "defaultTaxiInMinutes": 6,
+    "mixedModeOccupancyBufferSec": 75,
+    "parallelIndependentMinDistanceMeters": 1035
+  },
+  "airports": {
+    "EGLL": {
+      "icao": "EGLL",
+      "name": "London Heathrow",
+      "mode": "PARALLEL_SEGREGATED",
+      "description": "Dual parallel runways operating segregated arrivals and departures under ICAO Doc 9643. Departures do not use the same strip of concrete as arrivals; one runway handles departures and the other handles arrivals.",
+      "physicalStrips": [
+        {
+          "stripId": "09L/27R",
+          "runwayEnds": ["09L", "27R"],
+          "lengthMeters": 3902,
+          "widthMeters": 50,
+          "surface": "ASPHALT",
+          "complex": "NORTH_COMPLEX",
+          "segregatedRole": {
+            "WEST": "ARRIVAL",
+            "EAST": "ARRIVAL"
+          },
+          "description": "Northern physical concrete strip (09L/27R). Exclusively handles arrivals in segregated parallel operations."
+        },
+        {
+          "stripId": "09R/27L",
+          "runwayEnds": ["09R", "27L"],
+          "lengthMeters": 3660,
+          "widthMeters": 50,
+          "surface": "ASPHALT",
+          "complex": "SOUTH_COMPLEX",
+          "segregatedRole": {
+            "WEST": "DEPARTURE",
+            "EAST": "DEPARTURE"
+          },
+          "description": "Southern physical concrete strip (09R/27L). Exclusively handles departures in segregated parallel operations."
+        }
+      ],
+      "parallelRunways": [
+        {"runwayA": "09L/27R", "runwayB": "09R/27L", "distanceMeters": 1414}
+      ],
+      "westOperations": {
+        "departureRunways": ["27L"],
+        "arrivalRunways": ["27R"]
+      },
+      "eastOperations": {
+        "departureRunways": ["09R"],
+        "arrivalRunways": ["09L"]
+      },
+      "taxiOutMinutes": 15,
+      "taxiInMinutes": 8,
+      "mixedModeOccupancyBufferSec": 60
+    },
+    "EIDW": {
+      "icao": "EIDW",
+      "name": "Dublin International",
+      "mode": "PARALLEL_SEGREGATED",
+      "description": "Independent parallel operations on 10L/28R (North strip) and 10R/28L (South strip) with crosswind 16/34. Departures and arrivals operate on physically separate strips of concrete.",
+      "physicalStrips": [
+        {
+          "stripId": "10L/28R",
+          "runwayEnds": ["10L", "28R"],
+          "lengthMeters": 3110,
+          "widthMeters": 60,
+          "surface": "ASPHALT",
+          "complex": "NORTH_COMPLEX",
+          "segregatedRole": {
+            "WEST": "ARRIVAL",
+            "EAST": "DEPARTURE"
+          },
+          "description": "North runway concrete strip (10L/28R). Primary arrival strip in westerly operations."
+        },
+        {
+          "stripId": "10R/28L",
+          "runwayEnds": ["10R", "28L"],
+          "lengthMeters": 2637,
+          "widthMeters": 45,
+          "surface": "CONCRETE",
+          "complex": "SOUTH_COMPLEX",
+          "segregatedRole": {
+            "WEST": "DEPARTURE",
+            "EAST": "ARRIVAL"
+          },
+          "description": "South runway concrete strip (10R/28L). Primary departure strip in westerly operations."
+        },
+        {
+          "stripId": "16/34",
+          "runwayEnds": ["16", "34"],
+          "lengthMeters": 2072,
+          "widthMeters": 61,
+          "surface": "ASPHALT",
+          "complex": "CROSSWIND",
+          "segregatedRole": {
+            "WEST": "CROSSWIND_RELIEF",
+            "EAST": "CROSSWIND_RELIEF"
+          },
+          "description": "Secondary crosswind runway strip used during high crosswind conditions."
+        }
+      ],
+      "parallelRunways": [
+        {"runwayA": "10L/28R", "runwayB": "10R/28L", "distanceMeters": 1690}
+      ],
+      "westOperations": {
+        "departureRunways": ["28L"],
+        "arrivalRunways": ["28R"]
+      },
+      "eastOperations": {
+        "departureRunways": ["10L"],
+        "arrivalRunways": ["10R"]
+      },
+      "taxiOutMinutes": 12,
+      "taxiInMinutes": 7,
+      "mixedModeOccupancyBufferSec": 75
+    },
+    "EGCC": {
+      "icao": "EGCC",
+      "name": "Manchester",
+      "mode": "PARALLEL_SEGREGATED",
+      "description": "Dual parallel runways 05L/23R and 05R/23L with independent departure and arrival operations on distinct concrete strips.",
+      "physicalStrips": [
+        {
+          "stripId": "05L/23R",
+          "runwayEnds": ["05L", "23R"],
+          "lengthMeters": 3048,
+          "widthMeters": 45,
+          "surface": "ASPHALT",
+          "complex": "NORTH_COMPLEX",
+          "segregatedRole": {
+            "WEST": "ARRIVAL",
+            "EAST": "ARRIVAL"
+          },
+          "description": "Northern physical strip (05L/23R) dedicated to arrivals."
+        },
+        {
+          "stripId": "05R/23L",
+          "runwayEnds": ["05R", "23L"],
+          "lengthMeters": 3050,
+          "widthMeters": 45,
+          "surface": "ASPHALT",
+          "complex": "SOUTH_COMPLEX",
+          "segregatedRole": {
+            "WEST": "DEPARTURE",
+            "EAST": "DEPARTURE"
+          },
+          "description": "Southern physical strip (05R/23L) dedicated to departures."
+        }
+      ],
+      "parallelRunways": [
+        {"runwayA": "05L/23R", "runwayB": "05R/23L", "distanceMeters": 390}
+      ],
+      "westOperations": {
+        "departureRunways": ["23L"],
+        "arrivalRunways": ["23R"]
+      },
+      "eastOperations": {
+        "departureRunways": ["05R"],
+        "arrivalRunways": ["05L"]
+      },
+      "taxiOutMinutes": 12,
+      "taxiInMinutes": 6,
+      "mixedModeOccupancyBufferSec": 75
+    },
+    "LFPG": {
+      "icao": "LFPG",
+      "name": "Paris Charles de Gaulle",
+      "mode": "MULTIPLE_PARALLEL",
+      "description": "Multiple parallel runway complexes (Quad parallel). Arranged in two independent pairs (North doublet and South doublet). Each doublet dedicates the outer runway to arrivals and the inner runway to departures, eliminating runway-crossing conflicts.",
+      "runwayComplexes": ["NORTH_DOUBLET", "SOUTH_DOUBLET"],
+      "physicalStrips": [
+        {
+          "stripId": "09L/27R",
+          "runwayEnds": ["09L", "27R"],
+          "lengthMeters": 2700,
+          "widthMeters": 60,
+          "surface": "BITUMEN",
+          "complex": "NORTH_DOUBLET",
+          "position": "OUTBOARD",
+          "segregatedRole": {
+            "WEST": "ARRIVAL",
+            "EAST": "ARRIVAL"
+          },
+          "description": "North doublet outboard runway strip (09L/27R). Exclusively handles arrivals."
+        },
+        {
+          "stripId": "09R/27L",
+          "runwayEnds": ["09R", "27L"],
+          "lengthMeters": 4215,
+          "widthMeters": 45,
+          "surface": "BITUMEN",
+          "complex": "NORTH_DOUBLET",
+          "position": "INBOARD",
+          "segregatedRole": {
+            "WEST": "DEPARTURE",
+            "EAST": "DEPARTURE"
+          },
+          "description": "North doublet inboard runway strip (09R/27L). Exclusively handles departures."
+        },
+        {
+          "stripId": "08L/26R",
+          "runwayEnds": ["08L", "26R"],
+          "lengthMeters": 4200,
+          "widthMeters": 45,
+          "surface": "BITUMEN",
+          "complex": "SOUTH_DOUBLET",
+          "position": "INBOARD",
+          "segregatedRole": {
+            "WEST": "DEPARTURE",
+            "EAST": "DEPARTURE"
+          },
+          "description": "South doublet inboard runway strip (08L/26R). Exclusively handles departures."
+        },
+        {
+          "stripId": "08R/26L",
+          "runwayEnds": ["08R", "26L"],
+          "lengthMeters": 2700,
+          "widthMeters": 60,
+          "surface": "BITUMEN",
+          "complex": "SOUTH_DOUBLET",
+          "position": "OUTBOARD",
+          "segregatedRole": {
+            "WEST": "ARRIVAL",
+            "EAST": "ARRIVAL"
+          },
+          "description": "South doublet outboard runway strip (08R/26L). Exclusively handles arrivals."
+        }
+      ],
+      "parallelRunways": [
+        {"runwayA": "09L/27R", "runwayB": "09R/27L", "distanceMeters": 385, "complex": "NORTH_DOUBLET"},
+        {"runwayA": "08L/26R", "runwayB": "08R/26L", "distanceMeters": 385, "complex": "SOUTH_DOUBLET"},
+        {"runwayA": "09R/27L", "runwayB": "08L/26R", "distanceMeters": 2980, "complex": "INTER_DOUBLET"}
+      ],
+      "westOperations": {
+        "departureRunways": ["27L", "26R"],
+        "arrivalRunways": ["27R", "26L"]
+      },
+      "eastOperations": {
+        "departureRunways": ["09R", "08L"],
+        "arrivalRunways": ["09L", "08R"]
+      },
+      "taxiOutMinutes": 18,
+      "taxiInMinutes": 10,
+      "mixedModeOccupancyBufferSec": 60
+    },
+    "KORD": {
+      "icao": "KORD",
+      "name": "Chicago O'Hare International",
+      "mode": "MULTIPLE_PARALLEL",
+      "description": "Multiple parallel East-West runway system. Arranged into North and South parallel airfields with segregated arrivals and departures across dedicated concrete strips.",
+      "runwayComplexes": ["NORTH_AIRFIELD", "SOUTH_AIRFIELD"],
+      "physicalStrips": [
+        {
+          "stripId": "09L/27R",
+          "runwayEnds": ["09L", "27R"],
+          "lengthMeters": 2286,
+          "widthMeters": 46,
+          "surface": "CONCRETE",
+          "complex": "NORTH_AIRFIELD",
+          "segregatedRole": { "WEST": "ARRIVAL", "EAST": "ARRIVAL" }
+        },
+        {
+          "stripId": "09C/27C",
+          "runwayEnds": ["09C", "27C"],
+          "lengthMeters": 3426,
+          "widthMeters": 61,
+          "surface": "CONCRETE",
+          "complex": "NORTH_AIRFIELD",
+          "segregatedRole": { "WEST": "DEPARTURE", "EAST": "DEPARTURE" }
+        },
+        {
+          "stripId": "09R/27L",
+          "runwayEnds": ["09R", "27L"],
+          "lengthMeters": 2286,
+          "widthMeters": 46,
+          "surface": "CONCRETE",
+          "complex": "NORTH_AIRFIELD",
+          "segregatedRole": { "WEST": "DEPARTURE", "EAST": "DEPARTURE" }
+        },
+        {
+          "stripId": "10L/28R",
+          "runwayEnds": ["10L", "28R"],
+          "lengthMeters": 3962,
+          "widthMeters": 61,
+          "surface": "ASPHALT_CONCRETE",
+          "complex": "SOUTH_AIRFIELD",
+          "segregatedRole": { "WEST": "ARRIVAL", "EAST": "ARRIVAL" }
+        },
+        {
+          "stripId": "10C/28C",
+          "runwayEnds": ["10C", "28C"],
+          "lengthMeters": 3121,
+          "widthMeters": 61,
+          "surface": "CONCRETE",
+          "complex": "SOUTH_AIRFIELD",
+          "segregatedRole": { "WEST": "DEPARTURE", "EAST": "DEPARTURE" }
+        },
+        {
+          "stripId": "10R/28L",
+          "runwayEnds": ["10R", "28L"],
+          "lengthMeters": 2286,
+          "widthMeters": 46,
+          "surface": "CONCRETE",
+          "complex": "SOUTH_AIRFIELD",
+          "segregatedRole": { "WEST": "ARRIVAL", "EAST": "ARRIVAL" }
+        }
+      ],
+      "westOperations": {
+        "departureRunways": ["27C", "27L", "28C"],
+        "arrivalRunways": ["27R", "28R", "28L"]
+      },
+      "eastOperations": {
+        "departureRunways": ["09C", "09R", "10C"],
+        "arrivalRunways": ["09L", "10L", "10R"]
+      },
+      "taxiOutMinutes": 20,
+      "taxiInMinutes": 12,
+      "mixedModeOccupancyBufferSec": 60
+    },
+    "KATL": {
+      "icao": "KATL",
+      "name": "Hartsfield-Jackson Atlanta",
+      "mode": "MULTIPLE_PARALLEL",
+      "description": "Five parallel runways in two airfield complexes. North complex handles arrivals on 08L/26R and departures on 08R/26L. South complex handles departures on 09L/27R and arrivals on 09R/27L.",
+      "runwayComplexes": ["NORTH_COMPLEX", "SOUTH_COMPLEX"],
+      "physicalStrips": [
+        {
+          "stripId": "08L/26R",
+          "runwayEnds": ["08L", "26R"],
+          "lengthMeters": 2743,
+          "widthMeters": 46,
+          "surface": "CONCRETE",
+          "complex": "NORTH_COMPLEX",
+          "segregatedRole": { "WEST": "ARRIVAL", "EAST": "ARRIVAL" }
+        },
+        {
+          "stripId": "08R/26L",
+          "runwayEnds": ["08R", "26L"],
+          "lengthMeters": 3048,
+          "widthMeters": 46,
+          "surface": "CONCRETE",
+          "complex": "NORTH_COMPLEX",
+          "segregatedRole": { "WEST": "DEPARTURE", "EAST": "DEPARTURE" }
+        },
+        {
+          "stripId": "09L/27R",
+          "runwayEnds": ["09L", "27R"],
+          "lengthMeters": 3776,
+          "widthMeters": 46,
+          "surface": "CONCRETE",
+          "complex": "SOUTH_COMPLEX",
+          "segregatedRole": { "WEST": "DEPARTURE", "EAST": "DEPARTURE" }
+        },
+        {
+          "stripId": "09R/27L",
+          "runwayEnds": ["09R", "27L"],
+          "lengthMeters": 2743,
+          "widthMeters": 46,
+          "surface": "CONCRETE",
+          "complex": "SOUTH_COMPLEX",
+          "segregatedRole": { "WEST": "ARRIVAL", "EAST": "ARRIVAL" }
+        },
+        {
+          "stripId": "10/28",
+          "runwayEnds": ["10", "28"],
+          "lengthMeters": 2743,
+          "widthMeters": 46,
+          "surface": "CONCRETE",
+          "complex": "SOUTH_COMPLEX",
+          "segregatedRole": { "WEST": "ARRIVAL", "EAST": "ARRIVAL" }
+        }
+      ],
+      "westOperations": {
+        "departureRunways": ["26L", "27R"],
+        "arrivalRunways": ["26R", "27L", "28"]
+      },
+      "eastOperations": {
+        "departureRunways": ["08R", "09L"],
+        "arrivalRunways": ["08L", "09R", "10"]
+      },
+      "taxiOutMinutes": 18,
+      "taxiInMinutes": 9,
+      "mixedModeOccupancyBufferSec": 60
+    },
+    "EHAM": {
+      "icao": "EHAM",
+      "name": "Amsterdam Schiphol",
+      "mode": "MULTIPLE_PARALLEL",
+      "description": "Six-runway system including parallel North-South runways (Polderbaan 18R/36L, Zwanenburgerbaan 18C/36C, Aalsmeerbaan 18L/36R) and crosswind East-West runways (Kaagbaan 06/24, Buitenveldertbaan 09/27).",
+      "runwayComplexes": ["NORTH_SOUTH_PARALLELS", "CROSSWIND_SYSTEM"],
+      "physicalStrips": [
+        {
+          "stripId": "18R/36L",
+          "runwayEnds": ["18R", "36L"],
+          "lengthMeters": 3800,
+          "widthMeters": 45,
+          "surface": "ASPHALT",
+          "complex": "NORTH_SOUTH_PARALLELS",
+          "segregatedRole": { "WEST": "ARRIVAL", "EAST": "ARRIVAL" }
+        },
+        {
+          "stripId": "18C/36C",
+          "runwayEnds": ["18C", "36C"],
+          "lengthMeters": 3300,
+          "widthMeters": 45,
+          "surface": "ASPHALT",
+          "complex": "NORTH_SOUTH_PARALLELS",
+          "segregatedRole": { "WEST": "MIXED", "EAST": "MIXED" }
+        },
+        {
+          "stripId": "18L/36R",
+          "runwayEnds": ["18L", "36R"],
+          "lengthMeters": 3400,
+          "widthMeters": 45,
+          "surface": "ASPHALT",
+          "complex": "NORTH_SOUTH_PARALLELS",
+          "segregatedRole": { "WEST": "DEPARTURE", "EAST": "DEPARTURE" }
+        },
+        {
+          "stripId": "06/24",
+          "runwayEnds": ["06", "24"],
+          "lengthMeters": 3500,
+          "widthMeters": 45,
+          "surface": "ASPHALT",
+          "complex": "CROSSWIND_SYSTEM",
+          "segregatedRole": { "WEST": "DEPARTURE", "EAST": "DEPARTURE" }
+        },
+        {
+          "stripId": "09/27",
+          "runwayEnds": ["09", "27"],
+          "lengthMeters": 3450,
+          "widthMeters": 45,
+          "surface": "ASPHALT",
+          "complex": "CROSSWIND_SYSTEM",
+          "segregatedRole": { "WEST": "ARRIVAL", "EAST": "ARRIVAL" }
+        }
+      ],
+      "westOperations": {
+        "departureRunways": ["36R", "24"],
+        "arrivalRunways": ["36L", "27"]
+      },
+      "eastOperations": {
+        "departureRunways": ["18L", "06"],
+        "arrivalRunways": ["18R", "09"]
+      },
+      "taxiOutMinutes": 22,
+      "taxiInMinutes": 14,
+      "mixedModeOccupancyBufferSec": 60
+    },
+    "EGKK": {
+      "icao": "EGKK",
+      "name": "London Gatwick",
+      "mode": "MIXED_MODE_SINGLE",
+      "description": "World's busiest single-use runway (08R/26L). Departures and arrivals share the physical strip of concrete and must be interleaved with wake and occupancy buffers.",
+      "physicalStrips": [
+        {
+          "stripId": "08R/26L",
+          "runwayEnds": ["08R", "26L"],
+          "lengthMeters": 3316,
+          "widthMeters": 45,
+          "surface": "ASPHALT",
+          "complex": "MAIN_RUNWAY",
+          "segregatedRole": {
+            "WEST": "MIXED",
+            "EAST": "MIXED"
+          },
+          "description": "Single physical concrete strip (08R/26L). Interleaves both arrivals and departures."
+        }
+      ],
+      "westOperations": {
+        "departureRunways": ["26L"],
+        "arrivalRunways": ["26L"]
+      },
+      "eastOperations": {
+        "departureRunways": ["08R"],
+        "arrivalRunways": ["08R"]
+      },
+      "taxiOutMinutes": 14,
+      "taxiInMinutes": 7,
+      "mixedModeOccupancyBufferSec": 90
+    },
+    "EGSS": {
+      "icao": "EGSS",
+      "name": "London Stansted",
+      "mode": "MIXED_MODE_SINGLE",
+      "description": "Single runway 04/22 operating mixed mode.",
+      "physicalStrips": [
+        {
+          "stripId": "04/22",
+          "runwayEnds": ["04", "22"],
+          "lengthMeters": 3049,
+          "widthMeters": 46,
+          "surface": "ASPHALT",
+          "complex": "MAIN_RUNWAY",
+          "segregatedRole": { "WEST": "MIXED", "EAST": "MIXED" }
+        }
+      ],
+      "westOperations": {
+        "departureRunways": ["22"],
+        "arrivalRunways": ["22"]
+      },
+      "eastOperations": {
+        "departureRunways": ["04"],
+        "arrivalRunways": ["04"]
+      },
+      "taxiOutMinutes": 11,
+      "taxiInMinutes": 6,
+      "mixedModeOccupancyBufferSec": 80
+    },
+    "EGPH": {
+      "icao": "EGPH",
+      "name": "Edinburgh",
+      "mode": "MIXED_MODE_SINGLE",
+      "description": "Main runway 06/24 operating mixed mode on a single concrete strip.",
+      "physicalStrips": [
+        {
+          "stripId": "06/24",
+          "runwayEnds": ["06", "24"],
+          "lengthMeters": 2556,
+          "widthMeters": 46,
+          "surface": "ASPHALT",
+          "complex": "MAIN_RUNWAY",
+          "segregatedRole": { "WEST": "MIXED", "EAST": "MIXED" }
+        }
+      ],
+      "westOperations": {
+        "departureRunways": ["24"],
+        "arrivalRunways": ["24"]
+      },
+      "eastOperations": {
+        "departureRunways": ["06"],
+        "arrivalRunways": ["06"]
+      },
+      "taxiOutMinutes": 10,
+      "taxiInMinutes": 5,
+      "mixedModeOccupancyBufferSec": 75
+    },
+    "EGPF": {
+      "icao": "EGPF",
+      "name": "Glasgow",
+      "mode": "MIXED_MODE_SINGLE",
+      "description": "Main runway 05/23 operating mixed mode on a single concrete strip.",
+      "physicalStrips": [
+        {
+          "stripId": "05/23",
+          "runwayEnds": ["05", "23"],
+          "lengthMeters": 2665,
+          "widthMeters": 46,
+          "surface": "ASPHALT",
+          "complex": "MAIN_RUNWAY",
+          "segregatedRole": { "WEST": "MIXED", "EAST": "MIXED" }
+        }
+      ],
+      "westOperations": {
+        "departureRunways": ["23"],
+        "arrivalRunways": ["23"]
+      },
+      "eastOperations": {
+        "departureRunways": ["05"],
+        "arrivalRunways": ["05"]
+      },
+      "taxiOutMinutes": 10,
+      "taxiInMinutes": 5,
+      "mixedModeOccupancyBufferSec": 75
+    },
+    "EINN": {
+      "icao": "EINN",
+      "name": "Shannon",
+      "mode": "MIXED_MODE_SINGLE",
+      "description": "Main runway 06/24 operating mixed mode on a single concrete strip.",
+      "physicalStrips": [
+        {
+          "stripId": "06/24",
+          "runwayEnds": ["06", "24"],
+          "lengthMeters": 3199,
+          "widthMeters": 45,
+          "surface": "ASPHALT",
+          "complex": "MAIN_RUNWAY",
+          "segregatedRole": { "WEST": "MIXED", "EAST": "MIXED" }
+        }
+      ],
+      "westOperations": {
+        "departureRunways": ["24"],
+        "arrivalRunways": ["24"]
+      },
+      "eastOperations": {
+        "departureRunways": ["06"],
+        "arrivalRunways": ["06"]
+      },
+      "taxiOutMinutes": 8,
+      "taxiInMinutes": 5,
+      "mixedModeOccupancyBufferSec": 75
+    },
+    "EICK": {
+      "icao": "EICK",
+      "name": "Cork",
+      "mode": "MIXED_MODE_SINGLE",
+      "description": "Main runway 16/34 operating mixed mode on a single concrete strip.",
+      "physicalStrips": [
+        {
+          "stripId": "16/34",
+          "runwayEnds": ["16", "34"],
+          "lengthMeters": 2133,
+          "widthMeters": 45,
+          "surface": "ASPHALT",
+          "complex": "MAIN_RUNWAY",
+          "segregatedRole": { "WEST": "MIXED", "EAST": "MIXED" }
+        }
+      ],
+      "westOperations": {
+        "departureRunways": ["16"],
+        "arrivalRunways": ["16"]
+      },
+      "eastOperations": {
+        "departureRunways": ["34"],
+        "arrivalRunways": ["34"]
+      },
+      "taxiOutMinutes": 8,
+      "taxiInMinutes": 5,
+      "mixedModeOccupancyBufferSec": 75
+    },
+    "EGAA": {
+      "icao": "EGAA",
+      "name": "Belfast International",
+      "mode": "MIXED_MODE_SINGLE",
+      "description": "Main runway 07/25 operating mixed mode on a single concrete strip.",
+      "physicalStrips": [
+        {
+          "stripId": "07/25",
+          "runwayEnds": ["07", "25"],
+          "lengthMeters": 2780,
+          "widthMeters": 45,
+          "surface": "ASPHALT",
+          "complex": "MAIN_RUNWAY",
+          "segregatedRole": { "WEST": "MIXED", "EAST": "MIXED" }
+        }
+      ],
+      "westOperations": {
+        "departureRunways": ["25"],
+        "arrivalRunways": ["25"]
+      },
+      "eastOperations": {
+        "departureRunways": ["07"],
+        "arrivalRunways": ["07"]
+      },
+      "taxiOutMinutes": 9,
+      "taxiInMinutes": 5,
+      "mixedModeOccupancyBufferSec": 75
+    }
+  }
+}

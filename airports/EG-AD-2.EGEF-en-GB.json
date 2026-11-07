@@ -1,0 +1,33 @@
+{
+  "aerodrome": "Fair Isle Airport (EGEF)",
+  "icao_code": "EGEF",
+  "arp_coordinates": {
+    "latitude": "593205N",
+    "longitude": "0013743W"
+  },
+  "elevation": "237 FT",
+  "magnetic_variation": "0.07°E",
+  "runways": [
+    {
+      "designation": "06",
+      "true_bearing": "056.72°",
+      "dimensions": "540 x 22"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "236.73°",
+      "dimensions": "540 x 22"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "478",
+      "dimensions": "478"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "478",
+      "dimensions": "478"
+    }
+  ],
+  "communication_frequencies": []
+}

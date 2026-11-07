@@ -1,0 +1,73 @@
+{
+  "aerodrome": "Old Buckenham Airfield (EGSV)",
+  "icao_code": "EGSV",
+  "arp_coordinates": {
+    "latitude": "522951N",
+    "longitude": "0010307E"
+  },
+  "elevation": "195 FT",
+  "magnetic_variation": "1.65°E",
+  "runways": [
+    {
+      "designation": "02",
+      "true_bearing": "019.87°",
+      "dimensions": "428 x 18"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "199.87°",
+      "dimensions": "428 x 18"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "064.56°",
+      "dimensions": "798 x 18"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "244.57°",
+      "dimensions": "798 x 18"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "064.48°",
+      "dimensions": "407 x 23"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "244.48°",
+      "dimensions": "407 x 23"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "798",
+      "dimensions": "798"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "798",
+      "dimensions": "798"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "407",
+      "dimensions": "407"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "469",
+      "dimensions": "469"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "370",
+      "dimensions": "370"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "428",
+      "dimensions": "428"
+    }
+  ],
+  "communication_frequencies": []
+}

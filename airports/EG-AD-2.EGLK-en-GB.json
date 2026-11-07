@@ -1,0 +1,43 @@
+{
+  "aerodrome": "Blackbushe Airport (EGLK)",
+  "icao_code": "EGLK",
+  "arp_coordinates": {
+    "latitude": "511926N",
+    "longitude": "0005051W"
+  },
+  "elevation": "325 FT",
+  "magnetic_variation": "1.11°E",
+  "runways": [
+    {
+      "designation": "07",
+      "true_bearing": "071.57°",
+      "dimensions": "1285 x 46"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "251.58°",
+      "dimensions": "1285 x 46"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "1199",
+      "dimensions": "1199"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "1199",
+      "dimensions": "1199"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity high Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31285.eng;84"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity high Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31287.eng;88"
+    }
+  ],
+  "communication_frequencies": []
+}

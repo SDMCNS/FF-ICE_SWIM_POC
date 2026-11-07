@@ -1,0 +1,63 @@
+{
+  "aerodrome": "Thruxton Aerodrome (EGHO)",
+  "icao_code": "EGHO",
+  "arp_coordinates": {
+    "latitude": "511238N",
+    "longitude": "0013600W"
+  },
+  "elevation": "319 FT",
+  "magnetic_variation": "0.87°E",
+  "runways": [
+    {
+      "designation": "07",
+      "true_bearing": "066.91°",
+      "dimensions": "969 x 23"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "246.91°",
+      "dimensions": "969 x 23"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "122.84°",
+      "dimensions": "757 x 31"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "302.85°",
+      "dimensions": "757 x 31"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "799",
+      "dimensions": "799"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "799",
+      "dimensions": "799"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "757",
+      "dimensions": "757"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "757",
+      "dimensions": "757"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "-",
+      "dimensions": "Light intensity low Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31477.eng;381"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "-",
+      "dimensions": "Light intensity low Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31476.eng;380"
+    }
+  ],
+  "communication_frequencies": []
+}

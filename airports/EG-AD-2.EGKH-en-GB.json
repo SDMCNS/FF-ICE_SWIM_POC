@@ -1,0 +1,33 @@
+{
+  "aerodrome": "Headcorn Aerodrome (EGKH)",
+  "icao_code": "EGKH",
+  "arp_coordinates": {
+    "latitude": "510923N",
+    "longitude": "0003840E"
+  },
+  "elevation": "70 FT",
+  "magnetic_variation": "1.60°E",
+  "runways": [
+    {
+      "designation": "10",
+      "true_bearing": "104.84°",
+      "dimensions": "1250 x 30"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "284.85°",
+      "dimensions": "1250 x 30"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "1150",
+      "dimensions": "1150"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "1100",
+      "dimensions": "1100"
+    }
+  ],
+  "communication_frequencies": []
+}

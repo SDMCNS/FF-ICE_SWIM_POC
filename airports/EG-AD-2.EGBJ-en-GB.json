@@ -1,0 +1,83 @@
+{
+  "aerodrome": "Gloucestershire Airport (EGBJ)",
+  "icao_code": "EGBJ",
+  "arp_coordinates": {
+    "latitude": "515339N",
+    "longitude": "0021002W"
+  },
+  "elevation": "101 FT",
+  "magnetic_variation": "0.63°E",
+  "runways": [
+    {
+      "designation": "03",
+      "true_bearing": "034.65°",
+      "dimensions": "980 x 23"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "214.66°",
+      "dimensions": "980 x 23"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "083.75°",
+      "dimensions": "1432 x 30"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "263.77°",
+      "dimensions": "1432 x 30"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "1271",
+      "dimensions": "1311"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "1154",
+      "dimensions": "1194"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "1317",
+      "dimensions": "1319"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "1163",
+      "dimensions": "1165"
+    },
+    {
+      "designation": "03",
+      "true_bearing": "980",
+      "dimensions": "1091"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "980",
+      "dimensions": "1073"
+    },
+    {
+      "designation": "03",
+      "true_bearing": "-",
+      "dimensions": "-"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "-",
+      "dimensions": "-"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "Basic.Centre-line lighting 30 M spacing.TRWY_DIRECTION_ALS;ANNOTATION:31273.eng;150 230 Light intensity high",
+      "dimensions": "Green Light intensity high WingbarTRWY_DIRECTION_LGT_SYS;ANNOTATION:31485.eng;395"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "Intermediate. Centre-line lighting 30 M spacing with two crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31274.eng;151 312 Light intensity high",
+      "dimensions": "Green Light intensity high WingbarTRWY_DIRECTION_LGT_SYS;ANNOTATION:31592.eng;527"
+    }
+  ],
+  "communication_frequencies": []
+}

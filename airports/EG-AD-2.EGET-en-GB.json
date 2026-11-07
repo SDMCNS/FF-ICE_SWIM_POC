@@ -1,0 +1,43 @@
+{
+  "aerodrome": "Lerwick / Tingwall Airport (EGET)",
+  "icao_code": "EGET",
+  "arp_coordinates": {
+    "latitude": "601131N",
+    "longitude": "0011437W"
+  },
+  "elevation": "46 FT",
+  "magnetic_variation": "0.17°E",
+  "runways": [
+    {
+      "designation": "01",
+      "true_bearing": "013.20°",
+      "dimensions": "768 x 18"
+    },
+    {
+      "designation": "19",
+      "true_bearing": "193.20°",
+      "dimensions": "768 x 18"
+    },
+    {
+      "designation": "01",
+      "true_bearing": "768",
+      "dimensions": "768"
+    },
+    {
+      "designation": "19",
+      "true_bearing": "736",
+      "dimensions": "736"
+    },
+    {
+      "designation": "01",
+      "true_bearing": "Omni-directional RAI at 500 M, 1000 M, 1500 M.TRWY_DIRECTION_ALS;ANNOTATION:31248.eng;125 - Light intensity medium",
+      "dimensions": "Light intensity low Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31472.eng;370"
+    },
+    {
+      "designation": "19",
+      "true_bearing": "-",
+      "dimensions": "Light intensity low GreenTRWY_DIRECTION_LGT_SYS;ANNOTATION:84397.eng;3781"
+    }
+  ],
+  "communication_frequencies": []
+}

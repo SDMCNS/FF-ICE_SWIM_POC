@@ -1,0 +1,73 @@
+{
+  "aerodrome": "Cambridge City Airport (EGSC)",
+  "icao_code": "EGSC",
+  "arp_coordinates": {
+    "latitude": "521218N",
+    "longitude": "0001030E"
+  },
+  "elevation": "48 FT",
+  "magnetic_variation": "1.39°E",
+  "runways": [
+    {
+      "designation": "05",
+      "true_bearing": "049.87°",
+      "dimensions": "1964 x 45"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "229.89°",
+      "dimensions": "1964 x 45"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "1843",
+      "dimensions": "1952"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "1886",
+      "dimensions": "2019"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "1255",
+      "dimensions": "1363"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "1025",
+      "dimensions": "1133"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "580",
+      "dimensions": "688"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "1624",
+      "dimensions": "1756"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "1519",
+      "dimensions": "1652"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "1202",
+      "dimensions": "1335"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "Centre-line with one crossbar.TRWY_DIRECTION_ALS;ANNOTATION:31269.eng;146 420 Light intensity high",
+      "dimensions": "Elev HI wingbars at displaced thresholdTRWY_DIRECTION_LGT_SYS;ANNOTATION:31646.eng;589"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "Centre-line with five crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31270.eng;147 900 Light intensity high",
+      "dimensions": "Flush green threshold bar and elev HI wingbars at displaced thresholdTRWY_DIRECTION_LGT_SYS;ANNOTATION:31645.eng;588"
+    }
+  ],
+  "communication_frequencies": []
+}

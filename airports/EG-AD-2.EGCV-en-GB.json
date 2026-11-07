@@ -1,0 +1,63 @@
+{
+  "aerodrome": "Sleap Airfield (EGCV)",
+  "icao_code": "EGCV",
+  "arp_coordinates": {
+    "latitude": "525002N",
+    "longitude": "0024618W"
+  },
+  "elevation": "275 FT",
+  "magnetic_variation": "0.33°E",
+  "runways": [
+    {
+      "designation": "05",
+      "true_bearing": "045.18°",
+      "dimensions": "798 x 31"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "225.18°",
+      "dimensions": "798 x 31"
+    },
+    {
+      "designation": "18",
+      "true_bearing": "178.61°",
+      "dimensions": "770 x 18"
+    },
+    {
+      "designation": "36",
+      "true_bearing": "358.61°",
+      "dimensions": "770 x 18"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "798",
+      "dimensions": "798"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "798",
+      "dimensions": "798"
+    },
+    {
+      "designation": "18",
+      "true_bearing": "770",
+      "dimensions": "770"
+    },
+    {
+      "designation": "36",
+      "true_bearing": "770",
+      "dimensions": "770"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "-",
+      "dimensions": "Light intensity low"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "-",
+      "dimensions": "Light intensity low"
+    }
+  ],
+  "communication_frequencies": []
+}

@@ -1,0 +1,33 @@
+{
+  "aerodrome": "Aberporth Airport (EGFA)",
+  "icao_code": "EGFA",
+  "arp_coordinates": {
+    "latitude": "520653N",
+    "longitude": "0043334W"
+  },
+  "elevation": "428 FT",
+  "magnetic_variation": "0.23°W",
+  "runways": [
+    {
+      "designation": "07",
+      "true_bearing": "072.45°",
+      "dimensions": "1257 x 30"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "252.46°",
+      "dimensions": "1257 x 30"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "1199",
+      "dimensions": "1199"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "1199",
+      "dimensions": "1199"
+    }
+  ],
+  "communication_frequencies": []
+}

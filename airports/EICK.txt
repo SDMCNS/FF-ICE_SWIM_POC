@@ -1,0 +1,272 @@
+{
+  "aerodrome_identifier": "EICK",
+  "name": "Cork",
+  "geographical_and_administrative_data": {
+    "arp_coordinates": "515029N 0082928W",
+    "arp_site": "Mid Point RWY 16/34",
+    "direction_and_distance_from_city": "6.5KM (3.5 NM) south of Cork city",
+    "elevation_reference_temperature_mean_low": "502 ft AMSL / 18.5°C (Max Temp) 1.6°C (MNM Temp)",
+    "geoid_undulation": "187 ft",
+    "magnetic_variation": "3° W (2021)/11’ decreasing",
+    "operator_contact": {
+      "name": "daa plc, Cork Airport",
+      "address": "Cork Airport, Co. Cork. T12 P5NF",
+      "telephone": "+ 353 21 431 31 31",
+      "url": "www.corkairport.com",
+      "email": "cork.feedback@corkairport.com",
+      "afs": "EICKYDYX"
+    },
+    "types_of_traffic_permitted": "IFR/VFR"
+  },
+  "operational_hours": {
+    "ad_operator": "H24",
+    "customs_and_immigration": "H24 PN required to AD Operator",
+    "health_and_sanitation": "H24",
+    "ais_briefing_office": "H24 In conjunction with AIS Shannon",
+    "ais_reporting_office": "H24 In conjunction with AIS Shannon",
+    "met_briefing_office": "H24",
+    "fuelling": "H24",
+    "handling": "H24",
+    "security": "H24",
+    "de_icing": "H24",
+    "remarks": "Airport closed on Christmas Day. Exact HR advised by NOTAM"
+  },
+  "handling_services_and_facilities": {
+    "cargo_handling": "Facilities AVBL from Swissport and WFS",
+    "fuel_oil_types": "Jet A1, AVGAS 100LL / Oil Grades: W80, W100",
+    "fuelling_facilities_capacity": "Full facilities available daily 0530-2200HR local time. Outside these hours varying surcharges may apply.",
+    "de_icing_facilities": "Contact Aerodrome Administration",
+    "hangar_space": "Single hangar approx 1000 sq ft (up to Challenger 300 / ~17 tonne), managed by Weston Aviation",
+    "repair_facilities": "Nil",
+    "remarks": "Prior permission required (PPR) mandatory. Mandatory ground handling applies."
+  },
+  "rescue_and_fire_fighting_services": {
+    "standard_category": "CAT 7",
+    "augmented_category": "CAT 9 AVBL with 48HR prior notice",
+    "rescue_equipment": "Cutting equipment, Emergency Lighting, etc.",
+    "removal_of_disabled_aircraft": "Up to Code C aircraft (Utilising equipment available at Dublin Airport)"
+  },
+  "aprons_and_taxiways": {
+    "apron_surface_strength": "CONC / PCN 50/R/B/W/U",
+    "taxiways": [
+      {
+        "designation": "A",
+        "width": "27M",
+        "surface": "CONC/ASPH",
+        "strength": "PCN 63/R/B/W/T"
+      },
+      {
+        "designation": "B",
+        "width": "23M",
+        "surface": "CONC",
+        "strength": "PCN 50/R/B/W/U"
+      },
+      {
+        "designation": "C",
+        "width": "30M",
+        "surface": "CONC/ASPH",
+        "strength": "PCN 50/R/B/W/U"
+      },
+      {
+        "designation": "E",
+        "width": "13M",
+        "surface": "ASPH",
+        "strength": "Light Aircraft MTOW 5,700kg"
+      },
+      {
+        "designation": "F",
+        "width": "10.5M",
+        "surface": "ASPH",
+        "strength": "PCN 12/F/B/W/U"
+      }
+    ]
+  },
+  "runway_physical_characteristics": [
+    {
+      "designation": "16",
+      "true_bearing": "159.87°",
+      "dimensions": "2133 x 45 M",
+      "strength_and_surface": "55/F/B/W/T ASPH",
+      "thr_coordinates": "515100.97N 0082947.18W",
+      "rwy_end_coordinates": "514956.16N 0082908.84W",
+      "thr_elevation": "477 ft",
+      "tdz_elevation": "NIL",
+      "slope": "Grooved asphalt with 7.5M wide asphalt shoulders"
+    },
+    {
+      "designation": "34",
+      "true_bearing": "339.88°",
+      "dimensions": "2133 x 45 M",
+      "strength_and_surface": "55/F/B/W/T ASPH",
+      "thr_coordinates": "514956.16N 0082908.84W",
+      "rwy_end_coordinates": "515100.97N 0082947.18W",
+      "thr_elevation": "461 ft",
+      "tdz_elevation": "NIL"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "062.61°",
+      "dimensions": "1310 x 45 M",
+      "strength_and_surface": "55/R/C/W/U CONC/ASPH",
+      "thr_coordinates": "515029.78N 0082945.59W",
+      "rwy_end_coordinates": "515049.27N 0082844.84W",
+      "thr_elevation": "471 ft"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "242.62°",
+      "dimensions": "1310 x 45 M",
+      "strength_and_surface": "55/R/C/W/U CONC/ASPH",
+      "thr_coordinates": "515049.27N 0082844.84W",
+      "rwy_end_coordinates": "515029.78N 0082945.59W",
+      "thr_elevation": "502 ft"
+    }
+  ],
+  "declared_distances": [
+    {
+      "rwy": "16",
+      "tora": 2133,
+      "toda": 2194,
+      "asda": 2133,
+      "lda": 2133
+    },
+    {
+      "rwy": "34",
+      "tora": 2133,
+      "toda": 2194,
+      "asda": 2133,
+      "lda": 2133
+    },
+    {
+      "rwy": "07",
+      "tora": 1310,
+      "toda": 1371,
+      "asda": 1310,
+      "lda": 1310
+    },
+    {
+      "rwy": "25",
+      "tora": 1310,
+      "toda": 1371,
+      "asda": 1310,
+      "lda": 1310
+    }
+  ],
+  "approach_and_runway_lighting": [
+    {
+      "rwy": "16",
+      "apch_lgt": "CAT II 804M LIH",
+      "thr_lgt": "Green LIH",
+      "papi": "Both sides / 3° MEHT 21M",
+      "centre_line_lgt": "900M, 30M, LIH",
+      "edge_lgt": "2133M, 15M, White/Red/Yellow, LIH"
+    },
+    {
+      "rwy": "34",
+      "apch_lgt": "SIAL 420M LIH",
+      "thr_lgt": "Green LIH",
+      "papi": "Both sides / 3° MEHT 19M",
+      "edge_lgt": "2133M, 15M, White/Red/Yellow, LIH"
+    },
+    {
+      "rwy": "07",
+      "apch_lgt": "Nil",
+      "thr_lgt": "Green LIH",
+      "papi": "Both sides / 3° MEHT 13M",
+      "edge_lgt": "1310M, 60M, White/Yellow, LIH"
+    },
+    {
+      "rwy": "25",
+      "apch_lgt": "SIAL 450M LIH",
+      "thr_lgt": "Green LIH",
+      "papi": "Both sides / 3.7° MEHT 17M",
+      "edge_lgt": "1310M, 60M, White/Yellow, LIH"
+    }
+  ],
+  "ats_communications_facilities": [
+    {
+      "service": "GND",
+      "call_sign": "Cork Ground",
+      "frequency": "121.85 MHz",
+      "hours": "H24"
+    },
+    {
+      "service": "TWR",
+      "call_sign": "Cork Tower",
+      "frequency": "119.3 MHz, 121.7 MHz",
+      "hours": "H24"
+    },
+    {
+      "service": "APP",
+      "call_sign": "Cork Approach",
+      "frequency": "119.9 MHz",
+      "hours": "H24"
+    },
+    {
+      "service": "APP (RADAR)",
+      "call_sign": "Cork Radar",
+      "frequency": "118.8 MHz",
+      "hours": "H24"
+    },
+    {
+      "service": "ATIS",
+      "call_sign": "Cork Information",
+      "frequency": "120.925 MHz",
+      "hours": "0600-2300"
+    }
+  ],
+  "radio_navigation_and_landing_aids": [
+    {
+      "type": "DVOR/DME",
+      "id": "CRK",
+      "frequency": "114.6 MHz",
+      "hours": "H24",
+      "coordinates": "515026.19N 0082939.37W",
+      "elevation": "500ft"
+    },
+    {
+      "type": "ILS LOC RWY 16 (CAT II)",
+      "id": "ICS",
+      "frequency": "109.9 MHz",
+      "hours": "H24",
+      "coordinates": "514950.08N 0082905.25W"
+    },
+    {
+      "type": "ILS GP RWY 16",
+      "frequency": "333.8 MHz",
+      "hours": "H24",
+      "coordinates": "515050.02N 0082948.20W"
+    },
+    {
+      "type": "ILS LOC RWY 34 (CAT I)",
+      "id": "ICN",
+      "frequency": "109.15 MHz",
+      "hours": "H24",
+      "coordinates": "515104.83N 0082949.45W"
+    },
+    {
+      "type": "ILS GP RWY 34",
+      "frequency": "331.25 MHz",
+      "hours": "H24",
+      "coordinates": "515005.74N 0082921.33W"
+    }
+  ],
+  "ais_airspace": {
+    "designation": "Cork Control Zone",
+    "lateral_limits": "Circle, radius 15 NM 515029N 0082928W",
+    "vertical_limits": "5000ft AMSL",
+    "airspace_classification": "C",
+    "transition_altitude": "5000ft"
+  },
+  "local_regulations": [
+    "Apron taxiway south of TWY C suitable only for wingspan < 36M.",
+    "TWY E suitable only for daylight hours, wingspan < 24M, MTOW < 5700kg.",
+    "TWY F suitable only for wingspan < 24M.",
+    "180° turns by wide-bodied aircraft on RWY 16/34 permitted only at runway ends.",
+    "Mandatory ground handling for all aircraft."
+  ],
+  "noise_abatement_procedures": [
+    "CAT A, B aircraft departures must maintain straight ahead after take-off until passing 1000ft QNH before turn.",
+    "CAT C, D aircraft departures must maintain straight ahead after take-off until passing 2500ft QNH before turn."
+  ]
+}

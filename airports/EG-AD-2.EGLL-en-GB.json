@@ -1,0 +1,228 @@
+{
+  "aerodrome": "London Heathrow Airport (EGLL)",
+  "icao_code": "EGLL",
+  "arp_coordinates": {
+    "latitude": "512839N",
+    "longitude": "0002741W"
+  },
+  "elevation": "83 FT",
+  "magnetic_variation": "1.23°E",
+  "runways": [
+    {
+      "designation": "09",
+      "true_bearing": "089.67°",
+      "dimensions": "3901 x 50"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "269.71°",
+      "dimensions": "3901 x 50"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "089.68°",
+      "dimensions": "3658 x 50"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "269.72°",
+      "dimensions": "3658 x 50"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "3901",
+      "dimensions": "3901"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "3882",
+      "dimensions": "3960"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "3362",
+      "dimensions": "3362"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "2838",
+      "dimensions": "2838"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "2661",
+      "dimensions": "2661"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "2354",
+      "dimensions": "2354"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "1992",
+      "dimensions": "1992"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "1789",
+      "dimensions": "1789"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "3539",
+      "dimensions": "3617"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "3136",
+      "dimensions": "3214"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "2862",
+      "dimensions": "2940"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "2617",
+      "dimensions": "2695"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "2414",
+      "dimensions": "2492"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "2142",
+      "dimensions": "2220"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "1947",
+      "dimensions": "2025"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "3658",
+      "dimensions": "3658"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "3658",
+      "dimensions": "3658"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "3528",
+      "dimensions": "3528"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "3351",
+      "dimensions": "3351"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "2853",
+      "dimensions": "2853"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "2852",
+      "dimensions": "2852"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "2325",
+      "dimensions": "2325"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "2244",
+      "dimensions": "2244"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "1704",
+      "dimensions": "1704"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "3536",
+      "dimensions": "3536"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "3380",
+      "dimensions": "3380"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "3224",
+      "dimensions": "3224"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "3212",
+      "dimensions": "3212"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "2702",
+      "dimensions": "2702"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "2606",
+      "dimensions": "2606"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "2589",
+      "dimensions": "2589"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "2441",
+      "dimensions": "2441"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "2222",
+      "dimensions": "2222"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "2091",
+      "dimensions": "2091"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "2081",
+      "dimensions": "2081"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "Coded centre-line with five crossbars.Supplementary lighting inner 300 M.TRWY_DIRECTION_ALS;ANNOTATION:31235.eng;112 860 Light intensity high",
+      "dimensions": "Green Light intensity high With HI wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31457.eng;340"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "Coded centre-line with five crossbars. Supplementary lighting inner 300 M.TRWY_DIRECTION_ALS;ANNOTATION:31234.eng;111 905 Light intensity high",
+      "dimensions": "Green Light intensity high With HI wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31441.eng;322"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "Coded centre-line with five crossbars.Supplementary lighting inner 300 M.TRWY_DIRECTION_ALS;ANNOTATION:31243.eng;120 939 Light intensity high",
+      "dimensions": "Green Light intensity high With HI wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31442.eng;323"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "Coded centre-line with five crossbars.Supplementary lighting inner 300 M.TRWY_DIRECTION_ALS;ANNOTATION:31242.eng;119 922 Light intensity high",
+      "dimensions": "Green Light intensity high With HI wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31456.eng;339"
+    }
+  ],
+  "communication_frequencies": []
+}

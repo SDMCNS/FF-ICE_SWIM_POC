@@ -1,0 +1,53 @@
+{
+  "aerodrome": "Cranfield Airport (EGTC)",
+  "icao_code": "EGTC",
+  "arp_coordinates": {
+    "latitude": "520420N",
+    "longitude": "0003700W"
+  },
+  "elevation": "360 FT",
+  "magnetic_variation": "1.13°E",
+  "runways": [
+    {
+      "designation": "03",
+      "true_bearing": "031.73°",
+      "dimensions": "1799 x 45"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "211.74°",
+      "dimensions": "1799 x 45"
+    },
+    {
+      "designation": "03",
+      "true_bearing": "1799",
+      "dimensions": "1799"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "1672",
+      "dimensions": "1799"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "1306",
+      "dimensions": "1433"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "953",
+      "dimensions": "1080"
+    },
+    {
+      "designation": "03",
+      "true_bearing": "Centre-line with two crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31256.eng;133 405.5 Light intensity high",
+      "dimensions": "Green Light intensity high InsetWith green elevated wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31654.eng;598"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "Centre-line with two crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31255.eng;132 450 Light intensity high",
+      "dimensions": "Green Light intensity high Elevated with green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31734.eng;692"
+    }
+  ],
+  "communication_frequencies": []
+}

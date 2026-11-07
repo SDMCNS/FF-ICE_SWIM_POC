@@ -1,0 +1,43 @@
+{
+  "aerodrome": "Enniskillen/St Angelo Airport (EGAB)",
+  "icao_code": "EGAB",
+  "arp_coordinates": {
+    "latitude": "542355N",
+    "longitude": "0073907W"
+  },
+  "elevation": "159 FT",
+  "magnetic_variation": "1.70°W",
+  "runways": [
+    {
+      "designation": "14",
+      "true_bearing": "139.67°",
+      "dimensions": "1220 x 30"
+    },
+    {
+      "designation": "32",
+      "true_bearing": "319.68°",
+      "dimensions": "1220 x 30"
+    },
+    {
+      "designation": "14",
+      "true_bearing": "1199",
+      "dimensions": "1199"
+    },
+    {
+      "designation": "32",
+      "true_bearing": "1199",
+      "dimensions": "1199"
+    },
+    {
+      "designation": "14",
+      "true_bearing": "-",
+      "dimensions": "Light intensity high Green wingbarTRWY_DIRECTION_LGT_SYS;ANNOTATION:31618.eng;558"
+    },
+    {
+      "designation": "32",
+      "true_bearing": "-",
+      "dimensions": "Light intensity high Green wingbarTRWY_DIRECTION_LGT_SYS;ANNOTATION:31629.eng;571"
+    }
+  ],
+  "communication_frequencies": []
+}

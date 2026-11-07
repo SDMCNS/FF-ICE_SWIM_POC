@@ -1,0 +1,63 @@
+{
+  "aerodrome": "Rochester Airport (EGTO)",
+  "icao_code": "EGTO",
+  "arp_coordinates": {
+    "latitude": "512107N",
+    "longitude": "0003010E"
+  },
+  "elevation": "420 FT",
+  "magnetic_variation": "1.54°E",
+  "runways": [
+    {
+      "designation": "02",
+      "true_bearing": "021.32°",
+      "dimensions": "828 x 32"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "201.32°",
+      "dimensions": "828 x 32"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "021.15°",
+      "dimensions": "684 x 21"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "201.15°",
+      "dimensions": "684 x 21"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "828",
+      "dimensions": "828"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "828",
+      "dimensions": "828"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "684",
+      "dimensions": "684"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "684",
+      "dimensions": "684"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    }
+  ],
+  "communication_frequencies": []
+}

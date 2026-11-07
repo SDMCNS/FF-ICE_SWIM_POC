@@ -1,0 +1,123 @@
+{
+  "aerodrome": "Aberdeen International Airport (EGPD)",
+  "icao_code": "EGPD",
+  "arp_coordinates": {
+    "latitude": "571209N",
+    "longitude": "0021153W"
+  },
+  "elevation": "215 FT",
+  "magnetic_variation": "0.08°E",
+  "runways": [
+    {
+      "designation": "05",
+      "true_bearing": "046.47°",
+      "dimensions": "477 x 46"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "226.48°",
+      "dimensions": "477 x 46"
+    },
+    {
+      "designation": "14",
+      "true_bearing": "139.13°",
+      "dimensions": "581 x 36"
+    },
+    {
+      "designation": "32",
+      "true_bearing": "319.13°",
+      "dimensions": "581 x 36"
+    },
+    {
+      "designation": "16",
+      "true_bearing": "158.17°",
+      "dimensions": "1953 x 46"
+    },
+    {
+      "designation": "34",
+      "true_bearing": "338.18°",
+      "dimensions": "1953 x 46"
+    },
+    {
+      "designation": "36",
+      "true_bearing": "359.00°",
+      "dimensions": "260 x 36"
+    },
+    {
+      "designation": "16",
+      "true_bearing": "1953",
+      "dimensions": "2152"
+    },
+    {
+      "designation": "34",
+      "true_bearing": "1953",
+      "dimensions": "2091"
+    },
+    {
+      "designation": "16",
+      "true_bearing": "1830",
+      "dimensions": "2030"
+    },
+    {
+      "designation": "16",
+      "true_bearing": "1312",
+      "dimensions": "1511"
+    },
+    {
+      "designation": "16",
+      "true_bearing": "629",
+      "dimensions": "829"
+    },
+    {
+      "designation": "34",
+      "true_bearing": "1339",
+      "dimensions": "1477"
+    },
+    {
+      "designation": "34",
+      "true_bearing": "689",
+      "dimensions": "828"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "-",
+      "dimensions": "414 H - 477"
+    },
+    {
+      "designation": "14",
+      "true_bearing": "-",
+      "dimensions": "506 H - 581"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "-",
+      "dimensions": "-"
+    },
+    {
+      "designation": "32",
+      "true_bearing": "-",
+      "dimensions": "-"
+    },
+    {
+      "designation": "36",
+      "true_bearing": "-",
+      "dimensions": "580 H - 260"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "Runway 23 White touchdown square with green lights.TRWY_DIRECTION_ALS;ANNOTATION:31176.eng;53 -",
+      "dimensions": "White"
+    },
+    {
+      "designation": "16",
+      "true_bearing": "Coded centre-line five crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31206.eng;83 915 Light intensity high",
+      "dimensions": "Green With green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31334.eng;169"
+    },
+    {
+      "designation": "34",
+      "true_bearing": "Coded centre-line five crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31207.eng;84 915 Light intensity high",
+      "dimensions": "Green With green wingbarTRWY_DIRECTION_LGT_SYS;ANNOTATION:31362.eng;205"
+    }
+  ],
+  "communication_frequencies": []
+}

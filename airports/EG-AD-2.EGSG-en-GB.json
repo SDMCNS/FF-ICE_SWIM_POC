@@ -1,0 +1,63 @@
+{
+  "aerodrome": "Stapleford Aerodrome (EGSG)",
+  "icao_code": "EGSG",
+  "arp_coordinates": {
+    "latitude": "513909N",
+    "longitude": "0000922E"
+  },
+  "elevation": "185 FT",
+  "magnetic_variation": "1.41°E",
+  "runways": [
+    {
+      "designation": "03",
+      "true_bearing": "035.49°",
+      "dimensions": "900 x 30"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "215.50°",
+      "dimensions": "900 x 30"
+    },
+    {
+      "designation": "03",
+      "true_bearing": "035.50°",
+      "dimensions": "1077 x 46"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "215.51°",
+      "dimensions": "1077 x 46"
+    },
+    {
+      "designation": "03",
+      "true_bearing": "1127",
+      "dimensions": "1150"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "1100",
+      "dimensions": "1150"
+    },
+    {
+      "designation": "03",
+      "true_bearing": "900",
+      "dimensions": "900"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "900",
+      "dimensions": "900"
+    },
+    {
+      "designation": "03",
+      "true_bearing": "Sodium lights at the start of Runway 21L and 03R.TRWY_DIRECTION_ALS;ANNOTATION:31185.eng;62 - Light intensity high",
+      "dimensions": "Light intensity low"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "Sodium lights at the start of Runway 21L and 03R.TRWY_DIRECTION_ALS;ANNOTATION:31186.eng;63 - Light intensity high",
+      "dimensions": "Light intensity low"
+    }
+  ],
+  "communication_frequencies": []
+}

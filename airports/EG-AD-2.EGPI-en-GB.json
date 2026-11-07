@@ -1,0 +1,73 @@
+{
+  "aerodrome": "Islay Airport (EGPI)",
+  "icao_code": "EGPI",
+  "arp_coordinates": {
+    "latitude": "554100N",
+    "longitude": "0061535W"
+  },
+  "elevation": "56 FT",
+  "magnetic_variation": "1.35°W",
+  "runways": [
+    {
+      "designation": "07",
+      "true_bearing": "070.49°",
+      "dimensions": "635 x 18"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "250.50°",
+      "dimensions": "635 x 18"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "120.87°",
+      "dimensions": "1550 x 30"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "300.88°",
+      "dimensions": "1550 x 30"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "1409",
+      "dimensions": "1550"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "1407",
+      "dimensions": "1550"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "635",
+      "dimensions": "635"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "635",
+      "dimensions": "635"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "-",
+      "dimensions": "Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31415.eng;272"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "-",
+      "dimensions": "Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31416.eng;273"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "Abbreviated centre-line with one crossbar.TRWY_DIRECTION_ALS;ANNOTATION:31164.eng;41 - Light intensity high",
+      "dimensions": "Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31417.eng;274"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "-",
+      "dimensions": "Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31418.eng;275"
+    }
+  ],
+  "communication_frequencies": []
+}

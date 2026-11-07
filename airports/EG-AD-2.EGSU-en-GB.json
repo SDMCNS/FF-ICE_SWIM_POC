@@ -1,0 +1,53 @@
+{
+  "aerodrome": "Duxford Aerodrome (EGSU)",
+  "icao_code": "EGSU",
+  "arp_coordinates": {
+    "latitude": "520526N",
+    "longitude": "0000753E"
+  },
+  "elevation": "126 FT",
+  "magnetic_variation": "1.38°E",
+  "runways": [
+    {
+      "designation": "06",
+      "true_bearing": "058.02°",
+      "dimensions": "1020 x 25"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "238.03°",
+      "dimensions": "1020 x 25"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "058.02°",
+      "dimensions": "1448 x 32"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "238.04°",
+      "dimensions": "1448 x 32"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "1199",
+      "dimensions": "1199"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "1199",
+      "dimensions": "1199"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "1020",
+      "dimensions": "1020"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "1020",
+      "dimensions": "1020"
+    }
+  ],
+  "communication_frequencies": []
+}

@@ -1,0 +1,33 @@
+{
+  "aerodrome": "Coll Airport (EGEL)",
+  "icao_code": "EGEL",
+  "arp_coordinates": {
+    "latitude": "563607N",
+    "longitude": "0063704W"
+  },
+  "elevation": "20 FT",
+  "magnetic_variation": "1.65°W",
+  "runways": [
+    {
+      "designation": "02",
+      "true_bearing": "017.13°",
+      "dimensions": "501 x 18"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "197.13°",
+      "dimensions": "501 x 18"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "501",
+      "dimensions": "501"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "501",
+      "dimensions": "501"
+    }
+  ],
+  "communication_frequencies": []
+}

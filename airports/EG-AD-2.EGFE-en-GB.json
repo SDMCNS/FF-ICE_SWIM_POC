@@ -1,0 +1,63 @@
+{
+  "aerodrome": "Haverfordwest Airport (EGFE)",
+  "icao_code": "EGFE",
+  "arp_coordinates": {
+    "latitude": "515000N",
+    "longitude": "0045739W"
+  },
+  "elevation": "160 FT",
+  "magnetic_variation": "0.34°W",
+  "runways": [
+    {
+      "designation": "03",
+      "true_bearing": "029.70°",
+      "dimensions": "1486 x 45"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "209.71°",
+      "dimensions": "1486 x 45"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "087.53°",
+      "dimensions": "1035 x 46"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "267.54°",
+      "dimensions": "1035 x 46"
+    },
+    {
+      "designation": "03",
+      "true_bearing": "1199",
+      "dimensions": "1199"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "1199",
+      "dimensions": "1199"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "828",
+      "dimensions": "828"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "798",
+      "dimensions": "798"
+    },
+    {
+      "designation": "03",
+      "true_bearing": "-",
+      "dimensions": "Light intensity low"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "-",
+      "dimensions": "Light intensity low"
+    }
+  ],
+  "communication_frequencies": []
+}

@@ -1,0 +1,43 @@
+{
+  "aerodrome": "Eday Airport (EGED)",
+  "icao_code": "EGED",
+  "arp_coordinates": {
+    "latitude": "591125N",
+    "longitude": "0024621W"
+  },
+  "elevation": "13 FT",
+  "magnetic_variation": "0.39°W",
+  "runways": [
+    {
+      "designation": "07",
+      "true_bearing": "064.40°",
+      "dimensions": "527 x 18"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "244.41°",
+      "dimensions": "527 x 18"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "498",
+      "dimensions": "498"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "498",
+      "dimensions": "498"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    }
+  ],
+  "communication_frequencies": []
+}

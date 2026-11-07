@@ -1,0 +1,43 @@
+{
+  "aerodrome": "Chalgrove Airfield (EGLJ)",
+  "icao_code": "EGLJ",
+  "arp_coordinates": {
+    "latitude": "514028N",
+    "longitude": "0010507W"
+  },
+  "elevation": "240 FT",
+  "magnetic_variation": "1.01°E",
+  "runways": [
+    {
+      "designation": "12",
+      "true_bearing": "124.05°",
+      "dimensions": "1829 x 30"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "304.06°",
+      "dimensions": "1829 x 30"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "1784",
+      "dimensions": "1784"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "1784",
+      "dimensions": "1784"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "-",
+      "dimensions": "Threshold bar and stop bars.5 green/red each side as appropriate.TRWY_DIRECTION_LGT_SYS;ANNOTATION:31590.eng;525"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "-",
+      "dimensions": "Threshold bar and stop bars.5 green/red each side as appropriate.TRWY_DIRECTION_LGT_SYS;ANNOTATION:31591.eng;526"
+    }
+  ],
+  "communication_frequencies": []
+}

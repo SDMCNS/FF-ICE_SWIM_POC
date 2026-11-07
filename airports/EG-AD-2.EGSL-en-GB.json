@@ -1,0 +1,53 @@
+{
+  "aerodrome": "Andrewsfield Aerodrome (EGSL)",
+  "icao_code": "EGSL",
+  "arp_coordinates": {
+    "latitude": "515342N",
+    "longitude": "0002657E"
+  },
+  "elevation": "286 FT",
+  "magnetic_variation": "1.49°E",
+  "runways": [
+    {
+      "designation": "09",
+      "true_bearing": "085.11°",
+      "dimensions": "799 x -"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "265.12°",
+      "dimensions": "799 x -"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "799",
+      "dimensions": "799"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "799",
+      "dimensions": "799"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "-",
+      "dimensions": "Light intensity low Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:84455.eng;295"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "-",
+      "dimensions": "Light intensity low Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:84453.eng;291"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "-",
+      "dimensions": "Light intensity low Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:84451.eng;289"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "-",
+      "dimensions": "Light intensity low Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:84449.eng;290"
+    }
+  ],
+  "communication_frequencies": []
+}

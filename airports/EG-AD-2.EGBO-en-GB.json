@@ -1,0 +1,83 @@
+{
+  "aerodrome": "Wolverhampton Halfpenny Green Airport (EGBO)",
+  "icao_code": "EGBO",
+  "arp_coordinates": {
+    "latitude": "523104N",
+    "longitude": "0021535W"
+  },
+  "elevation": "283 FT",
+  "magnetic_variation": "0.54°E",
+  "runways": [
+    {
+      "designation": "04",
+      "true_bearing": "036.71°",
+      "dimensions": "646 x 18"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "216.71°",
+      "dimensions": "646 x 18"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "096.84°",
+      "dimensions": "1055 x 18"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "276.85°",
+      "dimensions": "1055 x 18"
+    },
+    {
+      "designation": "16",
+      "true_bearing": "155.83°",
+      "dimensions": "1170 x 30"
+    },
+    {
+      "designation": "34",
+      "true_bearing": "335.83°",
+      "dimensions": "1170 x 30"
+    },
+    {
+      "designation": "16",
+      "true_bearing": "1025",
+      "dimensions": "1025"
+    },
+    {
+      "designation": "34",
+      "true_bearing": "1096",
+      "dimensions": "1096"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "799",
+      "dimensions": "799"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "799",
+      "dimensions": "799"
+    },
+    {
+      "designation": "04",
+      "true_bearing": "646",
+      "dimensions": "646"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "515",
+      "dimensions": "515"
+    },
+    {
+      "designation": "16",
+      "true_bearing": "-",
+      "dimensions": "Light intensity high Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31437.eng;316"
+    },
+    {
+      "designation": "34",
+      "true_bearing": "-",
+      "dimensions": "Light intensity high Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31438.eng;317"
+    }
+  ],
+  "communication_frequencies": []
+}

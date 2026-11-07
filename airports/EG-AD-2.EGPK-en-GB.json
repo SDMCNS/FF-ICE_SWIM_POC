@@ -1,0 +1,158 @@
+{
+  "aerodrome": "Glasgow Prestwick Airport (EGPK)",
+  "icao_code": "EGPK",
+  "arp_coordinates": {
+    "latitude": "553034N",
+    "longitude": "0043540W"
+  },
+  "elevation": "65 FT",
+  "magnetic_variation": "0.67°W",
+  "runways": [
+    {
+      "designation": "02",
+      "true_bearing": "023.74°",
+      "dimensions": "1906 x 45"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "203.75°",
+      "dimensions": "1906 x 45"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "121.33°",
+      "dimensions": "2987 x 45"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "301.36°",
+      "dimensions": "2987 x 45"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "2987",
+      "dimensions": "3171"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "2987",
+      "dimensions": "3075"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "2445",
+      "dimensions": "2629"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "1453",
+      "dimensions": "1637"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "1366",
+      "dimensions": "1550"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "1190",
+      "dimensions": "1374"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "1128",
+      "dimensions": "1312"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "2899",
+      "dimensions": "2988"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "2678",
+      "dimensions": "2766"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "1904",
+      "dimensions": "1992"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "1841",
+      "dimensions": "1930"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "1652",
+      "dimensions": "1740"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "1589",
+      "dimensions": "1677"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "1906",
+      "dimensions": "1999"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "1906",
+      "dimensions": "2147"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "1906",
+      "dimensions": "2000"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "1229",
+      "dimensions": "1322"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "772",
+      "dimensions": "865"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "1710",
+      "dimensions": "1951"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "1158",
+      "dimensions": "1399"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "700",
+      "dimensions": "941"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity high With green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31707.eng;655"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "Centre-line with one crossbar.TRWY_DIRECTION_ALS;ANNOTATION:31157.eng;34 420 Light intensity high",
+      "dimensions": "Green Light intensity high With green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31708.eng;656"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "Coded centre-line with five crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31152.eng;29 853 Light intensity high",
+      "dimensions": "Green Light intensity high With green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31705.eng;653"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "Coded centre-line with five crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31151.eng;28 890 Light intensity high",
+      "dimensions": "Green Light intensity high With green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31713.eng;665"
+    }
+  ],
+  "communication_frequencies": []
+}

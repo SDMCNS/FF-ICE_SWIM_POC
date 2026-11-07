@@ -1,0 +1,63 @@
+{
+  "aerodrome": "Barrow Walney Island Airport (EGNL)",
+  "icao_code": "EGNL",
+  "arp_coordinates": {
+    "latitude": "540743N",
+    "longitude": "0031603W"
+  },
+  "elevation": "44 FT",
+  "magnetic_variation": "0.01°E",
+  "runways": [
+    {
+      "designation": "05",
+      "true_bearing": "-",
+      "dimensions": "-"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "-",
+      "dimensions": "-"
+    },
+    {
+      "designation": "17",
+      "true_bearing": "166.10°",
+      "dimensions": "1011 x 44"
+    },
+    {
+      "designation": "35",
+      "true_bearing": "346.11°",
+      "dimensions": "1011 x 44"
+    },
+    {
+      "designation": "17",
+      "true_bearing": "1011",
+      "dimensions": "1199"
+    },
+    {
+      "designation": "35",
+      "true_bearing": "1058",
+      "dimensions": "1191"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "-",
+      "dimensions": "Green Elevated uni­directional with green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:15242.eng;75"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "-",
+      "dimensions": "Elevated green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:15243.eng;76"
+    },
+    {
+      "designation": "17",
+      "true_bearing": "-",
+      "dimensions": "Green With elev green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31871.eng;860"
+    },
+    {
+      "designation": "35",
+      "true_bearing": "Uni-directional centre-line with two crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31193.eng;70 420 Light intensity high",
+      "dimensions": "Green With elev green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31870.eng;859"
+    }
+  ],
+  "communication_frequencies": []
+}

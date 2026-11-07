@@ -1,0 +1,43 @@
+{
+  "aerodrome": "Oban Airport (EGEO)",
+  "icao_code": "EGEO",
+  "arp_coordinates": {
+    "latitude": "562749N",
+    "longitude": "0052400W"
+  },
+  "elevation": "24 FT",
+  "magnetic_variation": "1.12°W",
+  "runways": [
+    {
+      "designation": "01",
+      "true_bearing": "005.58°",
+      "dimensions": "1264 x 30"
+    },
+    {
+      "designation": "19",
+      "true_bearing": "185.58°",
+      "dimensions": "1264 x 30"
+    },
+    {
+      "designation": "01",
+      "true_bearing": "1064",
+      "dimensions": "1064"
+    },
+    {
+      "designation": "19",
+      "true_bearing": "1142",
+      "dimensions": "1142"
+    },
+    {
+      "designation": "01",
+      "true_bearing": "-",
+      "dimensions": "Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:55923.eng;2500"
+    },
+    {
+      "designation": "19",
+      "true_bearing": "One crossbar.TRWY_DIRECTION_ALS;ANNOTATION:31199.eng;76 540 Light intensity high",
+      "dimensions": "Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31297.eng;114"
+    }
+  ],
+  "communication_frequencies": []
+}

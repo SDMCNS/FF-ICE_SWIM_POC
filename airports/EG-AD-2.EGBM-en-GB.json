@@ -1,0 +1,48 @@
+{
+  "aerodrome": "Tatenhill Airfield (EGBM)",
+  "icao_code": "EGBM",
+  "arp_coordinates": {
+    "latitude": "524851N",
+    "longitude": "0014553W"
+  },
+  "elevation": "439 FT",
+  "magnetic_variation": "0.68°E",
+  "runways": [
+    {
+      "designation": "03",
+      "true_bearing": "-",
+      "dimensions": "630 x 18"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "-",
+      "dimensions": "630 x 18"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "073.39°",
+      "dimensions": "1190 x 28"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "253.41°",
+      "dimensions": "1190 x 28"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "1190",
+      "dimensions": "1190"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "1190",
+      "dimensions": "1190"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "Runway lighting available by special arrangement only.TRWY_DIRECTION_ALS;ANNOTATION:31175.eng;52 -",
+      "dimensions": "-"
+    }
+  ],
+  "communication_frequencies": []
+}

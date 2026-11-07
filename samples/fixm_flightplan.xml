@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fx:Flight xmlns:fx="http://www.fixm.aero/flight/4.2"
+           xmlns:fb="http://www.fixm.aero/base/4.2"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <fx:gufi codeSpace="urn:uuid">urn:uuid:00000000-0000-0000-0000-000000000000</fx:gufi>
+  <fx:flightStatus>PLANNED</fx:flightStatus>
+  <fx:messageType>PRELIMINARY</fx:messageType>
+  <fx:filingTime>2026-11-07T13:03:58.226Z</fx:filingTime>
+  <fx:flightIdentification>
+    <fx:aircraftIdentification>EIN157</fx:aircraftIdentification>
+  </fx:flightIdentification>
+  <fx:aircraft>
+    <fx:aircraftType>A320</fx:aircraftType>
+    <fx:wakeTurbulenceCategory>M</fx:wakeTurbulenceCategory>
+    <fx:capabilities>
+      <fx:standardEquipment>SDFGIRW/LB1</fx:standardEquipment>
+    </fx:capabilities>
+  </fx:aircraft>
+  <fx:departure>
+    <fx:aerodrome>EINN</fx:aerodrome>
+    <fx:estimatedOffBlockTime>2026-11-07T13:47:00.000Z</fx:estimatedOffBlockTime>
+  </fx:departure>
+  <fx:arrival>
+    <fx:aerodrome>EIDW</fx:aerodrome>
+    <fx:estimatedTimeOfArrival>2026-11-07T14:17:16.944331Z</fx:estimatedTimeOfArrival>
+  </fx:arrival>
+  <fx:routeTrajectory>
+    <fx:trajectoryProfile>
+      <fx:totalDistance uom="NM">175</fx:totalDistance>
+      <fx:totalFlightTimeMinutes>30.3</fx:totalFlightTimeMinutes>
+      <fx:agreedTrajectory>
+        <fx:point4D>
+          <fx:pointType>DEPARTURE</fx:pointType>
+          <fx:pointIdentifier>EINN</fx:pointIdentifier>
+          <fx:position>
+            <fb:pos>52.701944 -8.924722</fb:pos>
+          </fx:position>
+          <fx:level>
+            <fb:altitude uom="FT">46</fb:altitude>
+            <fb:flightLevel>F000</fb:flightLevel>
+          </fx:level>
+          <fx:time>
+            <fb:estimatedTime>2026-11-07T13:47:00Z</fb:estimatedTime>
+            <fb:elapsedSeconds>0</fb:elapsedSeconds>
+          </fx:time>
+          <fx:cumulativeDistance uom="NM">0</fx:cumulativeDistance>
+          <fx:airspace>EISNFIR</fx:airspace>
+        </fx:point4D>
+        <fx:point4D>
+          <fx:pointType>INITIAL_CLIMB</fx:pointType>
+          <fx:pointIdentifier>RWY24_5NM</fx:pointIdentifier>
+          <fx:position>
+            <fb:pos>52.650911 -9.033260</fb:pos>
+          </fx:position>
+          <fx:level>
+            <fb:altitude uom="FT">2646</fb:altitude>
+            <fb:flightLevel>F026</fb:flightLevel>
+          </fx:level>
+          <fx:time>
+            <fb:estimatedTime>2026-11-07T13:48:12Z</fb:estimatedTime>
+            <fb:elapsedSeconds>72</fb:elapsedSeconds>
+          </fx:time>
+          <fx:cumulativeDistance uom="NM">5</fx:cumulativeDistance>
+          <fx:airspace>EISNFIR</fx:airspace>
+        </fx:point4D>
+        <fx:point4D>
+          <fx:pointType>TOC</fx:pointType>
+          <fx:pointIdentifier>TOC</fx:pointIdentifier>
+          <fx:position>
+            <fb:pos>52.795540 -7.901251</fb:pos>
+          </fx:position>
+          <fx:level>
+            <fb:altitude uom="FT">20000</fb:altitude>
+            <fb:flightLevel>F200</fb:flightLevel>
+          </fx:level>
+          <fx:time>
+            <fb:estimatedTime>2026-11-07T13:55:24.723117Z</fb:estimatedTime>
+            <fb:elapsedSeconds>505</fb:elapsedSeconds>
+          </fx:time>
+          <fx:cumulativeDistance uom="NM">47.07</fx:cumulativeDistance>
+          <fx:airspace>EISNFIR</fx:airspace>
+        </fx:point4D>
+        <fx:point4D>
+          <fx:pointType>TOD</fx:pointType>
+          <fx:pointIdentifier>TOD</fx:pointIdentifier>
+          <fx:position>
+            <fb:pos>52.997137 -6.142827</fb:pos>
+          </fx:position>
+          <fx:level>
+            <fb:altitude uom="FT">20000</fb:altitude>
+            <fb:flightLevel>F200</fb:flightLevel>
+          </fx:level>
+          <fx:time>
+            <fb:estimatedTime>2026-11-07T14:04:03.349032Z</fb:estimatedTime>
+            <fb:elapsedSeconds>1023</fb:elapsedSeconds>
+          </fx:time>
+          <fx:cumulativeDistance uom="NM">111.9</fx:cumulativeDistance>
+          <fx:airspace>EISNFIR</fx:airspace>
+        </fx:point4D>
+        <fx:point4D>
+          <fx:pointType>WAYPOINT</fx:pointType>
+          <fx:pointIdentifier>LIPGO</fx:pointIdentifier>
+          <fx:position>
+            <fb:pos>53.063925 -5.500000</fb:pos>
+          </fx:position>
+          <fx:level>
+            <fb:altitude uom="FT">12510</fb:altitude>
+            <fb:flightLevel>F125</fb:flightLevel>
+          </fx:level>
+          <fx:time>
+            <fb:estimatedTime>2026-11-07T14:07:52.530312Z</fb:estimatedTime>
+            <fb:elapsedSeconds>1253</fb:elapsedSeconds>
+          </fx:time>
+          <fx:cumulativeDistance uom="NM">135.45</fx:cumulativeDistance>
+          <fx:airspace>EGTTFIR</fx:airspace>
+        </fx:point4D>
+        <fx:point4D>
+          <fx:pointType>APPROACH_INTERCEPT</fx:pointType>
+          <fx:pointIdentifier>ILS28L_17NM</fx:pointIdentifier>
+          <fx:position>
+            <fb:pos>53.394448 -5.797174</fb:pos>
+          </fx:position>
+          <fx:level>
+            <fb:altitude uom="FT">5343</fb:altitude>
+            <fb:flightLevel>F053</fb:flightLevel>
+          </fx:level>
+          <fx:time>
+            <fb:estimatedTime>2026-11-07T14:12:32.293169Z</fb:estimatedTime>
+            <fb:elapsedSeconds>1532</fb:elapsedSeconds>
+          </fx:time>
+          <fx:cumulativeDistance uom="NM">157.99</fx:cumulativeDistance>
+          <fx:airspace>EISNFIR</fx:airspace>
+        </fx:point4D>
+        <fx:point4D>
+          <fx:pointType>DESTINATION</fx:pointType>
+          <fx:pointIdentifier>EIDW</fx:pointIdentifier>
+          <fx:position>
+            <fb:pos>53.421389 -6.270000</fb:pos>
+          </fx:position>
+          <fx:level>
+            <fb:altitude uom="FT">243</fb:altitude>
+            <fb:flightLevel>F002</fb:flightLevel>
+          </fx:level>
+          <fx:time>
+            <fb:estimatedTime>2026-11-07T14:17:16.944331Z</fb:estimatedTime>
+            <fb:elapsedSeconds>1817</fb:elapsedSeconds>
+          </fx:time>
+          <fx:cumulativeDistance uom="NM">174.99</fx:cumulativeDistance>
+          <fx:airspace>EISNFIR</fx:airspace>
+        </fx:point4D>
+      </fx:agreedTrajectory>
+    </fx:trajectoryProfile>
+  </fx:routeTrajectory>
+</fx:Flight>

@@ -1,0 +1,43 @@
+{
+  "aerodrome": "London City Airport (EGLC)",
+  "icao_code": "EGLC",
+  "arp_coordinates": {
+    "latitude": "513019N",
+    "longitude": "0000319E"
+  },
+  "elevation": "20 FT",
+  "magnetic_variation": "1.39°E",
+  "runways": [
+    {
+      "designation": "09",
+      "true_bearing": "092.87°",
+      "dimensions": "1508 x 30"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "272.89°",
+      "dimensions": "1508 x 30"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "1199",
+      "dimensions": "1457"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "1199",
+      "dimensions": "1415"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "Centre-line with two crossbars 15 M spacing.The approach and runway lighting and PAPI are set for 5.5° approach.TRWY_DIRECTION_ALS;ANNOTATION:31168.eng;45 297 Light intensity high",
+      "dimensions": "Green Light intensity high With HI elev green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31489.eng;400"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "Centre-line with one crossbar 15 M spacing.The approach and runway lighting and PAPI are set for 5.5° approach.TRWY_DIRECTION_ALS;ANNOTATION:31167.eng;44 397 Light intensity high",
+      "dimensions": "Green Light intensity high With HI green flush wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31488.eng;399"
+    }
+  ],
+  "communication_frequencies": []
+}

@@ -1,0 +1,63 @@
+{
+  "aerodrome": "City of Derry Airport (EGAE)",
+  "icao_code": "EGAE",
+  "arp_coordinates": {
+    "latitude": "550234N",
+    "longitude": "0070943W"
+  },
+  "elevation": "23 FT",
+  "magnetic_variation": "1.61°W",
+  "runways": [
+    {
+      "designation": "08",
+      "true_bearing": "073.12°",
+      "dimensions": "1969 x 45"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "253.14°",
+      "dimensions": "1969 x 45"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "1932",
+      "dimensions": "2898"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "1969",
+      "dimensions": "2267"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "1510",
+      "dimensions": "2265"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "1260",
+      "dimensions": "1890"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "804",
+      "dimensions": "1206"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "1151",
+      "dimensions": "1449"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "Centre-line with two crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31201.eng;78 420 Light intensity high",
+      "dimensions": "Green Inset uni-directionalWith green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31381.eng;231"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "Centre-line with two crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31200.eng;77 420 Light intensity high",
+      "dimensions": "Green Inset uni-directionalWith elevated green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31380.eng;230"
+    }
+  ],
+  "communication_frequencies": []
+}

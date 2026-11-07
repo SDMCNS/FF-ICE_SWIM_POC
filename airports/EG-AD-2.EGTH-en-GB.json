@@ -1,0 +1,53 @@
+{
+  "aerodrome": "Old Warden Airfield (EGTH)",
+  "icao_code": "EGTH",
+  "arp_coordinates": {
+    "latitude": "520512N",
+    "longitude": "0001907W"
+  },
+  "elevation": "127 FT",
+  "magnetic_variation": "1.23°E",
+  "runways": [
+    {
+      "designation": "02",
+      "true_bearing": "025.06°",
+      "dimensions": "799 x 21"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "205.07°",
+      "dimensions": "799 x 21"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "025.06°",
+      "dimensions": "1000 x 21"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "205.07°",
+      "dimensions": "1000 x 21"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "1000",
+      "dimensions": "1000"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "1087",
+      "dimensions": "1087"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "799",
+      "dimensions": "799"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "799",
+      "dimensions": "799"
+    }
+  ],
+  "communication_frequencies": []
+}

@@ -1,0 +1,99 @@
+{
+  "aerodrome": "Guernsey Airport (EGJB)",
+  "icao_code": "EGJB",
+  "arp_coordinates": {
+    "latitude": "492606N",
+    "longitude": "0023610W"
+  },
+  "elevation": "336 FT",
+  "magnetic_variation": "0.69°E",
+  "runways": [
+    {
+      "designation": "09",
+      "true_bearing": "087.56°",
+      "dimensions": "1583 x 45"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "267.57°",
+      "dimensions": "1583 x 45"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "1540",
+      "dimensions": "1721"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "1583",
+      "dimensions": "1799"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "1032",
+      "dimensions": "1213"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "1102",
+      "dimensions": "1318"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "Coded centre-line with five crossbars.Single approach centre-line lights have been omitted from the system at 570 M and 540 M from the Runway 09 threshold.TRWY_DIRECTION_ALS;ANNOTATION:31177.eng;54 803 Light intensity high",
+      "dimensions": "Green With green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31474.eng;372"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "Coded centre-line with five cross bars. Single approach centre-line light omitted from the system at 270 M from the Runway 27 threshold.TRWY_DIRECTION_ALS;ANNOTATION:31178.eng;55 895 Light intensity high",
+      "dimensions": "Green With green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31473.eng;371"
+    }
+  ],
+  "communication_frequencies": [
+    {
+      "service": "",
+      "details": " GUERNSEY 121.500 Emergency frequency.TFREQUENCY;ANNOTATION:33000.eng;1014 -TFREQUENCY;CUSTOM_ATT2;1014 - 0615-2100 (0515-2000).TFREQUENCY_STS;ANNOTATION:33001.eng;491 ATZ hours 0600-2100 (0500-2000).VDF492610.63N 0023607.41WOn AD.TSERVICE;ANNOTATION:31923.eng;633",
+      "frequency": "121.500"
+    },
+    {
+      "service": "",
+      "details": "  128.655 DOC 25 NM/10,000 FT.TFREQUENCY;ANNOTATION:33003.eng;1015 -TFREQUENCY;CUSTOM_ATT2;1015 - 0615-2100 (0515-2000).TFREQUENCY_STS;ANNOTATION:33004.eng;492 ",
+      "frequency": "128.655"
+    },
+    {
+      "service": "GND",
+      "details": " GUERNSEY 121.805 DOC 3 NM/GND.As directed by ATC.TFREQUENCY;ANNOTATION:30430.eng;163 -TFREQUENCY;CUSTOM_ATT2;163 - As directed by ATC.TFREQUENCY_STS;ANNOTATION:30431.eng;44 Extensions by arrangement for scheduled services only.If GMC is in use, an associated message will be broadcast on ATIS 'GUERNSEY INFORMATION' 109.400 MHz.TSERVICE;ANNOTATION:19580.eng;138",
+      "frequency": "121.805"
+    },
+    {
+      "service": "",
+      "details": " GUERNSEY 119.955 DOC 25 NM/10,000 FT.TFREQUENCY;ANNOTATION:31065.eng;432 -TFREQUENCY;CUSTOM_ATT2;432 - 0615-2100 (0515-2000).TFREQUENCY_STS;ANNOTATION:31066.eng;313 ",
+      "frequency": "119.955"
+    },
+    {
+      "service": "",
+      "details": " GUERNSEY 124.505 DOC 25 NM/10,000 FT.Serves Runway 09/27.TFREQUENCY;ANNOTATION:31062.eng;431 -TFREQUENCY;CUSTOM_ATT2;431 - 0615-2100 (0515-2000).TFREQUENCY_STS;ANNOTATION:31063.eng;312 VDF492610.63N 0023607.41WOn AD.TSERVICE;ANNOTATION:19582.eng;139",
+      "frequency": "124.505"
+    },
+    {
+      "service": "",
+      "details": " GUERNSEY 109.400 Broadcast on Guernsey VOR.TFREQUENCY;ANNOTATION:31071.eng;434 -TFREQUENCY;CUSTOM_ATT2;434 - 0615-2100 (0515-2000).TFREQUENCY_STS;ANNOTATION:31072.eng;315 -",
+      "frequency": "109.400"
+    },
+    {
+      "service": "GROUND",
+      "details": " GUERNSEY 121.605 Non-ATS channel.TFREQUENCY;ANNOTATION:30433.eng;164 -TFREQUENCY;CUSTOM_ATT2;164 - Available when Fire vehicle attending aircraft on the ground in an emergency.TFREQUENCY_STS;ANNOTATION:30434.eng;45 -",
+      "frequency": "121.605"
+    },
+    {
+      "service": "",
+      "details": "Air Traffic Control service JERSEY 120.455 To be used in the event of failure of communications on channel 125.205.TFREQUENCY;ANNOTATION:32773.eng;746 -TFREQUENCY;CUSTOM_ATT2;746 - 0545-2100 (0445-2030); and by arrangement.TFREQUENCY_STS;ANNOTATION:32774.eng;434 DOC 4900N00100W - 4834N00205W - 4920N00400W - 5015N00400W - 5015N00145W - 4935N00100W / 25,000 FT.TSERVICE;ANNOTATION:31917.eng;631",
+      "frequency": "120.455"
+    },
+    {
+      "service": "",
+      "details": "  125.205 CTR and AirwayChannel.TFREQUENCY;ANNOTATION:32770.eng;745 -TFREQUENCY;CUSTOM_ATT2;745 - 0545-2100 (0445-2030); and by arrangement.TFREQUENCY_STS;ANNOTATION:32771.eng;433 ",
+      "frequency": "125.205"
+    }
+  ]
+}

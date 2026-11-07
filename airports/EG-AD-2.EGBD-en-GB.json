@@ -1,0 +1,73 @@
+{
+  "aerodrome": "Derby Airfield (EGBD)",
+  "icao_code": "EGBD",
+  "arp_coordinates": {
+    "latitude": "525135N",
+    "longitude": "0013703W"
+  },
+  "elevation": "175 FT",
+  "magnetic_variation": "0.73°E",
+  "runways": [
+    {
+      "designation": "05",
+      "true_bearing": "047.57°",
+      "dimensions": "547 x 20"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "227.57°",
+      "dimensions": "547 x 20"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "097.78°",
+      "dimensions": "453 x 20"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "277.78°",
+      "dimensions": "453 x 20"
+    },
+    {
+      "designation": "17",
+      "true_bearing": "171.29°",
+      "dimensions": "594 x 20"
+    },
+    {
+      "designation": "35",
+      "true_bearing": "351.29°",
+      "dimensions": "594 x 20"
+    },
+    {
+      "designation": "17",
+      "true_bearing": "558",
+      "dimensions": "599"
+    },
+    {
+      "designation": "35",
+      "true_bearing": "-",
+      "dimensions": "-"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "330",
+      "dimensions": "360"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "523",
+      "dimensions": "585"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "316",
+      "dimensions": "316"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "433",
+      "dimensions": "433"
+    }
+  ],
+  "communication_frequencies": []
+}

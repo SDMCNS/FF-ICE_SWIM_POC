@@ -1,0 +1,73 @@
+{
+  "aerodrome": "Goodwood Aerodrome (EGHR)",
+  "icao_code": "EGHR",
+  "arp_coordinates": {
+    "latitude": "505134N",
+    "longitude": "0004533W"
+  },
+  "elevation": "111 FT",
+  "magnetic_variation": "1.17°E",
+  "runways": [
+    {
+      "designation": "06",
+      "true_bearing": "056.93°",
+      "dimensions": "855 x 30"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "236.94°",
+      "dimensions": "855 x 30"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "103.03°",
+      "dimensions": "700 x 30"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "283.04°",
+      "dimensions": "700 x 30"
+    },
+    {
+      "designation": "14",
+      "true_bearing": "139.21°",
+      "dimensions": "1262 x 31"
+    },
+    {
+      "designation": "32",
+      "true_bearing": "319.22°",
+      "dimensions": "1262 x 31"
+    },
+    {
+      "designation": "14",
+      "true_bearing": "1120",
+      "dimensions": "1120"
+    },
+    {
+      "designation": "32",
+      "true_bearing": "1127",
+      "dimensions": "1127"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "799",
+      "dimensions": "799"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "799",
+      "dimensions": "799"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "700",
+      "dimensions": "700"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "700",
+      "dimensions": "700"
+    }
+  ],
+  "communication_frequencies": []
+}

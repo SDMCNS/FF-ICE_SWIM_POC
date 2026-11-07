@@ -1,0 +1,63 @@
+{
+  "aerodrome": "Wellesbourne Mountford Airfield (EGBW)",
+  "icao_code": "EGBW",
+  "arp_coordinates": {
+    "latitude": "521132N",
+    "longitude": "0013652W"
+  },
+  "elevation": "159 FT",
+  "magnetic_variation": "0.79°E",
+  "runways": [
+    {
+      "designation": "05",
+      "true_bearing": "045.90°",
+      "dimensions": "587 x 18"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "225.90°",
+      "dimensions": "587 x 18"
+    },
+    {
+      "designation": "18",
+      "true_bearing": "175.90°",
+      "dimensions": "917 x 23"
+    },
+    {
+      "designation": "36",
+      "true_bearing": "355.90°",
+      "dimensions": "917 x 23"
+    },
+    {
+      "designation": "18",
+      "true_bearing": "917",
+      "dimensions": "917"
+    },
+    {
+      "designation": "36",
+      "true_bearing": "917",
+      "dimensions": "917"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "587",
+      "dimensions": "587"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "587",
+      "dimensions": "587"
+    },
+    {
+      "designation": "18",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity high"
+    },
+    {
+      "designation": "36",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity high"
+    }
+  ],
+  "communication_frequencies": []
+}

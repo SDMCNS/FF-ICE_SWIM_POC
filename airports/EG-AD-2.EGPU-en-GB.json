@@ -1,0 +1,73 @@
+{
+  "aerodrome": "Tiree Airport (EGPU)",
+  "icao_code": "EGPU",
+  "arp_coordinates": {
+    "latitude": "562957N",
+    "longitude": "0065209W"
+  },
+  "elevation": "38 FT",
+  "magnetic_variation": "1.73°W",
+  "runways": [
+    {
+      "designation": "05",
+      "true_bearing": "047.10°",
+      "dimensions": "1481 x 30"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "227.11°",
+      "dimensions": "1481 x 30"
+    },
+    {
+      "designation": "11",
+      "true_bearing": "107.06°",
+      "dimensions": "799 x 19"
+    },
+    {
+      "designation": "29",
+      "true_bearing": "287.07°",
+      "dimensions": "799 x 19"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "1411",
+      "dimensions": "1481"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "1410",
+      "dimensions": "1481"
+    },
+    {
+      "designation": "11",
+      "true_bearing": "799",
+      "dimensions": "799"
+    },
+    {
+      "designation": "29",
+      "true_bearing": "799",
+      "dimensions": "799"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    },
+    {
+      "designation": "11",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    },
+    {
+      "designation": "29",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    }
+  ],
+  "communication_frequencies": []
+}

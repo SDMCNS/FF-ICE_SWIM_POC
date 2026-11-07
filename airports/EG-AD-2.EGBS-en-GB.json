@@ -1,0 +1,54 @@
+{
+  "aerodrome": "Shobdon Airfield (EGBS)",
+  "icao_code": "EGBS",
+  "arp_coordinates": {
+    "latitude": "521430N",
+    "longitude": "0025252W"
+  },
+  "elevation": "317 FT",
+  "magnetic_variation": "0.35°E",
+  "runways": [
+    {
+      "designation": "08",
+      "true_bearing": "082.71°",
+      "dimensions": "836 x 18"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "262.72°",
+      "dimensions": "836 x 18"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "799",
+      "dimensions": "799"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "799",
+      "dimensions": "799"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    }
+  ],
+  "communication_frequencies": [
+    {
+      "service": "GROUND",
+      "details": " SHOBDON 118.155 DOC 10 NM/3000 FT.TFREQUENCY;ANNOTATION:32670.eng;649 -TFREQUENCY;CUSTOM_ATT2;649 - 0915-1700 (0815-1600).TFREQUENCY_STS;ANNOTATION:32671.eng;391 AFIS may downgrade to Air Ground Communication Service at short notice.TSERVICE;ANNOTATION:32077.eng;713 TSERVICE;ANNOTATION:32077.eng;713",
+      "frequency": "118.155"
+    },
+    {
+      "service": "",
+      "details": " SHOBDON 118.155 A/G Frequency.TFREQUENCY;ANNOTATION:54686.eng;2880 -TFREQUENCY;CUSTOM_ATT2;2880 - Outside of published AD opening hours or Temporarily during opening hours.TFREQUENCY_STS;ANNOTATION:54687.eng;2061 -",
+      "frequency": "118.155"
+    }
+  ]
+}

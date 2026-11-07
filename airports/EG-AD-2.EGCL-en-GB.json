@@ -1,0 +1,38 @@
+{
+  "aerodrome": "Fenland Airfield (EGCL)",
+  "icao_code": "EGCL",
+  "arp_coordinates": {
+    "latitude": "524422N",
+    "longitude": "0000148W"
+  },
+  "elevation": "6 FT",
+  "magnetic_variation": "1.28°E",
+  "runways": [
+    {
+      "designation": "18",
+      "true_bearing": "180.91°",
+      "dimensions": "608 x 30"
+    },
+    {
+      "designation": "36",
+      "true_bearing": "000.91°",
+      "dimensions": "608 x 30"
+    },
+    {
+      "designation": "18",
+      "true_bearing": "608",
+      "dimensions": "608"
+    },
+    {
+      "designation": "36",
+      "true_bearing": "608",
+      "dimensions": "608"
+    },
+    {
+      "designation": "18",
+      "true_bearing": "-",
+      "dimensions": "Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31289.eng;97"
+    }
+  ],
+  "communication_frequencies": []
+}

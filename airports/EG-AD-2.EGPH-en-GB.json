@@ -1,0 +1,53 @@
+{
+  "aerodrome": "Edinburgh Airport (EGPH)",
+  "icao_code": "EGPH",
+  "arp_coordinates": {
+    "latitude": "555700N",
+    "longitude": "0032221W"
+  },
+  "elevation": "112 FT",
+  "magnetic_variation": "0.24°W",
+  "runways": [
+    {
+      "designation": "06",
+      "true_bearing": "058.85°",
+      "dimensions": "2558 x 45"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "238.88°",
+      "dimensions": "2558 x 45"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "2556",
+      "dimensions": "2616"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "2554",
+      "dimensions": "3002"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "1891",
+      "dimensions": "1951"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "1891",
+      "dimensions": "2339"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "Coded centre-line with five crossbars.Supplementary lighting inner 300 M.First barrette of ALS removed. Lights are LED.TRWY_DIRECTION_ALS;ANNOTATION:31202.eng;79 870 Light intensity high",
+      "dimensions": "Green Light intensity high With green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31306.eng;128"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "Coded centre-line with five crossbars.Supplementry lighting inner 300 M.Lights are LED.TRWY_DIRECTION_ALS;ANNOTATION:31203.eng;80 914 Light intensity high",
+      "dimensions": "Green Light intensity high With green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31309.eng;131"
+    }
+  ],
+  "communication_frequencies": []
+}

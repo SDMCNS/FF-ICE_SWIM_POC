@@ -1,0 +1,53 @@
+{
+  "aerodrome": "Netherthorpe Airfield (EGNF)",
+  "icao_code": "EGNF",
+  "arp_coordinates": {
+    "latitude": "531901N",
+    "longitude": "0011146W"
+  },
+  "elevation": "248 FT",
+  "magnetic_variation": "0.84°E",
+  "runways": [
+    {
+      "designation": "06",
+      "true_bearing": "055.40°",
+      "dimensions": "573 x 36"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "235.41°",
+      "dimensions": "573 x 36"
+    },
+    {
+      "designation": "18",
+      "true_bearing": "174.80°",
+      "dimensions": "388 x 18"
+    },
+    {
+      "designation": "36",
+      "true_bearing": "354.80°",
+      "dimensions": "388 x 18"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "467",
+      "dimensions": "467"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "441",
+      "dimensions": "441"
+    },
+    {
+      "designation": "18",
+      "true_bearing": "318",
+      "dimensions": "318"
+    },
+    {
+      "designation": "36",
+      "true_bearing": "361",
+      "dimensions": "361"
+    }
+  ],
+  "communication_frequencies": []
+}

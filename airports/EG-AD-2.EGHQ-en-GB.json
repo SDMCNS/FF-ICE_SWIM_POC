@@ -1,0 +1,93 @@
+{
+  "aerodrome": "Cornwall Airport Newquay (EGHQ)",
+  "icao_code": "EGHQ",
+  "arp_coordinates": {
+    "latitude": "502627N",
+    "longitude": "0045943W"
+  },
+  "elevation": "390 FT",
+  "magnetic_variation": "0.20°W",
+  "runways": [
+    {
+      "designation": "12",
+      "true_bearing": "120.51°",
+      "dimensions": "2744 x 45"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "300.54°",
+      "dimensions": "2744 x 45"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "2637",
+      "dimensions": "2937"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "2744",
+      "dimensions": "3044"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "1964",
+      "dimensions": "2264"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "1940",
+      "dimensions": "2240"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "1823",
+      "dimensions": "2123"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "1272",
+      "dimensions": "1572"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "1247",
+      "dimensions": "1547"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "1441",
+      "dimensions": "1741"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "1417",
+      "dimensions": "1717"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "873",
+      "dimensions": "1173"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "726",
+      "dimensions": "1026"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "693",
+      "dimensions": "993"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "Centre-line with five crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31280.eng;157 817 Light intensity high",
+      "dimensions": "Green Light intensity high Uni-directional with HI green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31761.eng;729"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "Coded centre-line with five crossbars. Supplementary lighting inner 275 M.TRWY_DIRECTION_ALS;ANNOTATION:31281.eng;158 847 Light intensity high",
+      "dimensions": "Green Light intensity high Uni-directional with HI green elev wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31762.eng;730"
+    }
+  ],
+  "communication_frequencies": []
+}

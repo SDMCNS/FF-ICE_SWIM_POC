@@ -1,0 +1,43 @@
+{
+  "aerodrome": "Fairoaks Airport (EGTF)",
+  "icao_code": "EGTF",
+  "arp_coordinates": {
+    "latitude": "512053N",
+    "longitude": "0003331W"
+  },
+  "elevation": "80 FT",
+  "magnetic_variation": "1.20°E",
+  "runways": [
+    {
+      "designation": "06",
+      "true_bearing": "057.91°",
+      "dimensions": "810 x 27"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "237.91°",
+      "dimensions": "810 x 27"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "810",
+      "dimensions": "873"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "810",
+      "dimensions": "810"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "Pilot Controlled Lighting available.TRWY_DIRECTION_ALS;ANNOTATION:31191.eng;68 -",
+      "dimensions": "Light intensity low"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "-",
+      "dimensions": "Light intensity low"
+    }
+  ],
+  "communication_frequencies": []
+}

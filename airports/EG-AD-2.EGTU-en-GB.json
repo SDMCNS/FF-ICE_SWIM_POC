@@ -1,0 +1,43 @@
+{
+  "aerodrome": "Dunkeswell Airfield (EGTU)",
+  "icao_code": "EGTU",
+  "arp_coordinates": {
+    "latitude": "505136N",
+    "longitude": "0031405W"
+  },
+  "elevation": "839 FT",
+  "magnetic_variation": "0.36°E",
+  "runways": [
+    {
+      "designation": "04",
+      "true_bearing": "041.12°",
+      "dimensions": "967 x 45"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "221.13°",
+      "dimensions": "967 x 45"
+    },
+    {
+      "designation": "04",
+      "true_bearing": "967",
+      "dimensions": "967"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "967",
+      "dimensions": "967"
+    },
+    {
+      "designation": "04",
+      "true_bearing": "-",
+      "dimensions": "Light intensity low Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:54742.eng;2319"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "-",
+      "dimensions": "Light intensity low Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:54743.eng;2320"
+    }
+  ],
+  "communication_frequencies": []
+}

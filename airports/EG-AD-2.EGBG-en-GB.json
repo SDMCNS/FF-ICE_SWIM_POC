@@ -1,0 +1,123 @@
+{
+  "aerodrome": "Leicester Airport (EGBG)",
+  "icao_code": "EGBG",
+  "arp_coordinates": {
+    "latitude": "523628N",
+    "longitude": "0010155W"
+  },
+  "elevation": "469 FT",
+  "magnetic_variation": "0.95°E",
+  "runways": [
+    {
+      "designation": "04",
+      "true_bearing": "039.80°",
+      "dimensions": "490 x 18"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "219.80°",
+      "dimensions": "490 x 18"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "049.20°",
+      "dimensions": "340 x 30"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "229.20°",
+      "dimensions": "340 x 30"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "096.20°",
+      "dimensions": "935 x 30"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "276.20°",
+      "dimensions": "935 x 30"
+    },
+    {
+      "designation": "15",
+      "true_bearing": "149.20°",
+      "dimensions": "495 x 18"
+    },
+    {
+      "designation": "33",
+      "true_bearing": "329.20°",
+      "dimensions": "495 x 18"
+    },
+    {
+      "designation": "16",
+      "true_bearing": "149.90°",
+      "dimensions": "418 x 30"
+    },
+    {
+      "designation": "34",
+      "true_bearing": "329.90°",
+      "dimensions": "418 x 30"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "935",
+      "dimensions": "935"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "935",
+      "dimensions": "935"
+    },
+    {
+      "designation": "15",
+      "true_bearing": "495",
+      "dimensions": "495"
+    },
+    {
+      "designation": "33",
+      "true_bearing": "495",
+      "dimensions": "495"
+    },
+    {
+      "designation": "04",
+      "true_bearing": "490",
+      "dimensions": "490"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "490",
+      "dimensions": "490"
+    },
+    {
+      "designation": "16",
+      "true_bearing": "418",
+      "dimensions": "418"
+    },
+    {
+      "designation": "34",
+      "true_bearing": "418",
+      "dimensions": "418"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "340",
+      "dimensions": "340"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "340",
+      "dimensions": "340"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "-",
+      "dimensions": "Light intensity high"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "-",
+      "dimensions": "Light intensity high"
+    }
+  ],
+  "communication_frequencies": []
+}

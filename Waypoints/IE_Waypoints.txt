@@ -1,0 +1,1010 @@
+[
+  {
+    "name_code_designator": "ABAGU",
+    "coordinates": "523012N 0073848W",
+    "ats_route_or_other_route": null,
+    "remarks": null
+  },
+  {
+    "name_code_designator": "ADARA",
+    "coordinates": "513000N 0150000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Entry & Exit Point.\nFRA (EX)."
+  },
+  {
+    "name_code_designator": "ADBUS",
+    "coordinates": "542500N 0123000W",
+    "ats_route_or_other_route": null,
+    "remarks": "High Level Holding Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "ADMUP",
+    "coordinates": "524800N 0061400W",
+    "ats_route_or_other_route": null,
+    "remarks": "EID5 Avoidance Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "AGINI",
+    "coordinates": "530920N 0083446W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "AGORI",
+    "coordinates": "570000N 0130000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Entry & Exit Point.\nFRA (EX)."
+  },
+  {
+    "name_code_designator": "AKIGO",
+    "coordinates": "535030N 0075605W",
+    "ats_route_or_other_route": null,
+    "remarks": null
+  },
+  {
+    "name_code_designator": "AMDEP",
+    "coordinates": "513400N 0111300W",
+    "ats_route_or_other_route": null,
+    "remarks": "EID14 Avoidance Point."
+  },
+  {
+    "name_code_designator": "AMLAD",
+    "coordinates": "561552N 0100000W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nFRA (I): ABV FL255\nFRA (EX): BLW FL255\nScottish FIR."
+  },
+  {
+    "name_code_designator": "APSOV",
+    "coordinates": "554923N 0100000W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nFRA (I): ABV FL255\nFRA (EX): BLW FL255\nScottish FIR."
+  },
+  {
+    "name_code_designator": "ARKIL",
+    "coordinates": "503928N 0080000W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this FRA (I)."
+  },
+  {
+    "name_code_designator": "ASKUP",
+    "coordinates": "535333N 0060632W",
+    "ats_route_or_other_route": null,
+    "remarks": "EID1 Avoidance Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "ATSUR",
+    "coordinates": "500000N 0140000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Landfall Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "BAGSO",
+    "coordinates": "534048N 0053000W",
+    "ats_route_or_other_route": "M145",
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this FRA (E)."
+  },
+  {
+    "name_code_designator": "BAKUR",
+    "coordinates": "521430N 0054049W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point."
+  },
+  {
+    "name_code_designator": "BAMLI",
+    "coordinates": "540829N 0063904W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (EX)."
+  },
+  {
+    "name_code_designator": "BANBA",
+    "coordinates": "515710N 0061421W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "BEDRA",
+    "coordinates": "490000N 0150000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Entry & Exit Point\nFRA (EX)."
+  },
+  {
+    "name_code_designator": "BEGID",
+    "coordinates": "563000N 0140000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Landfall Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "BEPAN",
+    "coordinates": "523136N 0061549W",
+    "ats_route_or_other_route": "P620",
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "BEXET",
+    "coordinates": "540000N 0140000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Landfall Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "BIBLA",
+    "coordinates": "510809N 0085436W",
+    "ats_route_or_other_route": null,
+    "remarks": "EID13 Avoidance Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "BILTO",
+    "coordinates": "563000N 0150000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Entry & Exit Point.\nFRA (EX)."
+  },
+  {
+    "name_code_designator": "BIMGO",
+    "coordinates": "493000N 0140000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Landfall Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "BOFUM",
+    "coordinates": "533214N 0053000W",
+    "ats_route_or_other_route": "Q37",
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this FRA (X)."
+  },
+  {
+    "name_code_designator": "BOYNE",
+    "coordinates": "534602N 0053000W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this FRA (EX)."
+  },
+  {
+    "name_code_designator": "BUNED",
+    "coordinates": "523722N 0063748W",
+    "ats_route_or_other_route": "N34",
+    "remarks": "FRA (I).\nFRA (A)."
+  },
+  {
+    "name_code_designator": "BUNON",
+    "coordinates": "522230N 0093237W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "DEGOS",
+    "coordinates": "541121N 0065423W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nFRA (E): FL75 - FL255.\nFRA (I): ABV FL255.\nFRA (A): EGAA, EGAC.\nFRA (D): EGAA, EGAC, EGEC.\nScottish FIR."
+  },
+  {
+    "name_code_designator": "DEVOL",
+    "coordinates": "535325N 0102603W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "DEXEN",
+    "coordinates": "531649N 0053000W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this FRA(E) & FRA (X)."
+  },
+  {
+    "name_code_designator": "DIGAN",
+    "coordinates": "525613N 0081151W",
+    "ats_route_or_other_route": "M145",
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "DIMUS",
+    "coordinates": "521423N 0061505W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "DINIM",
+    "coordinates": "510000N 0150000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Entry & Exit Point.\nFRA (E).\nFRA (X)."
+  },
+  {
+    "name_code_designator": "DIRUM",
+    "coordinates": "530010N 0063940W",
+    "ats_route_or_other_route": "Q36",
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "DOGAL",
+    "coordinates": "540000N 0150000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Entry & Exit Point.\nFRA (E)."
+  },
+  {
+    "name_code_designator": "DOLIP",
+    "coordinates": "520000N 0120000W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "ELBOB",
+    "coordinates": "544358N 0074438W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nFRA (E).\nFRA (AD). See UK AIP for (AD) conditions."
+  },
+  {
+    "name_code_designator": "ELSOX",
+    "coordinates": "510000N 0140000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Landfall Point\nFRA (I)."
+  },
+  {
+    "name_code_designator": "ELTIG",
+    "coordinates": "514513N 0075006W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "EMPER",
+    "coordinates": "490000N 0090000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Landfall Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "ENDEQ",
+    "coordinates": "532644N 0053000W",
+    "ats_route_or_other_route": "Q36",
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this FRA (X)."
+  },
+  {
+    "name_code_designator": "ENJEX",
+    "coordinates": "520321.0613N 0060227.7789W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should beconsulted for conditions on the use of this FRA (I)."
+  },
+  {
+    "name_code_designator": "ENOKU",
+    "coordinates": "530604N 0073939W",
+    "ats_route_or_other_route": "M145",
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "ENULA",
+    "coordinates": "535821N 0081552W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "EPUNA",
+    "coordinates": "503000N 0140000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Landfall Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "ERABI",
+    "coordinates": "530054N 0093403W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "ERNAN",
+    "coordinates": "541644N 0072334W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nFRA (E): FL75 - FL255.\nFRA (I): ABV FL255.\nScottish FIR."
+  },
+  {
+    "name_code_designator": "ERTER",
+    "coordinates": "513343N 0080337W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "ETARI",
+    "coordinates": "553000N 0150000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Entry & Exit Point.\nFRA (E).\nFRA (X)."
+  },
+  {
+    "name_code_designator": "EVBAK",
+    "coordinates": "490000N 0100000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Landfall Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "EVRIN",
+    "coordinates": "514656N 0063348W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "GAPLI",
+    "coordinates": "500000N 0080000W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "GELPO",
+    "coordinates": "483839N 0093009W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nFRA (E)."
+  },
+  {
+    "name_code_designator": "GERVO",
+    "coordinates": "530529N 0063024W",
+    "ats_route_or_other_route": "Q36",
+    "remarks": "GILAN"
+  },
+  {
+    "name_code_designator": "GILAN",
+    "coordinates": "551348N 0070300W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (E).\nFRA (X)."
+  },
+  {
+    "name_code_designator": "GIMRO",
+    "coordinates": "533910N 0054455W",
+    "ats_route_or_other_route": null,
+    "remarks": "EID1 Avoidance Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "GIPER",
+    "coordinates": "510000N 0120000W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "GISTI",
+    "coordinates": "530000N 0140000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Landfall Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "GOMUP",
+    "coordinates": "570000N 0100000W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nFRA (E).\nFRA (X)."
+  },
+  {
+    "name_code_designator": "GOTEM",
+    "coordinates": "514926N 0074912W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "GUNSO",
+    "coordinates": "490310N 0114606W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nOceanic Landfall Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "GURGA",
+    "coordinates": "530655N 0065000W",
+    "ats_route_or_other_route": null,
+    "remarks": "EID5 Avoidance Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "IBATU",
+    "coordinates": "540512N 0080051W",
+    "ats_route_or_other_route": null,
+    "remarks": "IBROD"
+  },
+  {
+    "name_code_designator": "IBROD",
+    "coordinates": "563000N 0100000W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I): ABV FL255\nFRA (EX): BLW FL255.\nFRA (A/D): EGPU.\nScottish FIR."
+  },
+  {
+    "name_code_designator": "INKUR",
+    "coordinates": "533551N 0072329W",
+    "ats_route_or_other_route": "L975",
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "INRAD",
+    "coordinates": "521529N 0090901W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "JABEX",
+    "coordinates": "490000N 0093009W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Landfall Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "KESIX",
+    "coordinates": "565700N 0140000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Landfall Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "KOGAD",
+    "coordinates": "493000N 0150000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Entry & Exit Point.\nFRA (E).\nFRA (X)."
+  },
+  {
+    "name_code_designator": "KOKIB",
+    "coordinates": "543000N 0140000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Landfall Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "KOMAG",
+    "coordinates": "514335N 0083655W",
+    "ats_route_or_other_route": null,
+    "remarks": "EID13 Avoidance Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "KOMER",
+    "coordinates": "525058N 0065000W",
+    "ats_route_or_other_route": null,
+    "remarks": "EID5 Avoidance Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "KORAK",
+    "coordinates": "532342N 0074735W",
+    "ats_route_or_other_route": "L975",
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "KUDAG",
+    "coordinates": "540018N 0075915W",
+    "ats_route_or_other_route": null,
+    "remarks": "KUGUR"
+  },
+  {
+    "name_code_designator": "KUGUR",
+    "coordinates": "553000N 0100000W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nFRA (I): ABV FL255.\nFRA (EX): BLW FL255.\nScottish FIR."
+  },
+  {
+    "name_code_designator": "KURUM",
+    "coordinates": "521343N 0083953W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "LAPMO",
+    "coordinates": "532411N 0055644W",
+    "ats_route_or_other_route": null,
+    "remarks": "EID1 Avoidance Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "LASNO",
+    "coordinates": "483554N 0090000W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nOceanic Entry & Exit Point.\nFRA (E).\nFRA (X)."
+  },
+  {
+    "name_code_designator": "LEDGO",
+    "coordinates": "511424N 0073405W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "LEKVA",
+    "coordinates": "513000N 0140000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Landfall Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "LESLU",
+    "coordinates": "510000N 0080000W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "LIFFY",
+    "coordinates": "532848N 0053000W",
+    "ats_route_or_other_route": "L975",
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nFRA (X)."
+  },
+  {
+    "name_code_designator": "LILNO",
+    "coordinates": "513533N 0091312W",
+    "ats_route_or_other_route": null,
+    "remarks": "EID13 Avoidance Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "LIMRI",
+    "coordinates": "520000N 0150000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Entry & Exit Point\nFRA (EX)."
+  },
+  {
+    "name_code_designator": "LINRA",
+    "coordinates": "513447N 0100156W",
+    "ats_route_or_other_route": null,
+    "remarks": "EID14 Avoidance Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "LIPGO",
+    "coordinates": "530350N 0053000W",
+    "ats_route_or_other_route": "L18",
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nFRA (I): ABV FL245.\nFRA (EX): BLW FL245."
+  },
+  {
+    "name_code_designator": "LODLA",
+    "coordinates": "515610N 0103141W",
+    "ats_route_or_other_route": null,
+    "remarks": "EID14 Avoidance Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "LONDU",
+    "coordinates": "525500N 0123000W",
+    "ats_route_or_other_route": null,
+    "remarks": "High Level Holding Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "LULOX",
+    "coordinates": "502200N 0080000W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "LUNIG",
+    "coordinates": "522350N 0081634W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "LUPOR",
+    "coordinates": "523232N 0094207W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "LUSAT",
+    "coordinates": "531000N 0061400W",
+    "ats_route_or_other_route": null,
+    "remarks": "EID5 Avoidance Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "LUTOV",
+    "coordinates": "551422N 0100000W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nFRA (I): ABV FL255.\nFRA (EX): BLW FL255.\nFRA (A/D): EGAE.\nScottish FIR."
+  },
+  {
+    "name_code_designator": "MALOT",
+    "coordinates": "530000N 0150000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Entry & Exit Point.\nFRA (EX)."
+  },
+  {
+    "name_code_designator": "MAPAG",
+    "coordinates": "510000N 0083000W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "MIMKU",
+    "coordinates": "560000N 0100000W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nFRA (I): ABV FL255.\nFRA (EX): BLW FL255.\nScottish FIR."
+  },
+  {
+    "name_code_designator": "MOGLO",
+    "coordinates": "553000N 0140000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Landfall Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "MOLAK",
+    "coordinates": "543549N 0093023W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nFRA (I): ABV FL255.\nFRA (EX): FL75 - FL245.\nScottish FIR."
+  },
+  {
+    "name_code_designator": "MOMIN",
+    "coordinates": "530648N 0092334W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "MOPAT",
+    "coordinates": "512955N 0070538W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "MOPOM",
+    "coordinates": "534052N 0091848W",
+    "ats_route_or_other_route": null,
+    "remarks": "MORAG"
+  },
+  {
+    "name_code_designator": "MORAG",
+    "coordinates": "524510N 0053000W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "NASBA",
+    "coordinates": "490000N 0130000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Landfall Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "NAVEM",
+    "coordinates": "535532N 0092356W",
+    "ats_route_or_other_route": null,
+    "remarks": "NEBIN"
+  },
+  {
+    "name_code_designator": "NEBIN",
+    "coordinates": "533000N 0150000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Entry & Exit Point.\nFRA (EX)."
+  },
+  {
+    "name_code_designator": "NERTU",
+    "coordinates": "490000N 0140000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Landfall Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "NETKI",
+    "coordinates": "550000N 0140000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Landfall Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "NEVRI",
+    "coordinates": "540406N 0061611W",
+    "ats_route_or_other_route": "N34",
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "NEXAT",
+    "coordinates": "515620N 0063432W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "NIBOG",
+    "coordinates": "550000N 0100000W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nFRA (I): ABV FL255.\nFRA (EX): BLW FL255.\nScottish FIR."
+  },
+  {
+    "name_code_designator": "NIMAT",
+    "coordinates": "535754N 0054432W",
+    "ats_route_or_other_route": "P620",
+    "remarks": "FRA (I): ABV FL255."
+  },
+  {
+    "name_code_designator": "NIPIT",
+    "coordinates": "542709N 0082410W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nFRA (E): FL75 - FL255.\nFRA (I): ABV FL255."
+  },
+  {
+    "name_code_designator": "NIRIF",
+    "coordinates": "521755.8655N 0053404.3283W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (EX): BLW FL245"
+  },
+  {
+    "name_code_designator": "NORLA",
+    "coordinates": "513709N 0065211W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point."
+  },
+  {
+    "name_code_designator": "ODANU",
+    "coordinates": "495500N 0123000W",
+    "ats_route_or_other_route": null,
+    "remarks": "High Level Holding Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "OLAPO",
+    "coordinates": "534649N 0071741W",
+    "ats_route_or_other_route": "L149",
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "OLGON",
+    "coordinates": "533000N 0140000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Landfall Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "OLONO",
+    "coordinates": "524323N 0064644W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "OMOKO",
+    "coordinates": "485020N 0120000W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nOceanic Entry & Exit Point.\nFRA (EX)."
+  },
+  {
+    "name_code_designator": "ORTOM",
+    "coordinates": "511615N 0081758W",
+    "ats_route_or_other_route": null,
+    "remarks": "EID13 Avoidance Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "OSBOX",
+    "coordinates": "564823N 0124806W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Landfall Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "OSGAR",
+    "coordinates": "530258N 0071613W",
+    "ats_route_or_other_route": "Q37",
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "PELIG",
+    "coordinates": "531159N 0072000W",
+    "ats_route_or_other_route": "M145",
+    "remarks": "FRA (D) EIDW\nFRA (I)."
+  },
+  {
+    "name_code_designator": "PESIT",
+    "coordinates": "522357N 0054524W",
+    "ats_route_or_other_route": "L149",
+    "remarks": "FRA (E)."
+  },
+  {
+    "name_code_designator": "PEVAN",
+    "coordinates": "554700N 0112000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Full details of EGD701 (D701) are contained in the UK AIP and in conjunction with UK NOTAM should be consulted for activation times.\nEGD701 Avoidance Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "PIGET",
+    "coordinates": "555000N 0123000W",
+    "ats_route_or_other_route": null,
+    "remarks": "High Level Holding Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "PIKIL",
+    "coordinates": "560000N 0150000W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nOceanic Entry & Exit Point.\nFRA (EX)."
+  },
+  {
+    "name_code_designator": "RATKA",
+    "coordinates": "493000N 0080000W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nFRA (EX): BLW FL245.\nFRA (I): ABV FL245."
+  },
+  {
+    "name_code_designator": "RESNO",
+    "coordinates": "550000N 0150000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Entry & Exit Point.\nFRA (EX)."
+  },
+  {
+    "name_code_designator": "REVNU",
+    "coordinates": "542800N 0100700W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "RIKUL",
+    "coordinates": "530328N 0082045W",
+    "ats_route_or_other_route": "L975",
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "RILED",
+    "coordinates": "523000N 0140000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Landfall Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "RINUS",
+    "coordinates": "533839N 0073944W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "RODEL",
+    "coordinates": "503000N 0150000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Entry & Exit Point.\nFRA (EX)."
+  },
+  {
+    "name_code_designator": "ROTEV",
+    "coordinates": "540144N 0060358W",
+    "ats_route_or_other_route": "P600",
+    "remarks": "FRA (I): ABV FL255.\nFRA (A): EGEC.\nScottish FIR."
+  },
+  {
+    "name_code_designator": "RUKOH",
+    "coordinates": "521242.8325N 0054417.5538W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should beconsulted for conditions on the use of this point.FRA (I)."
+  },
+  {
+    "name_code_designator": "RUXIN",
+    "coordinates": "561655N 0120000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Full details of EGD701 (D701) are contained in the UK AIP and in conjunction with UK NOTAM should be consulted for activation times.\nEGD701 Avoidance Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "SAMON",
+    "coordinates": "511921N 0072504W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nFRA (EX)."
+  },
+  {
+    "name_code_designator": "SLANY",
+    "coordinates": "520931N 0055032W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "SOMAX",
+    "coordinates": "500000N 0150000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Entry & Exit Point.\nFRA (EX)."
+  },
+  {
+    "name_code_designator": "SOVED",
+    "coordinates": "560000N 0140000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Landfall Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "SOVIX",
+    "coordinates": "512539N 0083346W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "SUNOT",
+    "coordinates": "570000N 0150000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Entry & Exit Point.\nFRA (EX)."
+  },
+  {
+    "name_code_designator": "SUROX",
+    "coordinates": "535948N 0065936W",
+    "ats_route_or_other_route": "L18",
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "SUTEX",
+    "coordinates": "524928N 0065549W",
+    "ats_route_or_other_route": "Q36",
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "SUVAN",
+    "coordinates": "512500N 0123000W",
+    "ats_route_or_other_route": null,
+    "remarks": "High Level Holding Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "TADEX",
+    "coordinates": "545124N 0081401W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point."
+  },
+  {
+    "name_code_designator": "TAKAS",
+    "coordinates": "490000N 0080000W",
+    "ats_route_or_other_route": null,
+    "remarks": "France and UK are additional coordinating states and should be consulted for conditions on the use of this point.\nFRA (EX): BLW FL245.\nFRA (I): ABV FL245."
+  },
+  {
+    "name_code_designator": "TAMEL",
+    "coordinates": "484343N 0102950W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nOceanic Entry & Exit Point.\nFRA (EX)."
+  },
+  {
+    "name_code_designator": "TIDGO",
+    "coordinates": "535038N 0092213W",
+    "ats_route_or_other_route": null,
+    "remarks": "TIPUR"
+  },
+  {
+    "name_code_designator": "TIPUR",
+    "coordinates": "523521N 0080731W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "TISMO",
+    "coordinates": "520805N 0080047W",
+    "ats_route_or_other_route": "Q36",
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "TOBOR",
+    "coordinates": "523000N 0150000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Entry & Exit Point.\nFRA (EX)."
+  },
+  {
+    "name_code_designator": "TOMTO",
+    "coordinates": "525225N 0080905W",
+    "ats_route_or_other_route": "Q37",
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "TORLU",
+    "coordinates": "525916N 0073459W",
+    "ats_route_or_other_route": "Q37",
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "TUGSI",
+    "coordinates": "540000N 0071100W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "TULTA",
+    "coordinates": "483437N 0080000W",
+    "ats_route_or_other_route": null,
+    "remarks": "France and UK are additional coordinating states and should be consulted for conditions on the use of this point.\nFRA (EX)."
+  },
+  {
+    "name_code_designator": "TURLU",
+    "coordinates": "500435N 0080000W",
+    "ats_route_or_other_route": null,
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nFRA (EX)."
+  },
+  {
+    "name_code_designator": "TUVEN",
+    "coordinates": "510000N 0081500W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "ULTAG",
+    "coordinates": "534201N 0064417W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "UNBEG",
+    "coordinates": "524818N 0094348W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "UNLID",
+    "coordinates": "511233N 0104329W",
+    "ats_route_or_other_route": null,
+    "remarks": "EID14 Avoidance Point.\nFRA (I)."
+  },
+  {
+    "name_code_designator": "VAPAL",
+    "coordinates": "515243N 0074918W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I)."
+  },
+  {
+    "name_code_designator": "VATRY",
+    "coordinates": "523316N 0053000W",
+    "ats_route_or_other_route": "M17",
+    "remarks": "The UK is an additional coordinating state and should be consulted for conditions on the use of this point.\nFRA (I): ABV FL245."
+  },
+  {
+    "name_code_designator": "VENER",
+    "coordinates": "543000N 0150000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Entry & Exit Point.\nFRA (EX)."
+  },
+  {
+    "name_code_designator": "WETFI",
+    "coordinates": "534947N 0053000W",
+    "ats_route_or_other_route": null,
+    "remarks": "FRA (I):ABV FL245."
+  },
+  {
+    "name_code_designator": "XETBO",
+    "coordinates": "520000N 0140000W",
+    "ats_route_or_other_route": null,
+    "remarks": "Oceanic Landfall Point.\nFRA (I)."
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "aerodrome": "Solent Airport (EGHF)",
+  "icao_code": "EGHF",
+  "arp_coordinates": {
+    "latitude": "504856N",
+    "longitude": "0011224W"
+  },
+  "elevation": "33 FT",
+  "magnetic_variation": "1.03°E",
+  "runways": [
+    {
+      "designation": "05",
+      "true_bearing": "045.22°",
+      "dimensions": "1176 x 30"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "225.22°",
+      "dimensions": "1176 x 30"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "1176",
+      "dimensions": "1176"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "1026",
+      "dimensions": "1026"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "Simple Approach - T barTRWY_DIRECTION_ALS;ANNOTATION:86264.eng;2872 -",
+      "dimensions": "Green Light intensity high With green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:86290.eng;4008"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "Simple Approach - T barTRWY_DIRECTION_ALS;ANNOTATION:86265.eng;2873 -",
+      "dimensions": "Green Light intensity high With green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:86292.eng;4009"
+    }
+  ],
+  "communication_frequencies": []
+}

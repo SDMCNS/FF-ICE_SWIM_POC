@@ -1,0 +1,83 @@
+{
+  "aerodrome": "Bristol Airport (EGGD)",
+  "icao_code": "EGGD",
+  "arp_coordinates": {
+    "latitude": "512258N",
+    "longitude": "0024309W"
+  },
+  "elevation": "622 FT",
+  "magnetic_variation": "0.49°E",
+  "runways": [
+    {
+      "designation": "09",
+      "true_bearing": "086.43°",
+      "dimensions": "2011 x 45"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "266.45°",
+      "dimensions": "2011 x 45"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "2011",
+      "dimensions": "2133"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "2011",
+      "dimensions": "3016"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "1300",
+      "dimensions": "1422"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "701",
+      "dimensions": "823"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "652",
+      "dimensions": "774"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "1828",
+      "dimensions": "2742"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "1780",
+      "dimensions": "2670"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "1371",
+      "dimensions": "2057"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "1348",
+      "dimensions": "2021"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "734",
+      "dimensions": "1101"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "Coded centre-line with three crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31209.eng;86 480 Light intensity high",
+      "dimensions": "Green Light intensity high Uni-directional with wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31329.eng;164"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "Coded centre-line with three crossbars.Supplementary lights inner 300 M.TRWY_DIRECTION_ALS;ANNOTATION:31208.eng;85 570 Light intensity high",
+      "dimensions": "Green Light intensity high Uni-directional with wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31338.eng;173"
+    }
+  ],
+  "communication_frequencies": []
+}

@@ -1,0 +1,73 @@
+{
+  "aerodrome": "MOD St Athan (EGSY)",
+  "icao_code": "EGSY",
+  "arp_coordinates": {
+    "latitude": "512417N",
+    "longitude": "0032609W"
+  },
+  "elevation": "164 FT",
+  "magnetic_variation": "0.24°E",
+  "runways": [
+    {
+      "designation": "07",
+      "true_bearing": "073.05°",
+      "dimensions": "1828 x 45"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "253.07°",
+      "dimensions": "1828 x 45"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "1828",
+      "dimensions": "1846"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "1828",
+      "dimensions": "1840"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "1343",
+      "dimensions": "1360"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "1322",
+      "dimensions": "1340"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "1091",
+      "dimensions": "1109"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "1271",
+      "dimensions": "1283"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "1237",
+      "dimensions": "1248"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "761",
+      "dimensions": "773"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "CL1BTRWY_DIRECTION_ALS;ANNOTATION:47034.eng;624 430 Light intensity high",
+      "dimensions": "Green Light intensity high Uni-directionalTRWY_DIRECTION_LGT_SYS;ANNOTATION:47033.eng;1501"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "CL2BTRWY_DIRECTION_ALS;ANNOTATION:47037.eng;625 420 Light intensity high",
+      "dimensions": "Green Light intensity high Uni-directionalTRWY_DIRECTION_LGT_SYS;ANNOTATION:47131.eng;1504"
+    }
+  ],
+  "communication_frequencies": []
+}

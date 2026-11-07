@@ -1,0 +1,73 @@
+{
+  "aerodrome": "Westray Airport (EGEW)",
+  "icao_code": "EGEW",
+  "arp_coordinates": {
+    "latitude": "592100N",
+    "longitude": "0025701W"
+  },
+  "elevation": "30 FT",
+  "magnetic_variation": "0.49°W",
+  "runways": [
+    {
+      "designation": "09",
+      "true_bearing": "083.25°",
+      "dimensions": "527 x 18"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "263.26°",
+      "dimensions": "527 x 18"
+    },
+    {
+      "designation": "13",
+      "true_bearing": "128.56°",
+      "dimensions": "457 x 30"
+    },
+    {
+      "designation": "31",
+      "true_bearing": "308.56°",
+      "dimensions": "457 x 30"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "527",
+      "dimensions": "527"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "527",
+      "dimensions": "527"
+    },
+    {
+      "designation": "13",
+      "true_bearing": "411",
+      "dimensions": "411"
+    },
+    {
+      "designation": "31",
+      "true_bearing": "418",
+      "dimensions": "418"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    },
+    {
+      "designation": "13",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    },
+    {
+      "designation": "31",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    }
+  ],
+  "communication_frequencies": []
+}

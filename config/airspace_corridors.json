@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AirspaceCorridorsAndAlternates",
+  "description": "Standard ATS airway corridors and lateral deconfliction bypasses for UK & Irish airspace.",
+  "airways": [
+    {
+      "airwayId": "L18",
+      "name": "Upper ATS Route L18 (London - Dublin)",
+      "waypoints": ["LUXTO", "PEPZE", "SUROX", "DUB", "LIPGO"],
+      "connectedAirports": ["EGLL", "EGKK", "EGSS", "EIDW", "EINN"],
+      "minFlightLevel": 245,
+      "maxFlightLevel": 450
+    },
+    {
+      "airwayId": "L149",
+      "name": "Upper ATS Route L149 (Manchester - Cork)",
+      "waypoints": ["POL", "OLAPO", "PESIT", "EICK"],
+      "connectedAirports": ["EGCC", "EGGP", "EICK"],
+      "minFlightLevel": 200,
+      "maxFlightLevel": 450
+    },
+    {
+      "airwayId": "L975",
+      "name": "Trans-Irish Route L975 (Shannon - Scottish)",
+      "waypoints": ["SHA", "RIKUL", "TLA", "TRN"],
+      "connectedAirports": ["EINN", "EGPH", "EGPF"],
+      "minFlightLevel": 245,
+      "maxFlightLevel": 450
+    },
+    {
+      "airwayId": "M17",
+      "name": "Upper ATS Route M17 (Belfast - London)",
+      "waypoints": ["BEL", "CROFT", "WAL", "HON"],
+      "connectedAirports": ["EGAA", "EGAC", "EGLL", "EGBB"],
+      "minFlightLevel": 200,
+      "maxFlightLevel": 430
+    },
+    {
+      "airwayId": "M145",
+      "name": "Upper ATS Route M145 (East Coast Scottish)",
+      "waypoints": ["TLA", "NEW", "POL", "WAL"],
+      "connectedAirports": ["EGPH", "EGCC"],
+      "minFlightLevel": 200,
+      "maxFlightLevel": 410
+    }
+  ],
+  "waypointAlternates": {
+    "LIPGO": ["OLAPO", "SUROX", "PESIT", "WAL"],
+    "SUROX": ["LIPGO", "OLAPO", "DUB", "TLA"],
+    "OLAPO": ["LIPGO", "SUROX", "PESIT"],
+    "PESIT": ["LIPGO", "DUB", "OLAPO"],
+    "WAL": ["HON", "LIPGO", "CROFT"],
+    "HON": ["WAL", "CPT", "WELIN"],
+    "TLA": ["POL", "SUROX", "TRN"],
+    "DUB": ["LIPGO", "SUROX", "OLAPO"],
+    "BERUL": ["FACTU", "BEPHE", "OSSEP", "LANON"],
+    "FACTU": ["LUXTO", "BEPHE", "BIFIN"],
+    "BEPHE": ["FACTU", "BERUL", "OSSEP"]
+  }
+}
+

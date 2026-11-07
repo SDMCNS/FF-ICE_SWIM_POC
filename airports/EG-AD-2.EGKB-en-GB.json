@@ -1,0 +1,43 @@
+{
+  "aerodrome": "London Biggin Hill Airport (EGKB)",
+  "icao_code": "EGKB",
+  "arp_coordinates": {
+    "latitude": "511951N",
+    "longitude": "0000157E"
+  },
+  "elevation": "584 FT",
+  "magnetic_variation": "1.39°E",
+  "runways": [
+    {
+      "designation": "03",
+      "true_bearing": "025.70°",
+      "dimensions": "1806 x 45"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "205.70°",
+      "dimensions": "1806 x 45"
+    },
+    {
+      "designation": "03",
+      "true_bearing": "1781",
+      "dimensions": "2175"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "1670",
+      "dimensions": "1804"
+    },
+    {
+      "designation": "03",
+      "true_bearing": "Centre-line with one crossbar.TRWY_DIRECTION_ALS;ANNOTATION:49641.eng;904 363 Light intensity high",
+      "dimensions": "Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31548.eng;474"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "Coded centre-line with three crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31277.eng;154 420 Light intensity high",
+      "dimensions": "Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:84379.eng;473"
+    }
+  ],
+  "communication_frequencies": []
+}

@@ -1,0 +1,93 @@
+{
+  "aerodrome": "North Ronaldsay Airport (EGEN)",
+  "icao_code": "EGEN",
+  "arp_coordinates": {
+    "latitude": "592203N",
+    "longitude": "0022604W"
+  },
+  "elevation": "56 FT",
+  "magnetic_variation": "0.26°W",
+  "runways": [
+    {
+      "designation": "03",
+      "true_bearing": "026.76°",
+      "dimensions": "331 x 18"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "206.76°",
+      "dimensions": "331 x 18"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "094.98°",
+      "dimensions": "527 x 18"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "274.98°",
+      "dimensions": "527 x 18"
+    },
+    {
+      "designation": "13",
+      "true_bearing": "132.22°",
+      "dimensions": "304 x 30"
+    },
+    {
+      "designation": "31",
+      "true_bearing": "312.23°",
+      "dimensions": "304 x 30"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "527",
+      "dimensions": "527"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "527",
+      "dimensions": "527"
+    },
+    {
+      "designation": "13",
+      "true_bearing": "304",
+      "dimensions": "304"
+    },
+    {
+      "designation": "31",
+      "true_bearing": "304",
+      "dimensions": "304"
+    },
+    {
+      "designation": "03",
+      "true_bearing": "292",
+      "dimensions": "292"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "298",
+      "dimensions": "298"
+    },
+    {
+      "designation": "03",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    }
+  ],
+  "communication_frequencies": []
+}

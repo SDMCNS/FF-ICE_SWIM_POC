@@ -1,0 +1,204 @@
+[
+  {
+    "route_designator": "L18",
+    "navigation_specification": "RNAV 5",
+    "waypoints": [
+      {
+        "name": "SUROX",
+        "coordinates": "535948N 0065936W"
+      },
+      {
+        "name": "DUBLIN DVOR/DME (DUB)",
+        "coordinates": "532957.8N 0061825.6W"
+      },
+      {
+        "name": "LIPGO",
+        "coordinates": "530350N 0053000W"
+      }
+    ]
+  },
+  {
+    "route_designator": "L149",
+    "navigation_specification": "RNAV 5",
+    "waypoints": [
+      {
+        "name": "OLAPO",
+        "coordinates": "534649N 0071741W"
+      },
+      {
+        "name": "DUBLIN DVOR/DME (DUB)",
+        "coordinates": "532957.8N 0061825.6W"
+      },
+      {
+        "name": "PESIT",
+        "coordinates": "522357N 0054524W"
+      }
+    ]
+  },
+  {
+    "route_designator": "L975",
+    "navigation_specification": "RNAV 5",
+    "waypoints": [
+      {
+        "name": "SHANNON DVOR/DME (SHA)",
+        "coordinates": "524315.6N 0085306.8W"
+      },
+      {
+        "name": "RIKUL",
+        "coordinates": "530328N 0082045W"
+      },
+      {
+        "name": "KORAK",
+        "coordinates": "532342N 0074735W"
+      },
+      {
+        "name": "INKUR",
+        "coordinates": "533551N 0072329W"
+      },
+      {
+        "name": "DUBLIN DVOR/DME (DUB)",
+        "coordinates": "532957.8N 0061825.6W"
+      },
+      {
+        "name": "LIFFY",
+        "coordinates": "532848N 0053000W"
+      }
+    ]
+  },
+  {
+    "route_designator": "M17",
+    "navigation_specification": "RNAV 5",
+    "waypoints": [
+      {
+        "name": "DUBLIN DVOR/DME (DUB)",
+        "coordinates": "532957.8N 0061825.6W"
+      },
+      {
+        "name": "KILLINEY NDB (KLY)",
+        "coordinates": "531610.4N 0060623.2W"
+      },
+      {
+        "name": "VATRY",
+        "coordinates": "523316N 0053000W"
+      }
+    ]
+  },
+  {
+    "route_designator": "M145",
+    "navigation_specification": "RNAV 5",
+    "waypoints": [
+      {
+        "name": "SHANNON DVOR/DME (SHA)",
+        "coordinates": "524315.6N 0085306.8W"
+      },
+      {
+        "name": "DIGAN",
+        "coordinates": "525613N 0081151W"
+      },
+      {
+        "name": "ENOKU",
+        "coordinates": "530604N 0073939W"
+      },
+      {
+        "name": "PELIG",
+        "coordinates": "531159N 0072000W"
+      },
+      {
+        "name": "DUBLIN DVOR/DME (DUB)",
+        "coordinates": "532957.8N 0061825.6W"
+      },
+      {
+        "name": "BAGSO",
+        "coordinates": "534048N 0053000W"
+      }
+    ]
+  },
+  {
+    "route_designator": "N34",
+    "navigation_specification": "RNAV 5",
+    "waypoints": [
+      {
+        "name": "BUNED",
+        "coordinates": "523722N 0063748W"
+      },
+      {
+        "name": "DUBLIN DVOR/DME (DUB)",
+        "coordinates": "532957.8N 0061825.6W"
+      },
+      {
+        "name": "NEVRI",
+        "coordinates": "540406N 0061611W"
+      }
+    ]
+  },
+  {
+    "route_designator": "P600",
+    "navigation_specification": "RNAV 5",
+    "waypoints": [
+      {
+        "name": "DUBLIN DVOR/DME (DUB)",
+        "coordinates": "532957.8N 0061825.6W"
+      },
+      {
+        "name": "ROTEV",
+        "coordinates": "540144N 0060358W"
+      }
+    ]
+  },
+  {
+    "route_designator": "P620",
+    "navigation_specification": "RNAV 5",
+    "waypoints": [
+      {
+        "name": "NIMAT",
+        "coordinates": "535754N 0054432W"
+      },
+      {
+        "name": "DUBLIN DVOR/DME (DUB)",
+        "coordinates": "532957.8N 0061825.6W"
+      },
+      {
+        "name": "BEPAN",
+        "coordinates": "523136N 0061549W"
+      }
+    ]
+  },
+  {
+    "route_designator": "Q36",
+    "navigation_specification": "RNAV 5",
+    "waypoints": [
+      {
+        "name": "CORK DVOR/DME (CRK)",
+        "coordinates": null
+      },
+      {
+        "name": "TISMO",
+        "coordinates": "520805N 0080047W"
+      },
+      {
+        "name": "CLONMEL NDB (CML)",
+        "coordinates": "522713.5N 0072848.2W"
+      },
+      {
+        "name": "SUTEX",
+        "coordinates": "524928N 0065549W"
+      },
+      {
+        "name": "DIRUM",
+        "coordinates": "530010N 0063940W"
+      },
+      {
+        "name": "GERVO",
+        "coordinates": "530529N 0063024W"
+      },
+      {
+        "name": "KILLINEY NDB (KLY)",
+        "coordinates": "531610.4N 0060623.2W"
+      },
+      {
+        "name": "ENDEQ",
+        "coordinates": "532644N 0053000W"
+      }
+    ]
+  }
+]

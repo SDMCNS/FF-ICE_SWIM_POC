@@ -1,0 +1,43 @@
+{
+  "aerodrome": "Welshpool Airport (EGCW)",
+  "icao_code": "EGCW",
+  "arp_coordinates": {
+    "latitude": "523743N",
+    "longitude": "0030912W"
+  },
+  "elevation": "235 FT",
+  "magnetic_variation": "0.22°E",
+  "runways": [
+    {
+      "designation": "04",
+      "true_bearing": "035.11°",
+      "dimensions": "1020 x 18"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "215.11°",
+      "dimensions": "1020 x 18"
+    },
+    {
+      "designation": "04",
+      "true_bearing": "799",
+      "dimensions": "799"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "799",
+      "dimensions": "799"
+    },
+    {
+      "designation": "04",
+      "true_bearing": "-",
+      "dimensions": "Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31291.eng;104"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "-",
+      "dimensions": "Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31290.eng;103"
+    }
+  ],
+  "communication_frequencies": []
+}

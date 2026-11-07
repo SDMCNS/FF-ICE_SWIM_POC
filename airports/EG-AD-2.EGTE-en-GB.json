@@ -1,0 +1,88 @@
+{
+  "aerodrome": "Exeter International Airport (EGTE)",
+  "icao_code": "EGTE",
+  "arp_coordinates": {
+    "latitude": "504403N",
+    "longitude": "0032450W"
+  },
+  "elevation": "102 FT",
+  "magnetic_variation": "0.31°E",
+  "runways": [
+    {
+      "designation": "08",
+      "true_bearing": "076.11°",
+      "dimensions": "2076 x 45"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "256.13°",
+      "dimensions": "2076 x 45"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "2036",
+      "dimensions": "2252"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "2076",
+      "dimensions": "2657"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "1665",
+      "dimensions": "1880"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "1127",
+      "dimensions": "1342"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "1081",
+      "dimensions": "1296"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "791",
+      "dimensions": "1007"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "787",
+      "dimensions": "1002"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "1819",
+      "dimensions": "2400"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "1264",
+      "dimensions": "1846"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "973",
+      "dimensions": "1460"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "927",
+      "dimensions": "1391"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "Coded centre-line with two crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31230.eng;107 332 Light intensity high",
+      "dimensions": "Green Light intensity high Flush with wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31717.eng;670"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "Coded centre-line with five crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31229.eng;106 750 Light intensity high",
+      "dimensions": "Green Light intensity high Flush with wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31716.eng;669"
+    }
+  ],
+  "communication_frequencies": []
+}

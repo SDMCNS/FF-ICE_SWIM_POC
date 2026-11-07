@@ -1,0 +1,89 @@
+{
+  "aerodrome": "Redhill Aerodrome (EGKR)",
+  "icao_code": "EGKR",
+  "arp_coordinates": {
+    "latitude": "511249N",
+    "longitude": "0000819W"
+  },
+  "elevation": "222 FT",
+  "magnetic_variation": "1.35°E",
+  "runways": [
+    {
+      "designation": "07",
+      "true_bearing": "074.43°",
+      "dimensions": "683 x 23"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "254.44°",
+      "dimensions": "683 x 23"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "074.61°",
+      "dimensions": "897 x 30"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "254.62°",
+      "dimensions": "897 x 30"
+    },
+    {
+      "designation": "18",
+      "true_bearing": "181.02°",
+      "dimensions": "851 x 25"
+    },
+    {
+      "designation": "36",
+      "true_bearing": "001.02°",
+      "dimensions": "851 x 25"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "897",
+      "dimensions": "897"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "897",
+      "dimensions": "897"
+    },
+    {
+      "designation": "18",
+      "true_bearing": "851",
+      "dimensions": "851"
+    },
+    {
+      "designation": "36",
+      "true_bearing": "851",
+      "dimensions": "851"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "683",
+      "dimensions": "683"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "683",
+      "dimensions": "683"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "-",
+      "dimensions": "Light intensity high Green wingbars.TRWY_DIRECTION_LGT_SYS;ANNOTATION:31835.eng;826"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "Centre-line Simple Bar, with one cross bar at 265 M and one light prior to cross bar.TRWY_DIRECTION_ALS;ANNOTATION:31188.eng;65 318 Light intensity high",
+      "dimensions": "Light intensity high Green wingbars.TRWY_DIRECTION_LGT_SYS;ANNOTATION:31837.eng;828"
+    }
+  ],
+  "communication_frequencies": [
+    {
+      "service": "APP",
+      "details": "REDHILL 511134N 0001048W thence clockwise by the arc of a circle radius 2 N centred on 511249N 0000819W to 511230N 0000511W - 511134N 0001048W Upper limit: 2222 Lower limit: S  REDHILL English 6000 FT 0845-1715 (0745-1815).TAIRSPACE_ACTIVATION;ANNOTATION:136959.eng;806 In the event of being unable to establish 2-way communications with Redhill Tower on 119.605 MHz, pilots wishing to transit the ATZ should contact Gatwick Director on 126.825 MHz.Partly within the London Gatwick CTR and CTA and also partly below Controlled Airspace. Special procedures apply in the Redhill Local Flying Area.ATZ 2000 FT AAL.TAIRSPACE;ANNOTATION:89964.eng;1515",
+      "frequency": "119.605"
+    }
+  ]
+}

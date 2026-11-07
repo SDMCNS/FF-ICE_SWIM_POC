@@ -1,0 +1,83 @@
+{
+  "aerodrome": "Sumburgh Airport (EGPB)",
+  "icao_code": "EGPB",
+  "arp_coordinates": {
+    "latitude": "595253N",
+    "longitude": "0011738W"
+  },
+  "elevation": "24 FT",
+  "magnetic_variation": "0.18°E",
+  "runways": [
+    {
+      "designation": "09",
+      "true_bearing": "083.55°",
+      "dimensions": "1498 x 44"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "263.57°",
+      "dimensions": "1498 x 44"
+    },
+    {
+      "designation": "15",
+      "true_bearing": "143.41°",
+      "dimensions": "1424 x 43"
+    },
+    {
+      "designation": "33",
+      "true_bearing": "323.42°",
+      "dimensions": "1424 x 43"
+    },
+    {
+      "designation": "15",
+      "true_bearing": "1424",
+      "dimensions": "1424"
+    },
+    {
+      "designation": "33",
+      "true_bearing": "1424",
+      "dimensions": "1424"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "1319",
+      "dimensions": "1319"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "1319",
+      "dimensions": "1319"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "-",
+      "dimensions": "H - 544"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "-",
+      "dimensions": "H - 544"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "One flush inset crossbar plus four double flush inset lamps.TRWY_DIRECTION_ALS;ANNOTATION:31153.eng;30 110 Light intensity high",
+      "dimensions": "Green Light intensity high Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31563.eng;493"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "One flush inset crossbar plus four double flush inset lamps.TRWY_DIRECTION_ALS;ANNOTATION:31154.eng;31 90 Light intensity high",
+      "dimensions": "Light intensity high ElevatedGreen wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31569.eng;503"
+    },
+    {
+      "designation": "15",
+      "true_bearing": "-",
+      "dimensions": "Light intensity high ElevatedGreen wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31568.eng;502"
+    },
+    {
+      "designation": "33",
+      "true_bearing": "-",
+      "dimensions": "Light intensity high ElevatedGreen wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31567.eng;501"
+    }
+  ],
+  "communication_frequencies": []
+}

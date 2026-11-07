@@ -1,0 +1,73 @@
+{
+  "aerodrome": "Barra Airport (EGPR)",
+  "icao_code": "EGPR",
+  "arp_coordinates": {
+    "latitude": "570125N",
+    "longitude": "0072630W"
+  },
+  "elevation": "5 FT",
+  "magnetic_variation": "2.06°W",
+  "runways": [
+    {
+      "designation": "07",
+      "true_bearing": "066.06°",
+      "dimensions": "799 x 60"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "246.07°",
+      "dimensions": "799 x 60"
+    },
+    {
+      "designation": "11",
+      "true_bearing": "100.68°",
+      "dimensions": "680 x 46"
+    },
+    {
+      "designation": "29",
+      "true_bearing": "280.69°",
+      "dimensions": "680 x 46"
+    },
+    {
+      "designation": "15",
+      "true_bearing": "139.48°",
+      "dimensions": "846 x 46"
+    },
+    {
+      "designation": "33",
+      "true_bearing": "319.48°",
+      "dimensions": "846 x 46"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "799",
+      "dimensions": "799"
+    },
+    {
+      "designation": "15",
+      "true_bearing": "799",
+      "dimensions": "799"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "799",
+      "dimensions": "799"
+    },
+    {
+      "designation": "33",
+      "true_bearing": "799",
+      "dimensions": "799"
+    },
+    {
+      "designation": "11",
+      "true_bearing": "667",
+      "dimensions": "667"
+    },
+    {
+      "designation": "29",
+      "true_bearing": "667",
+      "dimensions": "667"
+    }
+  ],
+  "communication_frequencies": []
+}

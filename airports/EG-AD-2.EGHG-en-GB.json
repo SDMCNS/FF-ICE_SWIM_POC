@@ -1,0 +1,38 @@
+{
+  "aerodrome": "Yeovil/Westland Aerodrome (EGHG)",
+  "icao_code": "EGHG",
+  "arp_coordinates": {
+    "latitude": "505624N",
+    "longitude": "0023932W"
+  },
+  "elevation": "202 FT",
+  "magnetic_variation": "0.55°E",
+  "runways": [
+    {
+      "designation": "09",
+      "true_bearing": "091.83°",
+      "dimensions": "1190 x 37"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "271.85°",
+      "dimensions": "1190 x 37"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "1190",
+      "dimensions": "1190"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "1118",
+      "dimensions": "1118"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "Simple approach lights.TRWY_DIRECTION_ALS;ANNOTATION:31204.eng;81 - Light intensity high",
+      "dimensions": "-"
+    }
+  ],
+  "communication_frequencies": []
+}

@@ -1,0 +1,68 @@
+{
+  "aerodrome": "Glasgow Airport (EGPF)",
+  "icao_code": "EGPF",
+  "arp_coordinates": {
+    "latitude": "555219N",
+    "longitude": "0042559W"
+  },
+  "elevation": "26 FT",
+  "magnetic_variation": "0.65°W",
+  "runways": [
+    {
+      "designation": "05",
+      "true_bearing": "046.40°",
+      "dimensions": "2661 x 45"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "226.42°",
+      "dimensions": "2661 x 45"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "2658",
+      "dimensions": "2783"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "2661",
+      "dimensions": "3090"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "2360",
+      "dimensions": "2485"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "2163",
+      "dimensions": "2287"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "1661",
+      "dimensions": "1785"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "2580",
+      "dimensions": "3009"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "2304",
+      "dimensions": "2733"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "Coded centre-line with five crossbars.Supplementary lighting inner 300 M.TRWY_DIRECTION_ALS;ANNOTATION:31262.eng;139 914 Light intensity high",
+      "dimensions": "Green Light intensity high Flush with elevated HI green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31739.eng;700"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "Coded centre-line with five crossbars. Supplementary lighting inner 300 M.TRWY_DIRECTION_ALS;ANNOTATION:31263.eng;140 914 Light intensity high",
+      "dimensions": "Green Light intensity high Flush with elevated HI green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31743.eng;706"
+    }
+  ],
+  "communication_frequencies": []
+}

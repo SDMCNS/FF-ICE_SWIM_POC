@@ -1,0 +1,58 @@
+{
+  "aerodrome": "London Southend Airport (EGMC)",
+  "icao_code": "EGMC",
+  "arp_coordinates": {
+    "latitude": "513413N",
+    "longitude": "0004136E"
+  },
+  "elevation": "58 FT",
+  "magnetic_variation": "1.59°E",
+  "runways": [
+    {
+      "designation": "05",
+      "true_bearing": "054.16°",
+      "dimensions": "1856 x 36"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "234.17°",
+      "dimensions": "1856 x 36"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "1739",
+      "dimensions": "1799"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "1739",
+      "dimensions": "1799"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "1016",
+      "dimensions": "1076"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "978",
+      "dimensions": "1038"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "1182",
+      "dimensions": "1242"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "Uni-directional centre-line with three crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31179.eng;56 540 Light intensity high",
+      "dimensions": "Green Light intensity high InsetWingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31579.eng;514"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "Uni-directional centre-linewith four crossbars.Due siting limitations, there are only 3 centre-line lightsbetween the 2nd and 3rd crossbars from thethreshold and between the 3rd and 4th crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31268.eng;145 583 Light intensity high",
+      "dimensions": "Green Light intensity high InsetWingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31580.eng;515"
+    }
+  ],
+  "communication_frequencies": []
+}

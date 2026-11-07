@@ -1,0 +1,43 @@
+{
+  "aerodrome": "Benbecula Airport (EGPL)",
+  "icao_code": "EGPL",
+  "arp_coordinates": {
+    "latitude": "572850N",
+    "longitude": "0072150W"
+  },
+  "elevation": "19 FT",
+  "magnetic_variation": "2.11°W",
+  "runways": [
+    {
+      "designation": "06",
+      "true_bearing": "055.45°",
+      "dimensions": "1837 x 40"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "235.47°",
+      "dimensions": "1837 x 40"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "1837",
+      "dimensions": "2056"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "1688",
+      "dimensions": "1837"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "Centre-line with one crossbar.LEDTRWY_DIRECTION_ALS;ANNOTATION:31217.eng;94 242 Light intensity high",
+      "dimensions": "Light intensity high Green wingbarsLEDTRWY_DIRECTION_LGT_SYS;ANNOTATION:31366.eng;210"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "Centre-line with one crossbar.LEDTRWY_DIRECTION_ALS;ANNOTATION:31216.eng;93 342 Light intensity high",
+      "dimensions": "Light intensity high Green wingbarsLEDTRWY_DIRECTION_LGT_SYS;ANNOTATION:31368.eng;213"
+    }
+  ],
+  "communication_frequencies": []
+}

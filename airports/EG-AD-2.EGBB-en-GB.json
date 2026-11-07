@@ -1,0 +1,83 @@
+{
+  "aerodrome": "Birmingham Airport (EGBB)",
+  "icao_code": "EGBB",
+  "arp_coordinates": {
+    "latitude": "522714N",
+    "longitude": "0014453W"
+  },
+  "elevation": "339 FT",
+  "magnetic_variation": "0.72°E",
+  "runways": [
+    {
+      "designation": "15",
+      "true_bearing": "145.81°",
+      "dimensions": "3052 x 45"
+    },
+    {
+      "designation": "33",
+      "true_bearing": "325.82°",
+      "dimensions": "3052 x 45"
+    },
+    {
+      "designation": "15",
+      "true_bearing": "3004",
+      "dimensions": "3064"
+    },
+    {
+      "designation": "33",
+      "true_bearing": "3004",
+      "dimensions": "3197"
+    },
+    {
+      "designation": "15",
+      "true_bearing": "2447",
+      "dimensions": "2508"
+    },
+    {
+      "designation": "15",
+      "true_bearing": "1444",
+      "dimensions": "1504"
+    },
+    {
+      "designation": "15",
+      "true_bearing": "1220",
+      "dimensions": "1280"
+    },
+    {
+      "designation": "33",
+      "true_bearing": "2552",
+      "dimensions": "2745"
+    },
+    {
+      "designation": "33",
+      "true_bearing": "2182",
+      "dimensions": "2375"
+    },
+    {
+      "designation": "33",
+      "true_bearing": "2093",
+      "dimensions": "2286"
+    },
+    {
+      "designation": "33",
+      "true_bearing": "1769",
+      "dimensions": "1962"
+    },
+    {
+      "designation": "33",
+      "true_bearing": "1560",
+      "dimensions": "1752"
+    },
+    {
+      "designation": "15",
+      "true_bearing": "Coded centre-line with five crossbars.Supplementary lighting inner 300 M.TRWY_DIRECTION_ALS;ANNOTATION:31264.eng;141 914 Light intensity high",
+      "dimensions": "Light intensity high Uni-directionalGreen wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31670.eng;612"
+    },
+    {
+      "designation": "33",
+      "true_bearing": "Coded centre-line with five crossbars.Supplementary lighting inner 300 M.TRWY_DIRECTION_ALS;ANNOTATION:31265.eng;142 914 Light intensity high",
+      "dimensions": "Light intensity high Uni-directional Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31671.eng;613"
+    }
+  ],
+  "communication_frequencies": []
+}

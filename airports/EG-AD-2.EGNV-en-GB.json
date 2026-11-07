@@ -1,0 +1,58 @@
+{
+  "aerodrome": "Teesside International Airport (EGNV)",
+  "icao_code": "EGNV",
+  "arp_coordinates": {
+    "latitude": "543033N",
+    "longitude": "0012546W"
+  },
+  "elevation": "120 FT",
+  "magnetic_variation": "0.65°E",
+  "runways": [
+    {
+      "designation": "05",
+      "true_bearing": "047.44°",
+      "dimensions": "2291 x 45"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "227.46°",
+      "dimensions": "2291 x 45"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "2291",
+      "dimensions": "2576"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "2291",
+      "dimensions": "2488"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "1770",
+      "dimensions": "2055"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "997",
+      "dimensions": "1282"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "1355",
+      "dimensions": "1552"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "Coded centre-line with four crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31259.eng;136 605 Light intensity high",
+      "dimensions": "Green"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "Coded centre-line with five crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31258.eng;135 777 Light intensity high",
+      "dimensions": "Green"
+    }
+  ],
+  "communication_frequencies": []
+}

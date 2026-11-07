@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "UserCustomOverrides",
+  "description": "User-defined extensions and corrections for aircraft performance, wake separation, and custom corridors. Merged on load.",
+  "aircraft": {
+    "TEST_JET": {}
+  },
+  "departureWakeIntervalsSec": {},
+  "approachWakeSeparationNm": {},
+  "waypointAlternates": {}
+}

@@ -1,0 +1,53 @@
+{
+  "aerodrome": "Wick John O'Groats Airport (EGPC)",
+  "icao_code": "EGPC",
+  "arp_coordinates": {
+    "latitude": "582732N",
+    "longitude": "0030535W"
+  },
+  "elevation": "126 FT",
+  "magnetic_variation": "0.44°W",
+  "runways": [
+    {
+      "designation": "13",
+      "true_bearing": "126.97°",
+      "dimensions": "1831 x 45"
+    },
+    {
+      "designation": "31",
+      "true_bearing": "306.98°",
+      "dimensions": "1831 x 45"
+    },
+    {
+      "designation": "13",
+      "true_bearing": "1746",
+      "dimensions": "1896"
+    },
+    {
+      "designation": "31",
+      "true_bearing": "1714",
+      "dimensions": "1864"
+    },
+    {
+      "designation": "31",
+      "true_bearing": "1339",
+      "dimensions": "1489"
+    },
+    {
+      "designation": "31",
+      "true_bearing": "1087",
+      "dimensions": "1237"
+    },
+    {
+      "designation": "13",
+      "true_bearing": "Centre-line with two crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31266.eng;143 330 Light intensity high",
+      "dimensions": "Light intensity high Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31436.eng;314"
+    },
+    {
+      "designation": "31",
+      "true_bearing": "Centre-line with two crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31267.eng;144 390 Light intensity high",
+      "dimensions": "Light intensity high Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31435.eng;313"
+    }
+  ],
+  "communication_frequencies": []
+}

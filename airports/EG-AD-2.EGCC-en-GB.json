@@ -1,0 +1,129 @@
+{
+  "aerodrome": "Manchester Airport (EGCC)",
+  "icao_code": "EGCC",
+  "arp_coordinates": {
+    "latitude": "532113N",
+    "longitude": "0021630W"
+  },
+  "elevation": "257 FT",
+  "magnetic_variation": "0.45°E",
+  "runways": [
+    {
+      "designation": "05",
+      "true_bearing": "051.06°",
+      "dimensions": "3048 x 45"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "231.09°",
+      "dimensions": "3048 x 45"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "051.04°",
+      "dimensions": "3050 x 45"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "231.07°",
+      "dimensions": "3050 x 45"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "3047",
+      "dimensions": "3347"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "3200",
+      "dimensions": "3500"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "3121",
+      "dimensions": "3421"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "2954",
+      "dimensions": "3254"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "2848",
+      "dimensions": "3148"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "2504",
+      "dimensions": "2804"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "2202",
+      "dimensions": "2502"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "3014",
+      "dimensions": "3229"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "2897",
+      "dimensions": "3197"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "2771",
+      "dimensions": "2987"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "2433",
+      "dimensions": "2648"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "2037",
+      "dimensions": "2252"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "2567",
+      "dimensions": "2867"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "2120",
+      "dimensions": "2420"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "Coded centre-line with five crossbars.Supplementary lighting inner 300 M.TRWY_DIRECTION_ALS;ANNOTATION:31210.eng;87 914 Light intensity high",
+      "dimensions": "Green Light intensity high With flush HI Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31345.eng;180"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "Coded centre-line with five crossbars.Supplementary lighting inner 300 M.TRWY_DIRECTION_ALS;ANNOTATION:31211.eng;88 914 Light intensity high",
+      "dimensions": "Green Light intensity high With flush HI Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31350.eng;186"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "Coded centre-line with five crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31213.eng;90 900 Light intensity high",
+      "dimensions": "Green With flush HI green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31356.eng;193"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "Coded centre-line with five crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31212.eng;89 900 Light intensity high",
+      "dimensions": "Green Light intensity high With flush HI green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31355.eng;192"
+    }
+  ],
+  "communication_frequencies": [
+    {
+      "service": "APP",
+      "details": "Macclesfield South VRP 23R/23L Macclesfield 1 Visual From CTR Boundary east of Macclesfield VRP, route via the Macclesfield Entry/Exit Lane (keeping railway line on left) to disused Woodford Aerodrome. Join left base for Runway 23R/23L. 2500 FT (Notes 1, and 5) Maximum altitudes 2500 FT between CTR Boundary and the northern edge of Macclesfield, 1500 FT north of Macclesfield. Aircraft may be held at Hilltop VRP, which is defined as the open area 1 NM North West of the disused Woodford aerodrome factory. Pilots must hold by visual reference to ensure that the holding pattern does not deviate to the north, which would come into conflict with Runway 23R final instrument approach, particularly in a southerly wind. When Runway 23L is in use as the landing runway, Hilltop VRP will not be used. VFR inbound aircraft can expect to hold overhead disused Woodford aerodrome. Pilots should contact Manchester Radar initially on 118.580 MHz. Warning: High ground to the east of the Entry/Exit Lane. Aircraft must not leave the confines of the Entry/Exit Lane without prior co-ordination with ATC. Aircraft experiencing a radio failure inbound to Manchester whilst in the Macclesfield Entry/Exit Lane, or holding at Hilltop, are to carry out the Radio Communication Failure procedure detailed at ENR 1-2-2, paragraph 2.9 Note: No visual signals available at Manchester.",
+      "frequency": "118.580"
+    }
+  ]
+}

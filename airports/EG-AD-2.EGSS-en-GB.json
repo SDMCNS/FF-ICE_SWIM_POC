@@ -1,0 +1,113 @@
+{
+  "aerodrome": "London Stansted Airport (EGSS)",
+  "icao_code": "EGSS",
+  "arp_coordinates": {
+    "latitude": "515306N",
+    "longitude": "0001406E"
+  },
+  "elevation": "348 FT",
+  "magnetic_variation": "1.43°E",
+  "runways": [
+    {
+      "designation": "04",
+      "true_bearing": "042.87°",
+      "dimensions": "3049 x 46"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "222.89°",
+      "dimensions": "3049 x 46"
+    },
+    {
+      "designation": "04",
+      "true_bearing": "042.87°",
+      "dimensions": "-"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "222.88°",
+      "dimensions": "-"
+    },
+    {
+      "designation": "04",
+      "true_bearing": "3049",
+      "dimensions": "3338"
+    },
+    {
+      "designation": "04",
+      "true_bearing": "2198",
+      "dimensions": "2198"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "3049",
+      "dimensions": "3316"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "1900",
+      "dimensions": "1900"
+    },
+    {
+      "designation": "04",
+      "true_bearing": "2823",
+      "dimensions": "3112"
+    },
+    {
+      "designation": "04",
+      "true_bearing": "2392",
+      "dimensions": "2681"
+    },
+    {
+      "designation": "04",
+      "true_bearing": "1834",
+      "dimensions": "2123"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "2685",
+      "dimensions": "2952"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "2334",
+      "dimensions": "2601"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "1830",
+      "dimensions": "2097"
+    },
+    {
+      "designation": "04",
+      "true_bearing": "1900",
+      "dimensions": "2189"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "2198",
+      "dimensions": "2465"
+    },
+    {
+      "designation": "04",
+      "true_bearing": "Coded centre-line with five crossbars.Supplementary lighting inner 300 M.TRWY_DIRECTION_ALS;ANNOTATION:31241.eng;118 780 Light intensity high",
+      "dimensions": "Green Light intensity high With green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31718.eng;673"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "Coded centre-line with five crossbars.Supplementary lighting inner 300 M.TRWY_DIRECTION_ALS;ANNOTATION:31240.eng;117 900 Light intensity high",
+      "dimensions": "Green Light intensity high With green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31725.eng;681"
+    },
+    {
+      "designation": "04",
+      "true_bearing": "Truncated Simple Approach with one crossbar.TRWY_DIRECTION_ALS;ANNOTATION:73378.eng;2264 210 Light intensity low",
+      "dimensions": "Green with wing bars (2 units either side of runway)TRWY_DIRECTION_LGT_SYS;ANNOTATION:73305.eng;3199"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "Truncated Simple Approach with one crossbar.TRWY_DIRECTION_ALS;ANNOTATION:73382.eng;2265 210 Light intensity low",
+      "dimensions": "Green with wing bars (2 units either side of runway)TRWY_DIRECTION_LGT_SYS;ANNOTATION:73308.eng;3202"
+    }
+  ],
+  "communication_frequencies": []
+}

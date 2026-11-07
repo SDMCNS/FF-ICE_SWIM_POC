@@ -1,0 +1,113 @@
+{
+  "aerodrome": "Land's End Airport (EGHC)",
+  "icao_code": "EGHC",
+  "arp_coordinates": {
+    "latitude": "500610N",
+    "longitude": "0054014W"
+  },
+  "elevation": "398 FT",
+  "magnetic_variation": "0.39°W",
+  "runways": [
+    {
+      "designation": "02",
+      "true_bearing": "019.64°",
+      "dimensions": "483 x 19"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "199.64°",
+      "dimensions": "483 x 19"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "064.73°",
+      "dimensions": "693 x 18"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "244.74°",
+      "dimensions": "693 x 18"
+    },
+    {
+      "designation": "11",
+      "true_bearing": "112.73°",
+      "dimensions": "478 x 18"
+    },
+    {
+      "designation": "29",
+      "true_bearing": "292.73°",
+      "dimensions": "478 x 18"
+    },
+    {
+      "designation": "16",
+      "true_bearing": "158.22°",
+      "dimensions": "784 x 18"
+    },
+    {
+      "designation": "34",
+      "true_bearing": "338.22°",
+      "dimensions": "784 x 18"
+    },
+    {
+      "designation": "16",
+      "true_bearing": "784",
+      "dimensions": "784"
+    },
+    {
+      "designation": "34",
+      "true_bearing": "724",
+      "dimensions": "784"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "693",
+      "dimensions": "693"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "693",
+      "dimensions": "693"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "483",
+      "dimensions": "483"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "483",
+      "dimensions": "483"
+    },
+    {
+      "designation": "11",
+      "true_bearing": "478",
+      "dimensions": "478"
+    },
+    {
+      "designation": "29",
+      "true_bearing": "478",
+      "dimensions": "478"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "RTIL Strobes either side of landing threshold.TRWY_DIRECTION_ALS;ANNOTATION:31182.eng;59 -",
+      "dimensions": "Green"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "RTIL Strobes either side of landing threshold.TRWY_DIRECTION_ALS;ANNOTATION:31183.eng;60 -",
+      "dimensions": "Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31399.eng;249"
+    },
+    {
+      "designation": "16",
+      "true_bearing": "RTIL Strobes either side of landing threshold.TRWY_DIRECTION_ALS;ANNOTATION:31180.eng;57 -",
+      "dimensions": "Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31393.eng;243"
+    },
+    {
+      "designation": "34",
+      "true_bearing": "RTIL Strobes either side of landing threshold.TRWY_DIRECTION_ALS;ANNOTATION:31181.eng;58 -",
+      "dimensions": "Green"
+    }
+  ],
+  "communication_frequencies": []
+}

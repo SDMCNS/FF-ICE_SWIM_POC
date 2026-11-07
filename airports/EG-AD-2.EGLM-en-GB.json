@@ -1,0 +1,108 @@
+{
+  "aerodrome": "White Waltham Airfield (EGLM)",
+  "icao_code": "EGLM",
+  "arp_coordinates": {
+    "latitude": "513002N",
+    "longitude": "0004629W"
+  },
+  "elevation": "133 FT",
+  "magnetic_variation": "1.12°E",
+  "runways": [
+    {
+      "designation": "03",
+      "true_bearing": "026.23°",
+      "dimensions": "1029 x 45"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "206.24°",
+      "dimensions": "1029 x 45"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "064.62°",
+      "dimensions": "1116 x 45"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "244.63°",
+      "dimensions": "1116 x 45"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "064.61°",
+      "dimensions": "785 x 25"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "244.62°",
+      "dimensions": "785 x 25"
+    },
+    {
+      "designation": "11",
+      "true_bearing": "109.91°",
+      "dimensions": "930 x 30"
+    },
+    {
+      "designation": "29",
+      "true_bearing": "289.91°",
+      "dimensions": "930 x 30"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "1116",
+      "dimensions": "1116"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "1116",
+      "dimensions": "1116"
+    },
+    {
+      "designation": "03",
+      "true_bearing": "1029",
+      "dimensions": "1029"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "1029",
+      "dimensions": "1029"
+    },
+    {
+      "designation": "11",
+      "true_bearing": "930",
+      "dimensions": "930"
+    },
+    {
+      "designation": "29",
+      "true_bearing": "930",
+      "dimensions": "930"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "785",
+      "dimensions": "785"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "785",
+      "dimensions": "785"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "-",
+      "dimensions": "Light intensity low Green wingbars. Portable LED.TRWY_DIRECTION_LGT_SYS;ANNOTATION:99305.eng;4497"
+    },
+    {
+      "designation": "11",
+      "true_bearing": "-",
+      "dimensions": "Light intensity low Green wingbars. Portable LED. TRWY_DIRECTION_LGT_SYS;ANNOTATION:99292.eng;4491"
+    },
+    {
+      "designation": "29",
+      "true_bearing": "-",
+      "dimensions": "Light intensity low Green wingbars. Portable LED.TRWY_DIRECTION_LGT_SYS;ANNOTATION:99298.eng;4494"
+    }
+  ],
+  "communication_frequencies": []
+}

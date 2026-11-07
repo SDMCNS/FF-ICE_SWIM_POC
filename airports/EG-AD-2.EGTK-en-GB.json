@@ -1,0 +1,48 @@
+{
+  "aerodrome": "London Oxford Airport (EGTK)",
+  "icao_code": "EGTK",
+  "arp_coordinates": {
+    "latitude": "515013N",
+    "longitude": "0011912W"
+  },
+  "elevation": "263 FT",
+  "magnetic_variation": "0.92°E",
+  "runways": [
+    {
+      "designation": "01",
+      "true_bearing": "010.68°",
+      "dimensions": "1526 x 30"
+    },
+    {
+      "designation": "19",
+      "true_bearing": "190.68°",
+      "dimensions": "1526 x 30"
+    },
+    {
+      "designation": "01",
+      "true_bearing": "1442",
+      "dimensions": "1592"
+    },
+    {
+      "designation": "19",
+      "true_bearing": "1383",
+      "dimensions": "1558"
+    },
+    {
+      "designation": "19",
+      "true_bearing": "1000",
+      "dimensions": "1174"
+    },
+    {
+      "designation": "01",
+      "true_bearing": "Omni-directional variable intensity RTIL either side of threshold.TRWY_DIRECTION_ALS;ANNOTATION:71287.eng;2085 -",
+      "dimensions": "Green Light intensity high With elev green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31331.eng;166"
+    },
+    {
+      "designation": "19",
+      "true_bearing": "Omni-directional variable intensity RTIL either side of threshold.Coded centre-line with three crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31205.eng;82 454 Light intensity high",
+      "dimensions": "Green Light intensity high With elev green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31333.eng;168"
+    }
+  ],
+  "communication_frequencies": []
+}

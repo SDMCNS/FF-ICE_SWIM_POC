@@ -1,0 +1,131 @@
+{
+  "aerodrome": {
+    "indicator": "EGLL",
+    "name": "London Heathrow",
+    "geographical_and_administrative": {
+      "arp_coordinates": {
+        "latitude": "512839N",
+        "longitude": "0002741W",
+        "site": "Mid point of Runway 09L/27R"
+      },
+      "direction_and_distance_from_city": "12 NM W of London",
+      "elevation": "83 FT",
+      "reference_temperature": "20 °C",
+      "geoid_undulation_at_ad_elev_psn": "151 FT",
+      "magnetic_variation": "1.23°E (2027)",
+      "annual_change": "0.17°E",
+      "administration": {
+        "name": "HEATHROW AIRPORT LIMITED",
+        "address": "The Compass Centre, Nelson Road, Heathrow Airport, Hounslow, TW2 2GW",
+        "telephone": [
+          "08700-000123 (HAL)",
+          "020-8750 2636 (NATS Ltd)"
+        ],
+        "telefax": "020-8745 4290 (HAL)",
+        "telex": "934892 (HAL)"
+      },
+      "type_of_traffic_permitted": "IFR/VFR/SVFR",
+      "remarks": "Telephone calls to NATS Ltd operational areas may be recorded."
+    },
+    "operational_hours": {
+      "ad_administration": "H24",
+      "customs_and_immigration": "H24",
+      "ats_reporting_office_aro": "H24",
+      "ats": "H24",
+      "fuelling": "H24",
+      "handling": "H24",
+      "security": "H24",
+      "de_icing": "H24"
+    },
+    "fire_fighting_services": {
+      "ad_category": "RFF Category A10",
+      "disabled_aircraft_removal": "By arrangement with nominated recovery company"
+    },
+    "runways": [
+      {
+        "designator": "09L",
+        "true_bearing": "089.67°",
+        "dimensions": "3901 x 50 M",
+        "surface": "Asphalt, Grooved",
+        "pcr": "1020/R/A/W/T",
+        "threshold_coordinates": "512839.00N 0002905.97W",
+        "elevation": {
+          "threshold": "78.6 FT",
+          "tdz": "81.3 FT"
+        }
+      },
+      {
+        "designator": "27R",
+        "true_bearing": "269.71°",
+        "dimensions": "3901 x 50 M",
+        "surface": "Asphalt, Grooved",
+        "pcr": "1020/R/A/W/T",
+        "threshold_coordinates": "512839.63N 0002559.82W",
+        "elevation": {
+          "threshold": "78.1 FT",
+          "tdz": "79.3 FT"
+        }
+      },
+      {
+        "designator": "09R",
+        "true_bearing": "089.68°",
+        "dimensions": "3658 x 50 M",
+        "surface": "Asphalt, Grooved",
+        "pcr": "820/R/A/W/T",
+        "threshold_coordinates": "512753.25N 0002856.33W",
+        "elevation": {
+          "threshold": "75.3 FT",
+          "tdz": "76.2 FT"
+        }
+      },
+      {
+        "designator": "27L",
+        "true_bearing": "269.72°",
+        "dimensions": "3658 x 50 M",
+        "surface": "Asphalt, Grooved",
+        "pcr": "820/R/A/W/T",
+        "threshold_coordinates": "512753.82N 0002602.76W",
+        "elevation": {
+          "threshold": "76.8 FT",
+          "tdz": "77.8 FT"
+        }
+      }
+    ],
+    "air_traffic_services_airspace": [
+      {
+        "designation": "LONDON CTR",
+        "vertical_limits": "Upper: 2500 FT ALT | Lower: SFC",
+        "class": "D",
+        "ats_unit_callsign": "HEATHROW RADAR",
+        "language": "English",
+        "transition_altitude": "6000 FT"
+      },
+      {
+        "designation": "LONDON HEATHROW ATZ",
+        "vertical_limits": "Upper: 2083 FT ALT | Lower: SFC",
+        "class": "D",
+        "ats_unit_callsign": "HEATHROW RADAR",
+        "language": "English",
+        "transition_altitude": "6000 FT",
+        "hours": "H24"
+      }
+    ],
+    "communication_frequencies": {
+      "approach": [
+        {"service": "HEATHROW DIRECTOR", "frequency": "119.730 MHz", "hours": "H24"},
+        {"service": "HEATHROW DIRECTOR", "frequency": "120.400 MHz", "hours": "H24"},
+        {"service": "EMERGENCY", "frequency": "121.500 MHz", "hours": "H24"}
+      ],
+      "tower": [
+        {"service": "HEATHROW DELIVERY", "frequency": "121.980 MHz", "hours": "H24"},
+        {"service": "HEATHROW GROUND", "frequency": "121.705 MHz", "hours": "As directed by ATC"},
+        {"service": "HEATHROW TOWER", "frequency": "118.505 MHz", "hours": "H24"}
+      ],
+      "atis": [
+        {"service": "HEATHROW INFORMATION", "frequency": "113.750 MHz", "hours": "H24"},
+        {"service": "HEATHROW INFORMATION", "frequency": "117.000 MHz", "hours": "H24"},
+        {"service": "HEATHROW INFORMATION DEP", "frequency": "121.935 MHz", "hours": "H24"}
+      ]
+    }
+  }
+}

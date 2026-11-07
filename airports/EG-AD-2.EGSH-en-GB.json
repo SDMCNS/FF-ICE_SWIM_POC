@@ -1,0 +1,73 @@
+{
+  "aerodrome": "Norwich Airport (EGSH)",
+  "icao_code": "EGSH",
+  "arp_coordinates": {
+    "latitude": "524033N",
+    "longitude": "0011658E"
+  },
+  "elevation": "118 FT",
+  "magnetic_variation": "1.72°E",
+  "runways": [
+    {
+      "designation": "09",
+      "true_bearing": "089.28°",
+      "dimensions": "1842 x 45"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "269.30°",
+      "dimensions": "1842 x 45"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "1842",
+      "dimensions": "1993"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "1842",
+      "dimensions": "2112"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "1656",
+      "dimensions": "1808"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "850",
+      "dimensions": "1002"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "535",
+      "dimensions": "687"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "1326",
+      "dimensions": "1597"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "1014",
+      "dimensions": "1285"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "205",
+      "dimensions": "475"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "Centre-line with one crossbar.TRWY_DIRECTION_ALS;ANNOTATION:31219.eng;96 427 Light intensity high",
+      "dimensions": "Green Light intensity high"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "Coded centre-line with five crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31218.eng;95 953 Light intensity high",
+      "dimensions": "Green Light intensity high"
+    }
+  ],
+  "communication_frequencies": []
+}

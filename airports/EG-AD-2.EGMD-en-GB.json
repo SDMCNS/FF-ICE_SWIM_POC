@@ -1,0 +1,43 @@
+{
+  "aerodrome": "Lydd London Ashford Airport (EGMD)",
+  "icao_code": "EGMD",
+  "arp_coordinates": {
+    "latitude": "505722N",
+    "longitude": "0005620E"
+  },
+  "elevation": "13 FT",
+  "magnetic_variation": "1.70°E",
+  "runways": [
+    {
+      "designation": "03",
+      "true_bearing": "032.71°",
+      "dimensions": "1505 x 32"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "212.72°",
+      "dimensions": "1505 x 32"
+    },
+    {
+      "designation": "03",
+      "true_bearing": "1470",
+      "dimensions": "1799"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "1505",
+      "dimensions": "1681"
+    },
+    {
+      "designation": "03",
+      "true_bearing": "Centre-line with one crossbar at 305 M.TRWY_DIRECTION_ALS;ANNOTATION:31165.eng;42 427 Light intensity high",
+      "dimensions": "Green Light intensity high Elevated uni-directionalTRWY_DIRECTION_LGT_SYS;ANNOTATION:31492.eng;402"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "Coded centre-line with two crossbars at 150 M and 300 M.TRWY_DIRECTION_ALS;ANNOTATION:31163.eng;40 430 Light intensity high",
+      "dimensions": "Green Light intensity high Uni-directional with elev HI wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31495.eng;406"
+    }
+  ],
+  "communication_frequencies": []
+}

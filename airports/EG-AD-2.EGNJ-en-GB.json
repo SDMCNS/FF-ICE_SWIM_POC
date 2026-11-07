@@ -1,0 +1,88 @@
+{
+  "aerodrome": "Humberside Airport (EGNJ)",
+  "icao_code": "EGNJ",
+  "arp_coordinates": {
+    "latitude": "533424N",
+    "longitude": "0002105W"
+  },
+  "elevation": "121 FT",
+  "magnetic_variation": "1.11°E",
+  "runways": [
+    {
+      "designation": "02",
+      "true_bearing": "022.37°",
+      "dimensions": "2200 x 45"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "202.38°",
+      "dimensions": "2200 x 45"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "082.41°",
+      "dimensions": "990 x 18"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "262.42°",
+      "dimensions": "990 x 18"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "2070",
+      "dimensions": "2208"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "2196",
+      "dimensions": "2196"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "786",
+      "dimensions": "924"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "761",
+      "dimensions": "899"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "1827",
+      "dimensions": "1827"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "1327",
+      "dimensions": "1327"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "1301",
+      "dimensions": "1301"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "769",
+      "dimensions": "769"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "799",
+      "dimensions": "799"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "Coded centre-line with five crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31254.eng;131 840 Light intensity high",
+      "dimensions": "HI elevated green with elevated wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31526.eng;446"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "Coded centre-line with five crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31253.eng;130 912 Light intensity high",
+      "dimensions": "HI inset green with elevated wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31525.eng;445"
+    }
+  ],
+  "communication_frequencies": []
+}

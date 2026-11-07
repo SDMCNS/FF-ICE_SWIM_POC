@@ -1,0 +1,68 @@
+{
+  "aerodrome": "Hawarden Airport (EGNR)",
+  "icao_code": "EGNR",
+  "arp_coordinates": {
+    "latitude": "531041N",
+    "longitude": "0025840W"
+  },
+  "elevation": "45 FT",
+  "magnetic_variation": "0.22°E",
+  "runways": [
+    {
+      "designation": "04",
+      "true_bearing": "041.00°",
+      "dimensions": "2093 x 45"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "221.01°",
+      "dimensions": "2093 x 45"
+    },
+    {
+      "designation": "04",
+      "true_bearing": "1962",
+      "dimensions": "2109"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "2042",
+      "dimensions": "2208"
+    },
+    {
+      "designation": "04",
+      "true_bearing": "1468",
+      "dimensions": "1615"
+    },
+    {
+      "designation": "04",
+      "true_bearing": "1082",
+      "dimensions": "1229"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "2093",
+      "dimensions": "2259"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "1263",
+      "dimensions": "1429"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "911",
+      "dimensions": "1077"
+    },
+    {
+      "designation": "04",
+      "true_bearing": "One crossbar.Runway 04 has a final cleared plane of 1:32 over a distance of 1.75 miles, safeguarded at 1:50 incorporating a 3.5° ILS glideslope with an OCA of 570 FT.TRWY_DIRECTION_ALS;ANNOTATION:31227.eng;104 427 Light intensity high",
+      "dimensions": "Green Light intensity high Indented with green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31498.eng;412"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "Two crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31228.eng;105 366 Light intensity high",
+      "dimensions": "Green Light intensity high Indented with green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31501.eng;416"
+    }
+  ],
+  "communication_frequencies": []
+}

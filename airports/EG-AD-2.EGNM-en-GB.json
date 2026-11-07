@@ -1,0 +1,88 @@
+{
+  "aerodrome": "Leeds Bradford Airport (EGNM)",
+  "icao_code": "EGNM",
+  "arp_coordinates": {
+    "latitude": "535158N",
+    "longitude": "0013939W"
+  },
+  "elevation": "682 FT",
+  "magnetic_variation": "0.62°E",
+  "runways": [
+    {
+      "designation": "14",
+      "true_bearing": "137.73°",
+      "dimensions": "2250 x 46"
+    },
+    {
+      "designation": "32",
+      "true_bearing": "317.75°",
+      "dimensions": "2250 x 46"
+    },
+    {
+      "designation": "14",
+      "true_bearing": "2113",
+      "dimensions": "3170"
+    },
+    {
+      "designation": "32",
+      "true_bearing": "2190",
+      "dimensions": "2389"
+    },
+    {
+      "designation": "14",
+      "true_bearing": "1933",
+      "dimensions": "2899"
+    },
+    {
+      "designation": "14",
+      "true_bearing": "1801",
+      "dimensions": "2701"
+    },
+    {
+      "designation": "14",
+      "true_bearing": "1514",
+      "dimensions": "2271"
+    },
+    {
+      "designation": "14",
+      "true_bearing": "1429",
+      "dimensions": "2143"
+    },
+    {
+      "designation": "14",
+      "true_bearing": "1245",
+      "dimensions": "1868"
+    },
+    {
+      "designation": "14",
+      "true_bearing": "961",
+      "dimensions": "1441"
+    },
+    {
+      "designation": "32",
+      "true_bearing": "1916",
+      "dimensions": "2115"
+    },
+    {
+      "designation": "32",
+      "true_bearing": "1629",
+      "dimensions": "1828"
+    },
+    {
+      "designation": "32",
+      "true_bearing": "1115",
+      "dimensions": "1314"
+    },
+    {
+      "designation": "14",
+      "true_bearing": "Coded centre-line with five crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31247.eng;124 872 Light intensity high",
+      "dimensions": "Green Light intensity high With HI wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31483.eng;391"
+    },
+    {
+      "designation": "32",
+      "true_bearing": "Coded centre-line with five crossbars. Supplementary lighting inner 262 M.TRWY_DIRECTION_ALS;ANNOTATION:31246.eng;123 815 Light intensity high",
+      "dimensions": "Green Light intensity high With HI wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31482.eng;390"
+    }
+  ],
+  "communication_frequencies": []
+}

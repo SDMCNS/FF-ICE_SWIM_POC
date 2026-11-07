@@ -1,0 +1,98 @@
+{
+  "aerodrome": "Belfast International Airport (EGAA)",
+  "icao_code": "EGAA",
+  "arp_coordinates": {
+    "latitude": "543927N",
+    "longitude": "0061257W"
+  },
+  "elevation": "268 FT",
+  "magnetic_variation": "1.18°W",
+  "runways": [
+    {
+      "designation": "07",
+      "true_bearing": "065.07°",
+      "dimensions": "2780 x 45"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "245.10°",
+      "dimensions": "2780 x 45"
+    },
+    {
+      "designation": "17",
+      "true_bearing": "161.95°",
+      "dimensions": "1891 x 45"
+    },
+    {
+      "designation": "35",
+      "true_bearing": "341.96°",
+      "dimensions": "1891 x 45"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "2780",
+      "dimensions": "3073"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "2779",
+      "dimensions": "3141"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "2654",
+      "dimensions": "2947"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "2197",
+      "dimensions": "2490"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "1204",
+      "dimensions": "1497"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "1607",
+      "dimensions": "1968"
+    },
+    {
+      "designation": "17",
+      "true_bearing": "1791",
+      "dimensions": "1889"
+    },
+    {
+      "designation": "35",
+      "true_bearing": "1891",
+      "dimensions": "2111"
+    },
+    {
+      "designation": "17",
+      "true_bearing": "1732",
+      "dimensions": "1830"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "Centre-line with one crossbar.TRWY_DIRECTION_ALS;ANNOTATION:31149.eng;26 439 Light intensity high",
+      "dimensions": "Green Light intensity high With HI green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31630.eng;574"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "Coded centre-line with five crossbars. Supplementary lighting inner 288 M.TRWY_DIRECTION_ALS;ANNOTATION:31150.eng;27 882 Light intensity high",
+      "dimensions": "Green Light intensity high With HI green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31631.eng;575"
+    },
+    {
+      "designation": "17",
+      "true_bearing": "Coded centre-line with five crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31279.eng;156 910 Light intensity high",
+      "dimensions": "Green Light intensity high With HI green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31632.eng;576"
+    },
+    {
+      "designation": "35",
+      "true_bearing": "Centre-line with one crossbar. Last approach light 92 M from displaced threshold.TRWY_DIRECTION_ALS;ANNOTATION:31278.eng;155 522 Light intensity high",
+      "dimensions": "Green Light intensity high With HI green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31633.eng;577"
+    }
+  ],
+  "communication_frequencies": []
+}

@@ -1,0 +1,43 @@
+{
+  "aerodrome": "Warton Aerodrome (EGNO)",
+  "icao_code": "EGNO",
+  "arp_coordinates": {
+    "latitude": "534442N",
+    "longitude": "0025300W"
+  },
+  "elevation": "55 FT",
+  "magnetic_variation": "0.19°E",
+  "runways": [
+    {
+      "designation": "07",
+      "true_bearing": "071.15°",
+      "dimensions": "2420 x 44"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "251.18°",
+      "dimensions": "2420 x 44"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "2419",
+      "dimensions": "2697"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "2341",
+      "dimensions": "2490"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "CL2B. Irregular spacing. See AD 2.20 para 3.TRWY_DIRECTION_ALS;ANNOTATION:31190.eng;67 1030 White Light intensity high",
+      "dimensions": "Green Light intensity high Wingbars only.TRWY_DIRECTION_LGT_SYS;ANNOTATION:31860.eng;847"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "CL5B. Irregular spacing. Supplemented by LI Omni-directional red T for circling guidance. See AD 2.20 para 3.TRWY_DIRECTION_ALS;ANNOTATION:31189.eng;66 879 White Light intensity high",
+      "dimensions": "Green Light intensity high 23 M central gap and HI Wingbars.TRWY_DIRECTION_LGT_SYS;ANNOTATION:31861.eng;848"
+    }
+  ],
+  "communication_frequencies": []
+}

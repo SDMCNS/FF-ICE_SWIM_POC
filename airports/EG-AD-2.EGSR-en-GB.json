@@ -1,0 +1,43 @@
+{
+  "aerodrome": "Earls Colne Airfield (EGSR)",
+  "icao_code": "EGSR",
+  "arp_coordinates": {
+    "latitude": "515452N",
+    "longitude": "0004057E"
+  },
+  "elevation": "229 FT",
+  "magnetic_variation": "1.57°E",
+  "runways": [
+    {
+      "designation": "06",
+      "true_bearing": "060.48°",
+      "dimensions": "926 x 32"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "240.48°",
+      "dimensions": "926 x 32"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "799",
+      "dimensions": "799"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "799",
+      "dimensions": "799"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "-",
+      "dimensions": "Light intensity low Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:56862.eng;2679"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "-",
+      "dimensions": "Light intensity low Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31377.eng;227"
+    }
+  ],
+  "communication_frequencies": []
+}

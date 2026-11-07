@@ -1,0 +1,78 @@
+{
+  "aerodrome": "Kirkwall Airport (EGPA)",
+  "icao_code": "EGPA",
+  "arp_coordinates": {
+    "latitude": "585729N",
+    "longitude": "0025402W"
+  },
+  "elevation": "58 FT",
+  "magnetic_variation": "0.42°W",
+  "runways": [
+    {
+      "designation": "09",
+      "true_bearing": "087.40°",
+      "dimensions": "1424 x 45"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "267.42°",
+      "dimensions": "1424 x 45"
+    },
+    {
+      "designation": "14",
+      "true_bearing": "140.39°",
+      "dimensions": "677 x 19"
+    },
+    {
+      "designation": "32",
+      "true_bearing": "320.39°",
+      "dimensions": "677 x 19"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "1424",
+      "dimensions": "1424"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "1365",
+      "dimensions": "1430"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "992",
+      "dimensions": "992"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "1076",
+      "dimensions": "1141"
+    },
+    {
+      "designation": "14",
+      "true_bearing": "558",
+      "dimensions": "558"
+    },
+    {
+      "designation": "32",
+      "true_bearing": "677",
+      "dimensions": "677"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "Five crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31272.eng;149 900 Light intensity high",
+      "dimensions": "Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31424.eng;282"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "Two crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31271.eng;148 450 Light intensity high",
+      "dimensions": "Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31423.eng;281"
+    },
+    {
+      "designation": "32",
+      "true_bearing": "-",
+      "dimensions": "Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:45875.eng;1239"
+    }
+  ],
+  "communication_frequencies": []
+}

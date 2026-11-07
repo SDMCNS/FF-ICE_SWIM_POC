@@ -1,0 +1,63 @@
+{
+  "aerodrome": "Nottingham City Airport (EGBN)",
+  "icao_code": "EGBN",
+  "arp_coordinates": {
+    "latitude": "525512N",
+    "longitude": "0010445W"
+  },
+  "elevation": "138 FT",
+  "magnetic_variation": "0.91°E",
+  "runways": [
+    {
+      "designation": "03",
+      "true_bearing": "028.70°",
+      "dimensions": "821 x 23"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "208.70°",
+      "dimensions": "821 x 23"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "088.10°",
+      "dimensions": "1050 x 30"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "268.10°",
+      "dimensions": "1050 x 30"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "989",
+      "dimensions": "1091"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "970",
+      "dimensions": "1070"
+    },
+    {
+      "designation": "03",
+      "true_bearing": "799",
+      "dimensions": "799"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "799",
+      "dimensions": "799"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "-",
+      "dimensions": "LI Green/Red wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31819.eng;808"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "-",
+      "dimensions": "LI Green/Red wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31820.eng;810"
+    }
+  ],
+  "communication_frequencies": []
+}

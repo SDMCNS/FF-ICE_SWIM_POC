@@ -1,0 +1,63 @@
+{
+  "aerodrome": "Wycombe Air Park (EGTB)",
+  "icao_code": "EGTB",
+  "arp_coordinates": {
+    "latitude": "513642N",
+    "longitude": "0004830W"
+  },
+  "elevation": "516 FT",
+  "magnetic_variation": "1.10°E",
+  "runways": [
+    {
+      "designation": "06",
+      "true_bearing": "062.42°",
+      "dimensions": "730 x 23"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "242.43°",
+      "dimensions": "730 x 23"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "062.44°",
+      "dimensions": "631 x 23"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "242.45°",
+      "dimensions": "631 x 23"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "730",
+      "dimensions": "730"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "730",
+      "dimensions": "730"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "631",
+      "dimensions": "631"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "631",
+      "dimensions": "631"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "-",
+      "dimensions": "Light intensity low"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "-",
+      "dimensions": "Light intensity low"
+    }
+  ],
+  "communication_frequencies": []
+}

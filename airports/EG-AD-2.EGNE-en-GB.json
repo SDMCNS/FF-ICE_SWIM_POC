@@ -1,0 +1,43 @@
+{
+  "aerodrome": "Retford Gamston Airport (EGNE)",
+  "icao_code": "EGNE",
+  "arp_coordinates": {
+    "latitude": "531650N",
+    "longitude": "0005705W"
+  },
+  "elevation": "87 FT",
+  "magnetic_variation": "0.93°E",
+  "runways": [
+    {
+      "designation": "02",
+      "true_bearing": "024.98°",
+      "dimensions": "1199 x 23"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "204.98°",
+      "dimensions": "1199 x 23"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "1199",
+      "dimensions": "1199"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "1199",
+      "dimensions": "1199"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "-",
+      "dimensions": "Green LED insetTRWY_DIRECTION_LGT_SYS;ANNOTATION:31534.eng;457"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "-",
+      "dimensions": "Green LED insetTRWY_DIRECTION_LGT_SYS;ANNOTATION:31535.eng;458"
+    }
+  ],
+  "communication_frequencies": []
+}

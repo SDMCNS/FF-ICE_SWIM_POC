@@ -1,0 +1,83 @@
+{
+  "aerodrome": "Isle of Man Airport (EGNS)",
+  "icao_code": "EGNS",
+  "arp_coordinates": {
+    "latitude": "540500N",
+    "longitude": "0043724W"
+  },
+  "elevation": "53 FT",
+  "magnetic_variation": "0.49°W",
+  "runways": [
+    {
+      "designation": "03",
+      "true_bearing": "027.96°",
+      "dimensions": "1199 x 46"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "207.97°",
+      "dimensions": "1199 x 46"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "077.94°",
+      "dimensions": "2110 x 46"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "257.96°",
+      "dimensions": "2110 x 46"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "1877",
+      "dimensions": "2815"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "1909",
+      "dimensions": "2057"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "1496",
+      "dimensions": "2243"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "1469",
+      "dimensions": "1617"
+    },
+    {
+      "designation": "03",
+      "true_bearing": "1199",
+      "dimensions": "1199"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "1105",
+      "dimensions": "1199"
+    },
+    {
+      "designation": "03",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity high With green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31536.eng;459"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "Centre-line with one crossbar with HI uni-directional component co-located with LI red omni-directional component.TRWY_DIRECTION_ALS;ANNOTATION:31187.eng;64 427 Light intensity high",
+      "dimensions": "Green Light intensity high With green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31537.eng;460"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "Coded centre-line with four crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31233.eng;110 700 Light intensity high",
+      "dimensions": "Green Light intensity high With green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31538.eng;463"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "Coded centre-line with three crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31236.eng;113 360 Light intensity high",
+      "dimensions": "Green Light intensity high With green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31539.eng;464"
+    }
+  ],
+  "communication_frequencies": []
+}

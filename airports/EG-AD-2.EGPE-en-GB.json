@@ -1,0 +1,73 @@
+{
+  "aerodrome": "Inverness Airport (EGPE)",
+  "icao_code": "EGPE",
+  "arp_coordinates": {
+    "latitude": "573233N",
+    "longitude": "0040251W"
+  },
+  "elevation": "31 FT",
+  "magnetic_variation": "0.72°W",
+  "runways": [
+    {
+      "designation": "05",
+      "true_bearing": "049.44°",
+      "dimensions": "1888 x 45"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "229.46°",
+      "dimensions": "1888 x 45"
+    },
+    {
+      "designation": "11",
+      "true_bearing": "109.59°",
+      "dimensions": "701 x 18"
+    },
+    {
+      "designation": "29",
+      "true_bearing": "289.60°",
+      "dimensions": "701 x 18"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "1888",
+      "dimensions": "2038"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "1822",
+      "dimensions": "1972"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "994",
+      "dimensions": "1144"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "849",
+      "dimensions": "999"
+    },
+    {
+      "designation": "11",
+      "true_bearing": "701",
+      "dimensions": "701"
+    },
+    {
+      "designation": "29",
+      "true_bearing": "701",
+      "dimensions": "701"
+    },
+    {
+      "designation": "05",
+      "true_bearing": "Five crossbars.LEDTRWY_DIRECTION_ALS;ANNOTATION:31261.eng;138 900 Light intensity high",
+      "dimensions": "Green with green wingbarsLEDTRWY_DIRECTION_LGT_SYS;ANNOTATION:31735.eng;693"
+    },
+    {
+      "designation": "23",
+      "true_bearing": "Five crossbars.LEDTRWY_DIRECTION_ALS;ANNOTATION:31260.eng;137 900 Light intensity high",
+      "dimensions": "Green with green wingbarsLEDTRWY_DIRECTION_LGT_SYS;ANNOTATION:31736.eng;694"
+    }
+  ],
+  "communication_frequencies": []
+}

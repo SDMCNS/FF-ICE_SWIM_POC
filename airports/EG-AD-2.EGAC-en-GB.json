@@ -1,0 +1,43 @@
+{
+  "aerodrome": "George Best Belfast City Airport (EGAC)",
+  "icao_code": "EGAC",
+  "arp_coordinates": {
+    "latitude": "543705N",
+    "longitude": "0055221W"
+  },
+  "elevation": "15 FT",
+  "magnetic_variation": "1.04°W",
+  "runways": [
+    {
+      "designation": "04",
+      "true_bearing": "034.76°",
+      "dimensions": "1829 x 45"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "214.77°",
+      "dimensions": "1829 x 45"
+    },
+    {
+      "designation": "04",
+      "true_bearing": "1829",
+      "dimensions": "2029"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "1767",
+      "dimensions": "1917"
+    },
+    {
+      "designation": "04",
+      "true_bearing": "One crossbar 289 M from threshold.TRWY_DIRECTION_ALS;ANNOTATION:31161.eng;38 413 Light intensity high",
+      "dimensions": "Green Light intensity high Uni-directionalWith elevated wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31602.eng;535"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "Coded with five crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31162.eng;39 914 Light intensity high",
+      "dimensions": "Green Light intensity high Uni-directionalWith flush wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31603.eng;536"
+    }
+  ],
+  "communication_frequencies": []
+}

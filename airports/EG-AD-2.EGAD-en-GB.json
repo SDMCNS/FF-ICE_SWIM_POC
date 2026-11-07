@@ -1,0 +1,93 @@
+{
+  "aerodrome": "Newtownards Airport (EGAD)",
+  "icao_code": "EGAD",
+  "arp_coordinates": {
+    "latitude": "543452N",
+    "longitude": "0054131W"
+  },
+  "elevation": "7 FT",
+  "magnetic_variation": "0.97°W",
+  "runways": [
+    {
+      "designation": "03",
+      "true_bearing": "030.97°",
+      "dimensions": "790 x 18"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "210.97°",
+      "dimensions": "790 x 18"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "077.00°",
+      "dimensions": "564 x 18"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "257.01°",
+      "dimensions": "564 x 18"
+    },
+    {
+      "designation": "15",
+      "true_bearing": "149.44°",
+      "dimensions": "640 x 18"
+    },
+    {
+      "designation": "33",
+      "true_bearing": "329.44°",
+      "dimensions": "640 x 18"
+    },
+    {
+      "designation": "03",
+      "true_bearing": "715",
+      "dimensions": "745"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "790",
+      "dimensions": "790"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "564",
+      "dimensions": "564"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "-",
+      "dimensions": "-"
+    },
+    {
+      "designation": "15",
+      "true_bearing": "563",
+      "dimensions": "593"
+    },
+    {
+      "designation": "33",
+      "true_bearing": "554",
+      "dimensions": "584"
+    },
+    {
+      "designation": "03",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "-",
+      "dimensions": "Light intensity low Green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31288.eng;93"
+    },
+    {
+      "designation": "15",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    },
+    {
+      "designation": "33",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    }
+  ],
+  "communication_frequencies": []
+}

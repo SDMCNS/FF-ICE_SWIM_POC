@@ -1,0 +1,38 @@
+{
+  "name": "ff-ice-swim-poc",
+  "version": "1.0.0",
+  "description": "A proof of concept, open-source FF-ICE flight planning and 4D trajectory engine for collaborative, conflict-aware airspace operations.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SDMCNS/FF-ICE_SWIM_POC.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "tsx tests/run-all-tests.ts",
+    "start": "tsx src/swim/server.ts"
+  },
+  "keywords": [
+    "ff-ice",
+    "icao",
+    "fixm",
+    "swim",
+    "aviation",
+    "flight-plan",
+    "trajectory"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "fast-xml-parser": "^4.5.0",
+    "uuid": "^11.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "@types/uuid": "^10.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
+

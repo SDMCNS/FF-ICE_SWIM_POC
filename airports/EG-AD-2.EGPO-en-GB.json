@@ -1,0 +1,93 @@
+{
+  "aerodrome": "Stornoway Airport (EGPO)",
+  "icao_code": "EGPO",
+  "arp_coordinates": {
+    "latitude": "581256N",
+    "longitude": "0061952W"
+  },
+  "elevation": "26 FT",
+  "magnetic_variation": "1.79°W",
+  "runways": [
+    {
+      "designation": "06",
+      "true_bearing": "059.87°",
+      "dimensions": "1000 x 23"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "239.88°",
+      "dimensions": "1000 x 23"
+    },
+    {
+      "designation": "18",
+      "true_bearing": "174.27°",
+      "dimensions": "2088 x 45"
+    },
+    {
+      "designation": "36",
+      "true_bearing": "354.28°",
+      "dimensions": "2088 x 45"
+    },
+    {
+      "designation": "18",
+      "true_bearing": "2088",
+      "dimensions": "2230"
+    },
+    {
+      "designation": "36",
+      "true_bearing": "2088",
+      "dimensions": "2229"
+    },
+    {
+      "designation": "18",
+      "true_bearing": "1829",
+      "dimensions": "1972"
+    },
+    {
+      "designation": "18",
+      "true_bearing": "923",
+      "dimensions": "1065"
+    },
+    {
+      "designation": "36",
+      "true_bearing": "1715",
+      "dimensions": "1856"
+    },
+    {
+      "designation": "36",
+      "true_bearing": "1189",
+      "dimensions": "1330"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "1000",
+      "dimensions": "1150"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "1000",
+      "dimensions": "1150"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low Portable electric green wingbars.Portable LI electric lights are available for use on Runway 06/24 as edge, threshold wingbar and stop end lighting. Minimum30 minutes prior notification required in order to deploy lighting.TRWY_DIRECTION_LGT_SYS;ANNOTATION:31874.eng;867"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low Portable electric green wingbars.Portable LI electric lights are available for use on Runway 06/24 as edge, threshold wingbar and stop end lighting. Minimum30 minutes prior notification required in order to deploy lighting.TRWY_DIRECTION_LGT_SYS;ANNOTATION:31873.eng;866"
+    },
+    {
+      "designation": "18",
+      "true_bearing": "Centre-line with one crossbar.LEDTRWY_DIRECTION_ALS;ANNOTATION:31276.eng;153 150 Light intensity high",
+      "dimensions": "Light intensity high Green wingbars.LEDTRWY_DIRECTION_LGT_SYS;ANNOTATION:31624.eng;565"
+    },
+    {
+      "designation": "36",
+      "true_bearing": "Centre-line with four crossbars.LEDTRWY_DIRECTION_ALS;ANNOTATION:31275.eng;152 750 Light intensity high",
+      "dimensions": "Light intensity high Green wingbars.LEDTRWY_DIRECTION_LGT_SYS;ANNOTATION:31613.eng;551"
+    }
+  ],
+  "communication_frequencies": []
+}

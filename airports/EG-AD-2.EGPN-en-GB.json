@@ -1,0 +1,43 @@
+{
+  "aerodrome": "Dundee Airport (EGPN)",
+  "icao_code": "EGPN",
+  "arp_coordinates": {
+    "latitude": "562709N",
+    "longitude": "0030133W"
+  },
+  "elevation": "17 FT",
+  "magnetic_variation": "0.17°W",
+  "runways": [
+    {
+      "designation": "09",
+      "true_bearing": "090.52°",
+      "dimensions": "1400 x 30"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "270.54°",
+      "dimensions": "1400 x 30"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "1319",
+      "dimensions": "1319"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "1319",
+      "dimensions": "1319"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "Uni-directional simple approach with two crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31257.eng;134 375 Light intensity high",
+      "dimensions": "Green Light intensity high Elevated with HI elevated green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31773.eng;743"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity high ElevatedTRWY_DIRECTION_LGT_SYS;ANNOTATION:31772.eng;742"
+    }
+  ],
+  "communication_frequencies": []
+}

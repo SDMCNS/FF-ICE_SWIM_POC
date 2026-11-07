@@ -1,0 +1,53 @@
+{
+  "aerodrome": "Swansea Airport (EGFH)",
+  "icao_code": "EGFH",
+  "arp_coordinates": {
+    "latitude": "513618N",
+    "longitude": "0040405W"
+  },
+  "elevation": "298 FT",
+  "magnetic_variation": "0.18°E",
+  "runways": [
+    {
+      "designation": "04",
+      "true_bearing": "036.31°",
+      "dimensions": "1351 x 30"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "216.32°",
+      "dimensions": "1351 x 30"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "096.32°",
+      "dimensions": "857 x 18"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "276.33°",
+      "dimensions": "857 x 18"
+    },
+    {
+      "designation": "04",
+      "true_bearing": "1199",
+      "dimensions": "1199"
+    },
+    {
+      "designation": "22",
+      "true_bearing": "1199",
+      "dimensions": "1199"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "799",
+      "dimensions": "799"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "799",
+      "dimensions": "799"
+    }
+  ],
+  "communication_frequencies": []
+}

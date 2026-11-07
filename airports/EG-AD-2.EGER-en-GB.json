@@ -1,0 +1,73 @@
+{
+  "aerodrome": "Stronsay Airport (EGER)",
+  "icao_code": "EGER",
+  "arp_coordinates": {
+    "latitude": "590919N",
+    "longitude": "0023829W"
+  },
+  "elevation": "39 FT",
+  "magnetic_variation": "0.33°W",
+  "runways": [
+    {
+      "designation": "02",
+      "true_bearing": "019.86°",
+      "dimensions": "515 x 18"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "199.86°",
+      "dimensions": "515 x 18"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "096.22°",
+      "dimensions": "331 x 30"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "276.22°",
+      "dimensions": "331 x 30"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "476",
+      "dimensions": "476"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "493",
+      "dimensions": "493"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "331",
+      "dimensions": "331"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "331",
+      "dimensions": "331"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    }
+  ],
+  "communication_frequencies": []
+}

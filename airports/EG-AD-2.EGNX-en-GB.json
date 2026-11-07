@@ -1,0 +1,73 @@
+{
+  "aerodrome": "East Midlands Airport (EGNX)",
+  "icao_code": "EGNX",
+  "arp_coordinates": {
+    "latitude": "524952N",
+    "longitude": "0011940W"
+  },
+  "elevation": "306 FT",
+  "magnetic_variation": "0.83°E",
+  "runways": [
+    {
+      "designation": "09",
+      "true_bearing": "088.26°",
+      "dimensions": "2894 x 45"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "268.29°",
+      "dimensions": "2894 x 45"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "2894",
+      "dimensions": "3205"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "2894",
+      "dimensions": "3353"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "2714",
+      "dimensions": "3024"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "2080",
+      "dimensions": "2391"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "1317",
+      "dimensions": "1627"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "2465",
+      "dimensions": "2924"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "1610",
+      "dimensions": "2069"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "837",
+      "dimensions": "1256"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "Coded centre-line with five crossbars 900 M HI. Centre-line with one crossbar 420 M LI.TRWY_DIRECTION_ALS;ANNOTATION:31220.eng;97 -",
+      "dimensions": "Green Light intensity high With green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31801.eng;780"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "Coded centre-line with five crossbars 900 M HI. Supplementry lighting inner 300 M. Centre-line with one crossbar 420 M LI.TRWY_DIRECTION_ALS;ANNOTATION:31221.eng;98 -",
+      "dimensions": "Green Light intensity high With green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31803.eng;782"
+    }
+  ],
+  "communication_frequencies": []
+}

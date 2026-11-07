@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SWIM FF-ICE Flight Planning & 4D Trajectory Console</title>
+  <link rel="stylesheet" href="/styles.css">
+  <!-- Leaflet CSS for Aeronautical Map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-left">
+      <div class="logo-mark">✈️</div>
+      <div>
+        <h1>FF-ICE Flight Planning Console</h1>
+        <p class="subtitle">ICAO Doc 9965 (Release 1) &bull; FIXM v4.2+ &bull; SWIM Yellow Profile</p>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="swim-badge"><span class="status-dot"></span> SWIM Service Online</div>
+      <button type="button" id="btnOpenWeatherModal" class="btn-sample" style="border-color: #38bdf8; color: #38bdf8;">🌤️ Weather & Runways</button>
+      <button type="button" id="btnOpenAbout" class="btn-sample">ℹ️ About</button>
+      <button type="button" id="btnOpenTrafficGen" class="btn-sample" style="border-color: var(--accent-cyan); color: var(--accent-cyan);">🎲 Generate Traffic</button>
+      <a href="/docs" target="_blank" class="api-docs-link">📖 OpenAPI Specs</a>
+      <div class="sample-routes">
+        <span>Quick Samples:</span>
+        <button id="btnSampleEGLL_EIDW" class="btn-sample">EGLL &rarr; EIDW</button>
+        <button id="btnSampleEGPH_EICK" class="btn-sample">EGPH &rarr; EICK</button>
+        <button id="btnSampleEINN_EGKK" class="btn-sample">EINN &rarr; EGKK</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-layout">
+    <!-- Left Column: Flight Plan Form & Dispatch Controls -->
+    <section class="dispatch-panel">
+      <div class="panel-header">
+        <h2>Flight Plan Parameters</h2>
+        <span class="step-tag">Step 1: Configure</span>
+      </div>
+
+      <!-- Identification -->
+      <div class="form-group-row">
+        <div class="form-field flex-1">
+          <div class="field-label-wrap">
+            <label for="callsign">Callsign</label>
+            <button type="button" class="info-btn" data-info="callsign" title="What is aircraft callsign?">?</button>
+          </div>
+          <input type="text" id="callsign" value="EIN157" maxlength="7" placeholder="e.g. EIN157" />
+        </div>
+        <div class="form-field flex-1">
+          <div class="field-label-wrap">
+            <label for="registration">Registration (Optional)</label>
+          </div>
+          <input type="text" id="registration" value="EI-DVM" placeholder="e.g. EI-DVM" />
+        </div>
+      </div>
+
+      <!-- EOBT & Departure Airport Slot Selection -->
+      <div class="form-group-row">
+        <div class="form-field flex-2">
+          <div class="field-label-wrap">
+            <label for="eobt">Off-Block (EOBT) & Runway Take-Off (ETOT)</label>
+            <button type="button" class="info-btn" data-info="eobt" title="What is EOBT vs ETOT?">?</button>
+          </div>
+          <input type="datetime-local" id="eobt" />
+        </div>
+        <div class="form-field flex-1 align-self-end">
+          <button type="button" id="btnNowPlus30" class="btn-secondary w-100">Now + 30m</button>
+        </div>
+      </div>
+
+      <!-- Derived Timing & Runway Mode Ribbon -->
+      <div id="runwayTimingRibbon" class="subtext" style="margin-top: -6px; margin-bottom: 10px; display: flex; gap: 12px; font-size: 0.74rem; color: var(--text-muted); align-items: center; flex-wrap: wrap;">
+        <span>🛫 <strong>Take-Off (ETOT):</strong> <span id="lblDerivedEtot" style="color: var(--accent-cyan); font-weight: 700;">--:-- UTC</span></span>
+        <span>🚪 <strong>Taxi-Out:</strong> <span id="lblTaxiOut" style="color: var(--text-main); font-weight: 600;">15 min</span></span>
+        <span id="lblDepRunwayMode" class="swim-badge" style="font-size: 0.65rem; border: 1px solid rgba(255,255,255,0.15);">PARALLEL_SEGREGATED</span>
+      </div>
+
+      <!-- Airport Runway Slot Picker Row -->
+      <div class="form-group-row" style="margin-top: -6px; margin-bottom: 12px;">
+        <div class="form-field flex-2">
+          <div class="field-label-wrap">
+            <label for="depSlotSelect">🛫 Available Departure Slot (5-min Bins)</label>
+            <span id="depSlotBadge" class="slot-badge available">Checking Slots...</span>
+          </div>
+          <select id="depSlotSelect">
+            <option value="">-- Select Available Departure Slot --</option>
+          </select>
+        </div>
+        <div class="form-field flex-1 align-self-end">
+          <button type="button" id="btnOpenSlotModal" class="btn-config-caps w-100" style="padding: 7px 8px; font-size: 0.75rem;" title="View interactive airport runway capacity and slots board">📅 Slot Board</button>
+        </div>
+      </div>
+
+      <!-- Airports Selection -->
+      <div class="form-section-title">
+        <span>Aerodromes (UK & Ireland)</span>
+        <button type="button" class="info-btn" data-info="airports" title="Aerodromes info">?</button>
+      </div>
+      <div class="form-group-row">
+        <div class="form-field flex-2">
+          <label for="depAirport">Departure Aerodrome</label>
+          <select id="depAirport">
+            <option value="">Loading aerodromes...</option>
+          </select>
+          <div id="depWeatherBadge" class="weather-badge">💨 Fetching live NOAA METAR...</div>
+        </div>
+        <div class="form-field flex-1">
+          <label for="depRunway">Departure Runway</label>
+          <select id="depRunway">
+            <option value="">Auto (Active Runway)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group-row">
+        <div class="form-field flex-2">
+          <label for="arrAirport">Arrival Aerodrome</label>
+          <select id="arrAirport">
+            <option value="">Loading aerodromes...</option>
+          </select>
+          <div id="arrWeatherBadge" class="weather-badge">💨 Fetching live NOAA METAR...</div>
+        </div>
+        <div class="form-field flex-1">
+          <label for="arrRunway">Arrival Runway</label>
+          <select id="arrRunway">
+            <option value="">Auto (Active Runway)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Arrival Slot Notice -->
+      <div id="arrSlotNotice" class="slot-notice-inline hidden">
+        <span>🛬 Estimated Arrival Slot: <strong id="arrSlotTime">--:-- UTC</strong> (<span id="arrSlotStatus">Available</span>)</span>
+      </div>
+
+      <!-- Aircraft & Equipment -->
+      <div class="form-section-title">
+        <span>Aircraft & Capabilities</span>
+        <button type="button" id="btnOpenCapsModal" class="btn-config-caps">⚙️ Configure Capabilities</button>
+      </div>
+      <div class="form-group-row">
+        <div class="form-field flex-1">
+          <div class="field-label-wrap">
+            <label for="aircraftType">Aircraft Type</label>
+            <button type="button" class="info-btn" data-info="aircraft" title="Aircraft performance">?</button>
+          </div>
+          <select id="aircraftType">
+            <option value="A320">A320 - Airbus A320-200/neo</option>
+            <option value="B738">B738 - Boeing 737-800/MAX</option>
+            <option value="A321">A321 - Airbus A321neo</option>
+            <option value="E190">E190 - Embraer E190</option>
+            <option value="AT76">AT76 - ATR 72-600</option>
+            <option value="DH8D">DH8D - Dash 8 Q400</option>
+            <option value="B77W">B77W - Boeing 777-300ER</option>
+            <option value="A359">A359 - Airbus A350-900</option>
+            <option value="C172">C172 - Cessna 172 Skyhawk</option>
+          </select>
+        </div>
+        <div class="form-field flex-1">
+          <div class="field-label-wrap">
+            <label for="equipment">Equipment String (ICAO/FF-ICE)</label>
+            <button type="button" class="info-btn" data-info="equipment" title="Equipment codes">?</button>
+          </div>
+          <input type="text" id="equipment" value="SDFGIRW/LB1" />
+        </div>
+      </div>
+
+      <div id="aircraftPerfBadge" class="aircraft-perf-badge">
+        <span><strong>Ceiling:</strong> <span id="perfCeiling">FL390</span></span>
+        <span><strong>Climb:</strong> <span id="perfClimb">2200 fpm</span></span>
+        <span><strong>Cruise TAS:</strong> <span id="perfTas">450 kts</span></span>
+        <span><strong>Descent:</strong> <span id="perfDescent">2000 fpm</span></span>
+      </div>
+
+      <!-- Altitude & Sanity Advisory -->
+      <div class="form-section-title">
+        <span>En-Route Flight Level & Deconfliction</span>
+        <button type="button" class="info-btn" data-info="flightlevel" title="Flight level & semicircular rule">?</button>
+      </div>
+      <div class="form-group-row">
+        <div class="form-field flex-1">
+          <div class="field-label-wrap">
+            <label for="cruiseFl">Requested Cruise Level</label>
+            <button type="button" id="btnAutoSuggestFl" class="btn-fl-suggest" title="Suggest optimal flight level based on aircraft ceiling and route direction">💡 Optimal: <span id="suggestedFlBadge">FL280</span></button>
+          </div>
+          <div class="fl-input-wrap">
+            <span class="fl-prefix">FL</span>
+            <input type="number" id="cruiseFl" value="280" min="30" max="430" step="10" />
+          </div>
+        </div>
+        <div class="form-field flex-1 align-self-end">
+          <button type="button" id="btnCalculate" class="btn-primary w-100">⚡ 4D Trajectory</button>
+        </div>
+        <div class="form-field flex-1 align-self-end">
+          <button type="button" id="btnTestConflicts" class="btn-secondary w-100" style="border-color: var(--accent-amber); color: #fde68a;">🔍 Check Conflicts</button>
+        </div>
+      </div>
+
+      <!-- Strict Conflict Enforcement Toggle -->
+      <label class="strict-toggle-wrap">
+        <input type="checkbox" id="chkStrictDeconfliction" />
+        <span><strong>Strict SWIM Mode:</strong> Reject plan submission if 4D conflict is detected</span>
+      </label>
+
+      <!-- Sanity Check Advisory Callout Banner -->
+      <div id="sanityBanner" class="sanity-banner hidden">
+        <button type="button" class="banner-dismiss-btn" data-dismiss="sanityBanner" onclick="document.getElementById('sanityBanner').classList.add('hidden')" title="Dismiss Advisory">&times;</button>
+        <div class="sanity-icon" id="sanityIcon">⚠️</div>
+        <div class="sanity-content">
+          <div class="sanity-title" id="sanityTitle">Altitude & Route Sanity Advisory</div>
+          <div class="sanity-messages" id="sanityMessages"></div>
+          <button type="button" id="btnApplyAdvisory" class="btn-advisory hidden">Apply Recommended Flight Level</button>
+        </div>
+      </div>
+
+      <!-- 4D Strategic Deconfliction Banner -->
+      <div id="deconflictionBanner" class="deconfliction-banner hidden">
+        <button type="button" class="banner-dismiss-btn" data-dismiss="deconflictionBanner" onclick="document.getElementById('deconflictionBanner').classList.add('hidden')" title="Dismiss Deconfliction">&times;</button>
+        <div class="deconfliction-icon" id="deconflictionIcon">🛡️</div>
+        <div class="deconfliction-content">
+          <div class="deconfliction-header-row">
+            <div class="deconfliction-title" id="deconflictionTitle">4D Traffic Deconfliction</div>
+            <button type="button" id="btnOpenConflictsMap" class="btn-conflicts-map hidden">🗺️ View All Conflicting Paths on Map</button>
+          </div>
+          <div class="deconfliction-messages" id="deconflictionMessages">No conflicting traffic detected.</div>
+          <!-- Global Comprehensive Solutions Container -->
+          <div id="comprehensiveSolutionsContainer" class="comprehensive-solutions-container"></div>
+          <!-- Tactical Individual Conflict Cards -->
+          <div id="deconflictionResolutions" class="deconfliction-resolutions"></div>
+        </div>
+      </div>
+
+      <!-- Waypoints / Route Selection -->
+      <div class="form-section-title">
+        <span>Route Waypoints (Sequenced)</span>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          <button type="button" id="btnOpenWaypointMap" class="btn-config-caps">🗺️ Select on Map</button>
+          <button type="button" id="btnClearWaypoints" class="btn-link">Clear</button>
+        </div>
+      </div>
+
+      <div class="form-group-row">
+        <div class="form-field flex-2">
+          <input type="text" id="waypointSearch" placeholder="Search waypoint (e.g. LIPGO, SUROX, OLAPO)..." />
+        </div>
+        <div class="form-field flex-1">
+          <button type="button" id="btnAddWaypoint" class="btn-secondary w-100">+ Add Waypoint</button>
+        </div>
+      </div>
+
+      <!-- Airway Preset Selection -->
+      <div class="airway-presets">
+        <span class="subtext">Insert ATS Airway:</span>
+        <button type="button" class="btn-airway" data-route="L18">L18 (SUROX-DUB-LIPGO)</button>
+        <button type="button" class="btn-airway" data-route="L149">L149 (OLAPO-DUB-PESIT)</button>
+        <button type="button" class="btn-airway" data-route="L975">L975 (SHA-RIKUL)</button>
+      </div>
+
+      <div id="waypointChips" class="waypoint-chips-container">
+        <!-- Waypoint chips injected here -->
+      </div>
+
+      <!-- Dispatch Actions -->
+      <div class="dispatch-actions">
+        <button type="button" id="btnFilePlan" class="btn-success">📤 File FF-ICE Plan (SWIM)</button>
+        <button type="button" id="btnExportXml" class="btn-secondary">💾 FIXM XML</button>
+        <button type="button" id="btnExportJson" class="btn-secondary">💾 FIXM JSON</button>
+      </div>
+    </section>
+
+    <!-- Right Column: Interactive Map, Vertical Situation Display & FIXM Inspector -->
+    <section class="display-panel">
+      <div class="display-tabs">
+        <button class="tab-btn active" data-tab="tabMap">🗺️ 4D Airspace Map</button>
+        <button class="tab-btn" data-tab="tabProfile">📈 Vertical Situation Display (VSD)</button>
+        <button class="tab-btn" data-tab="tabPoints">📋 4D Waypoint Table</button>
+        <button class="tab-btn" data-tab="tabFixm">📄 FIXM Inspector</button>
+        <button class="tab-btn" data-tab="tabFiled">🗂️ Filed Plans (<span id="filedCount">0</span>)</button>
+      </div>
+
+      <!-- Tab 1: Map -->
+      <div id="tabMap" class="tab-content active">
+        <div id="airspaceMap" class="map-container"></div>
+        <div class="map-legend">
+          <span class="legend-item"><span class="legend-color fir-london"></span> London FIR (EGTT)</span>
+          <span class="legend-item"><span class="legend-color fir-scottish"></span> Scottish FIR (EGPX)</span>
+          <span class="legend-item"><span class="legend-color fir-shannon"></span> Shannon FIR (EISN)</span>
+          <span class="legend-item"><span class="legend-color flightpath"></span> 4D Flightpath</span>
+          <span class="legend-item"><span class="legend-marker marker-toc"></span> TOC / TOD</span>
+          <span class="legend-item"><span class="legend-marker marker-fir"></span> FIR Crossing</span>
+        </div>
+      </div>
+
+      <!-- Tab 2: Vertical Profile Display (VSD) -->
+      <div id="tabProfile" class="tab-content">
+        <div class="profile-header">
+          <h3>Vertical Situation Display (Climb, Cruise, Descent & Airspace Strata)</h3>
+          <span id="profileSummary" class="profile-summary">No trajectory calculated</span>
+        </div>
+        <div class="vsd-canvas-container">
+          <canvas id="vsdCanvas" width="900" height="360"></canvas>
+        </div>
+      </div>
+
+      <!-- Tab 3: 4D Waypoint Table -->
+      <div id="tabPoints" class="tab-content">
+        <div class="table-container">
+          <table class="points-table">
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Identifier</th>
+                <th>Flight Level</th>
+                <th>Altitude</th>
+                <th>Distance</th>
+                <th>Ground Speed</th>
+                <th>ETA (UTC)</th>
+                <th>Airspace</th>
+              </tr>
+            </thead>
+            <tbody id="pointsTableBody">
+              <tr><td colspan="8" class="text-center">Click "Calculate 4D Trajectory" to generate waypoint sequence.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab 4: FIXM Inspector -->
+      <div id="tabFixm" class="tab-content">
+        <div class="fixm-inspector-controls">
+          <div class="btn-group">
+            <button id="btnViewXml" class="btn-tab-sub active">FIXM XML</button>
+            <button id="btnViewJson" class="btn-tab-sub">FIXM JSON</button>
+          </div>
+          <button id="btnCopyFixm" class="btn-secondary">📋 Copy</button>
+        </div>
+        <pre id="fixmOutput" class="fixm-code-view">&lt;!-- FIXM data will appear here after calculation or filing --&gt;</pre>
+      </div>
+
+      <!-- Tab 5: Filed Plans -->
+      <div id="tabFiled" class="tab-content">
+        <div class="table-container">
+          <table class="points-table">
+            <thead>
+              <tr>
+                <th>GUFI</th>
+                <th>Status</th>
+                <th>Callsign</th>
+                <th>Route</th>
+                <th>EOBT</th>
+                <th>Cruise FL</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="filedTableBody">
+              <tr><td colspan="7" class="text-center">No flight plans filed yet.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal 1: About FF-ICE & SWIM -->
+  <div id="aboutModal" class="modal-backdrop hidden">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3>ℹ️ About FF-ICE & SWIM</h3>
+        <button type="button" class="modal-close" data-close="aboutModal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="margin-bottom: 12px;"><strong>FF-ICE (Flight and Flow Information for a Collaborative Environment)</strong> is the global ICAO standard (Doc 9965) replacing legacy ICAO 4444 paper/AFTN flight plans with modern, machine-consumable 4D trajectories.</p>
+
+        <h4 style="color: var(--accent-blue); margin-top: 14px; margin-bottom: 6px;">Key Pillars:</h4>
+        <ul style="padding-left: 20px; margin-bottom: 12px;">
+          <li><strong>4D Trajectory Core:</strong> Trajectories are represented as four-dimensional coordinates $(Latitude, Longitude, Altitude, Timestamp)$, enabling precise Top-of-Climb (TOC), Top-of-Descent (TOD), and 3D FIR boundary crossings.</li>
+          <li><strong>FIXM Standard:</strong> Uses Flight Information Exchange Model (FIXM v4.2+) XML and JSON payloads for semantic consistency.</li>
+          <li><strong>GUFI:</strong> Every flight is assigned an immutable RFC 4122 UUID v4 Globally Unique Flight Identifier.</li>
+          <li><strong>SWIM Compliant:</strong> Implements System-Wide Information Management (Doc 10039) Yellow Profile REST interfaces with OpenAPI 3.0.</li>
+          <li><strong>Strategic Deconfliction:</strong> Automated 4D separation check against active traffic (enforcing 5 NM horizontal, 1,000 ft vertical, and 5-minute temporal separation).</li>
+        </ul>
+
+        <h4 style="color: var(--accent-cyan); margin-top: 14px; margin-bottom: 6px;">Geographical Scope:</h4>
+        <p>UK & Irish Airspace (London FIR `EGTT`, Scottish FIR `EGPX`, Shannon FIR `EISN`, Shanwick Oceanic `EGGX`) utilizing official UK & Irish Aeronautical Information Publications (AIP).</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-primary" data-close="aboutModal">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Aircraft Capabilities Configurator -->
+  <div id="capabilitiesModal" class="modal-backdrop hidden">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3>⚙️ Aircraft Equipment & Capabilities Configurator</h3>
+        <button type="button" class="modal-close" data-close="capabilitiesModal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="color: var(--text-muted); margin-bottom: 14px;">Select the avionics, navigation, communication, and surveillance systems fitted to this aircraft. Codes are mapped to standard ICAO Item 10/18 and FIXM capabilities.</p>
+
+        <!-- Navigation Section -->
+        <div class="capability-section">
+          <div class="capability-section-title">Navigation & PBN Capabilities (Item 10a / Item 18 PBN)</div>
+          <div class="capability-grid">
+            <label class="capability-card">
+              <input type="checkbox" id="cap_rnav1" checked data-code="R" />
+              <div class="capability-info">
+                <span class="capability-title">RNAV 1 <span class="code-pill">PBN/D1-D2</span></span>
+                <span class="capability-desc">1 NM accuracy required for terminal SIDs/STARs and RNAV departures/arrivals.</span>
+              </div>
+            </label>
+            <label class="capability-card">
+              <input type="checkbox" id="cap_rnav5" checked data-code="R" />
+              <div class="capability-info">
+                <span class="capability-title">RNAV 5 (B-RNAV) <span class="code-pill">PBN/B2</span></span>
+                <span class="capability-desc">5 NM en-route accuracy. Mandatory in all European airspace above FL95.</span>
+              </div>
+            </label>
+            <label class="capability-card">
+              <input type="checkbox" id="cap_rnp4" checked data-code="R" />
+              <div class="capability-info">
+                <span class="capability-title">RNP 4 <span class="code-pill">PBN/L1</span></span>
+                <span class="capability-desc">4 NM navigation performance required for oceanic Shanwick (EGGX) tracks.</span>
+              </div>
+            </label>
+            <label class="capability-card">
+              <input type="checkbox" id="cap_ils" checked data-code="I" />
+              <div class="capability-info">
+                <span class="capability-title">ILS Precision Approach <span class="code-pill">I</span></span>
+                <span class="capability-desc">Instrument Landing System receiver for Cat I/II/III precision approaches.</span>
+              </div>
+            </label>
+            <label class="capability-card">
+              <input type="checkbox" id="cap_vor" checked data-code="O" />
+              <div class="capability-info">
+                <span class="capability-title">VOR / DME <span class="code-pill">O/D</span></span>
+                <span class="capability-desc">VHF Omnidirectional Range and Distance Measuring Equipment.</span>
+              </div>
+            </label>
+            <label class="capability-card">
+              <input type="checkbox" id="cap_gnss" checked data-code="G" />
+              <div class="capability-info">
+                <span class="capability-title">GNSS / GPS <span class="code-pill">G</span></span>
+                <span class="capability-desc">Global Navigation Satellite System receiver (GPS/Galileo).</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Communication Section -->
+        <div class="capability-section">
+          <div class="capability-section-title">Communication Capabilities (Item 10a / Item 18 COM)</div>
+          <div class="capability-grid">
+            <label class="capability-card">
+              <input type="checkbox" id="cap_833" checked data-code="Y" />
+              <div class="capability-info">
+                <span class="capability-title">VHF 8.33 kHz Spacing <span class="code-pill">Y</span></span>
+                <span class="capability-desc">Mandatory for all flights in UK and European airspace above FL195 and IFR.</span>
+              </div>
+            </label>
+            <label class="capability-card">
+              <input type="checkbox" id="cap_cpdlc" checked data-code="J1" />
+              <div class="capability-info">
+                <span class="capability-title">CPDLC (ATN-B1) <span class="code-pill">J1</span></span>
+                <span class="capability-desc">Controller-Pilot Data Link Communications via Aeronautical Telecommunications Network.</span>
+              </div>
+            </label>
+            <label class="capability-card">
+              <input type="checkbox" id="cap_hf" data-code="H" />
+              <div class="capability-info">
+                <span class="capability-title">HF RTF <span class="code-pill">H</span></span>
+                <span class="capability-desc">High Frequency Radio for oceanic flights out of VHF range.</span>
+              </div>
+            </label>
+            <label class="capability-card">
+              <input type="checkbox" id="cap_satcom" data-code="M1" />
+              <div class="capability-info">
+                <span class="capability-title">Satellite Voice / Data <span class="code-pill">M1</span></span>
+                <span class="capability-desc">Inmarsat/Iridium SATCOM for oceanic long-range operations.</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Surveillance Section -->
+        <div class="capability-section">
+          <div class="capability-section-title">Surveillance & Transponder (Item 10b / Item 18 SUR)</div>
+          <div class="capability-grid">
+            <label class="capability-card">
+              <input type="checkbox" id="cap_modes" checked data-code="L" />
+              <div class="capability-info">
+                <span class="capability-title">Mode S (EHS) <span class="code-pill">L</span></span>
+                <span class="capability-desc">Enhanced Surveillance with Downlinked Aircraft Parameters (DAP: TAS, heading, roll).</span>
+              </div>
+            </label>
+            <label class="capability-card">
+              <input type="checkbox" id="cap_adsb_out" checked data-code="B1" />
+              <div class="capability-info">
+                <span class="capability-title">ADS-B Out (1090 MHz) <span class="code-pill">B1</span></span>
+                <span class="capability-desc">Automatic Dependent Surveillance-Broadcast 1090 MHz Extended Squitter Out.</span>
+              </div>
+            </label>
+            <label class="capability-card">
+              <input type="checkbox" id="cap_adsb_in" data-code="B2" />
+              <div class="capability-info">
+                <span class="capability-title">ADS-B In (1090 MHz) <span class="code-pill">B2</span></span>
+                <span class="capability-desc">Cockpit display of traffic information (CDTI) received via 1090 MHz.</span>
+              </div>
+            </label>
+            <label class="capability-card">
+              <input type="checkbox" id="cap_tcas" checked data-code="W" />
+              <div class="capability-info">
+                <span class="capability-title">TCAS II v7.1 <span class="code-pill">W</span></span>
+                <span class="capability-desc">Traffic Alert and Collision Avoidance System version 7.1 mandatory in EU/UK.</span>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-secondary" data-close="capabilitiesModal">Cancel</button>
+        <button type="button" id="btnApplyCapabilities" class="btn-primary">Apply Capabilities to Flight Plan</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Generic Explainer Info Modal -->
+  <div id="infoModal" class="modal-backdrop hidden">
+    <div class="modal-dialog" style="width: 500px;">
+      <div class="modal-header">
+        <h3 id="infoModalTitle">Parameter Explainer</h3>
+        <button type="button" class="modal-close" data-close="infoModal">&times;</button>
+      </div>
+      <div class="modal-body" id="infoModalBody">
+        <!-- Content dynamically injected -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-primary" data-close="infoModal">Got It</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Traffic Generator Modal -->
+  <div id="trafficModal" class="modal-backdrop hidden">
+    <div class="modal-dialog" style="width: 520px;">
+      <div class="modal-header">
+        <h3>🎲 Generate Realistic UK & Irish Air Traffic</h3>
+        <button type="button" class="modal-close" data-close="trafficModal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="margin-bottom: 14px; color: var(--text-muted);">Populate the SQLite database with realistic commercial airline flights connecting major UK and Irish airports over a specified time window.</p>
+        <div class="form-group-row" style="margin-bottom: 12px;">
+          <div class="form-field flex-1">
+            <label for="trafficCount">Number of Flights (X)</label>
+            <input type="number" id="trafficCount" value="20" min="1" max="100" />
+          </div>
+          <div class="form-field flex-1">
+            <label for="trafficHours">Time Window (Y Hours)</label>
+            <input type="number" id="trafficHours" value="6" min="1" max="24" />
+          </div>
+        </div>
+        <p style="font-size: 0.75rem; color: var(--accent-cyan);">
+          &bull; Uses major commercial airports: EGLL, EGKK, EGSS, EGPH, EGPF, EGCC, EGBB, EGAA, EIDW, EICK, EINN.<br>
+          &bull; Real airline callsigns: British Airways (BAW), Aer Lingus (EIN), Ryanair (RYR), easyJet (EZY).<br>
+          &bull; Validates semicircular cruising levels & computes full 4D trajectories with GUFIs.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-secondary" data-close="trafficModal">Cancel</button>
+        <button type="button" id="btnExecuteTrafficGen" class="btn-primary">Generate & Populate DB</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: Map Waypoint Selector Modal -->
+  <div id="waypointMapModal" class="modal-backdrop hidden">
+    <div class="modal-dialog" style="width: 980px; max-width: 95vw;">
+      <div class="modal-header">
+        <h3>🗺️ Airspace Waypoint Map Selector & Sequential Route Builder</h3>
+        <button type="button" class="modal-close" data-close="waypointMapModal">&times;</button>
+      </div>
+      <div class="modal-body" style="padding: 14px 20px;">
+        <!-- Active Route Sequence -->
+        <div class="modal-route-bar">
+          <span>Active Sequence:</span>
+          <div id="mapModalChips" class="waypoint-chips-inline">
+            <!-- Injected dynamically -->
+          </div>
+          <button type="button" id="btnAutoFillRoute" class="btn-autofill" style="margin-left: auto;">✨ Auto-Fill Route / Airway Gaps</button>
+        </div>
+
+        <!-- Auto-fill notice banner -->
+        <div id="autofillNotice" class="autofill-notice hidden"></div>
+
+        <!-- Filter / Search Row -->
+        <div class="map-modal-search-row">
+          <input type="text" id="mapWaypointFilter" placeholder="Filter waypoints by name (e.g. LIPGO, SUROX, OLAPO)..." />
+          <span id="mapWaypointCount" class="subtext">Plotting UK & Irish Aeronautical Fixes...</span>
+        </div>
+
+        <!-- Map Container -->
+        <div id="waypointSelectorMap" class="waypoint-selector-map"></div>
+        <p style="font-size: 0.72rem; color: var(--text-muted); margin-top: 8px;">
+          &bull; <strong>Click multiple waypoints on the map</strong> to build your sequential routing (labeled #1, #2, #3...).<br>
+          &bull; <strong>Auto-Fill Route / Airway Gaps:</strong> Automatically identifies connecting ATS airways and fills intermediate corridor fixes.<br>
+          &bull; Depicts initial 5.0 NM straight departure corridor and 17.0 NM ILS localizer intercept on active runways in real time.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="btnClearMapRoute" class="btn-secondary" style="margin-right: auto; color: var(--accent-red);">Clear Sequence</button>
+        <button type="button" class="btn-secondary" data-close="waypointMapModal">Close</button>
+        <button type="button" id="btnApplyMapRoute" class="btn-primary">Apply Route to Flight Plan</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6: Conflicting Paths Map Modal -->
+  <div id="conflictsMapModal" class="modal-backdrop hidden">
+    <div class="modal-dialog" style="width: 1040px; max-width: 96vw;">
+      <div class="modal-header">
+        <div style="display: flex; flex-direction: column;">
+          <h3>🗺️ 4D Strategic Airspace Conflict Visualizer</h3>
+          <span style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">
+            Simultaneous 4D trajectories of candidate flight and all conflicting traffic with Closest Point of Approach (CPA) loss of separation fixes.
+          </span>
+        </div>
+        <button type="button" class="modal-close" data-close="conflictsMapModal">&times;</button>
+      </div>
+      <div class="modal-body" style="padding: 12px 18px;">
+        <!-- Visual Legend Bar -->
+        <div class="conflicts-map-legend" id="conflictsMapLegend">
+          <div class="legend-chip legend-candidate">
+            <span class="legend-color-dot" style="background: #f59e0b;"></span>
+            <span id="legendCandidateLabel">Candidate: EIN157 (FL280)</span>
+          </div>
+          <div class="legend-traffic-group" id="legendTrafficGroup">
+            <!-- Dynamically populated per conflicting flight -->
+          </div>
+          <div class="legend-chip legend-cpa">
+            <span class="legend-color-dot" style="background: #ef4444; box-shadow: 0 0 6px #ef4444;"></span>
+            <span>⚠️ CPA Separation Loss Point</span>
+          </div>
+        </div>
+
+        <!-- Leaflet Map Container -->
+        <div id="conflictsMap" class="conflicts-map-container"></div>
+
+        <!-- Conflicting Flights / CPA Quick-Focus List -->
+        <div class="conflicts-focus-bar" id="conflictsFocusBar">
+          <!-- Dynamically populated cards with 'Zoom to CPA' button -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-secondary" data-close="conflictsMapModal">Close Visualizer</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 7: Aerodrome Weather & Active Runways Info Modal -->
+  <div id="weatherInfoModal" class="modal-backdrop hidden">
+    <div class="modal-dialog" style="width: 880px; max-width: 95vw;">
+      <div class="modal-header">
+        <div style="display: flex; flex-direction: column;">
+          <h3>🌤️ Aerodrome Weather & Operational Runway Inspector</h3>
+          <span style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">
+            Live NOAA METAR, TAF, and dynamic runway headwind/crosswind analysis for UK & Irish Airspace.
+          </span>
+        </div>
+        <button type="button" class="modal-close" data-close="weatherInfoModal">&times;</button>
+      </div>
+      <div class="modal-body" style="padding: 14px 20px;">
+        <!-- Quick Airport Badges & Search Row -->
+        <div class="weather-picker-row">
+          <div class="weather-quick-airports">
+            <span style="font-size: 0.72rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase;">Quick Aerodromes:</span>
+            <button type="button" class="weather-quick-btn" data-icao="EGLL">EGLL (Heathrow)</button>
+            <button type="button" class="weather-quick-btn" data-icao="EGKK">EGKK (Gatwick)</button>
+            <button type="button" class="weather-quick-btn" data-icao="EGSS">EGSS (Stansted)</button>
+            <button type="button" class="weather-quick-btn" data-icao="EGCC">EGCC (Manchester)</button>
+            <button type="button" class="weather-quick-btn" data-icao="EGPH">EGPH (Edinburgh)</button>
+            <button type="button" class="weather-quick-btn" data-icao="EGPF">EGPF (Glasgow)</button>
+            <button type="button" class="weather-quick-btn" data-icao="EGAA">EGAA (Belfast)</button>
+            <button type="button" class="weather-quick-btn" data-icao="EIDW">EIDW (Dublin)</button>
+            <button type="button" class="weather-quick-btn" data-icao="EICK">EICK (Cork)</button>
+            <button type="button" class="weather-quick-btn" data-icao="EINN">EINN (Shannon)</button>
+          </div>
+          <div class="weather-search-box">
+            <input type="text" id="weatherIcaoInput" placeholder="ICAO (e.g. EGGD, EGBB)" maxlength="4" />
+            <button type="button" id="btnFetchWeatherModal" class="btn-primary" style="padding: 5px 12px; font-size: 0.8rem;">Inspect</button>
+          </div>
+        </div>
+
+        <!-- Weather Status Card / Content Container -->
+        <div id="weatherModalContent" class="weather-modal-content">
+          <div class="weather-loading-msg" id="weatherLoadingMsg">Select an aerodrome to view live weather and runway analysis.</div>
+        </div>
+      </div>
+      <div class="modal-footer" id="weatherModalFooter">
+        <button type="button" id="btnSetAsDeparture" class="btn-secondary" style="margin-right: auto; color: var(--accent-cyan); display: none;">🛫 Set as Departure Aerodrome</button>
+        <button type="button" id="btnSetAsArrival" class="btn-secondary" style="margin-right: 8px; color: var(--accent-green); display: none;">🛬 Set as Arrival Aerodrome</button>
+        <button type="button" class="btn-primary" data-close="weatherInfoModal">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 8: Airport Runway Slot Management & Capacity Board Modal -->
+  <div id="slotBoardModal" class="modal-backdrop hidden">
+    <div class="modal-dialog" style="width: 980px; max-width: 96vw;">
+      <div class="modal-header">
+        <div style="display: flex; flex-direction: column;">
+          <h3>🛫 Airport Runway Slot Management & Capacity Board</h3>
+          <span style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">
+            Live 5-minute runway slot allocation, wake turbulence intervals, and ground occupancy deconfliction.
+          </span>
+        </div>
+        <button type="button" class="modal-close" data-close="slotBoardModal">&times;</button>
+      </div>
+      <div class="modal-body" style="padding: 14px 20px;">
+        <!-- Controls: Airport picker, Type, Date -->
+        <div class="slot-modal-controls">
+          <div class="slot-control-item">
+            <label for="slotModalAirport">Aerodrome:</label>
+            <select id="slotModalAirport">
+              <option value="EGLL">EGLL - London Heathrow</option>
+              <option value="EGKK">EGKK - London Gatwick</option>
+              <option value="EGSS">EGSS - London Stansted</option>
+              <option value="EGCC">EGCC - Manchester</option>
+              <option value="EGPH">EGPH - Edinburgh</option>
+              <option value="EGPF">EGPF - Glasgow</option>
+              <option value="EGAA">EGAA - Belfast</option>
+              <option value="EIDW" selected>EIDW - Dublin</option>
+              <option value="EICK">EICK - Cork</option>
+              <option value="EINN">EINN - Shannon</option>
+            </select>
+          </div>
+          <div class="slot-control-item">
+            <label for="slotModalType">Operation:</label>
+            <select id="slotModalType">
+              <option value="DEPARTURE" selected>Departures (Runway Slots)</option>
+              <option value="ARRIVAL">Arrivals (Runway Slots)</option>
+            </select>
+          </div>
+          <div class="slot-control-item">
+            <label for="slotModalDate">Date:</label>
+            <input type="date" id="slotModalDate" />
+          </div>
+          <div class="slot-control-item align-self-end">
+            <button type="button" id="btnRefreshSlotModal" class="btn-primary" style="padding: 6px 14px; font-size: 0.8rem;">Refresh Slots</button>
+          </div>
+        </div>
+
+        <!-- Runway Operational Mode Banner (ICAO Doc 9643 SOIR vs Mixed Mode) -->
+        <div id="slotAirportModeNotice" style="margin-bottom: 10px;"></div>
+
+        <!-- Legend and summary stats -->
+        <div class="slot-stats-row" id="slotStatsRow">
+          <span class="slot-stat-chip"><strong id="statTotalSlots">0</strong> Total Slots</span>
+          <span class="slot-stat-chip available"><strong id="statAvailableSlots">0</strong> Available</span>
+          <span class="slot-stat-chip occupied"><strong id="statOccupiedSlots">0</strong> Occupied</span>
+          <span style="font-size: 0.72rem; color: var(--text-muted); margin-left: auto;">
+            Click any green slot to allocate as your departure/arrival slot.
+          </span>
+        </div>
+
+        <!-- Slot Grid Container -->
+        <div id="slotGridContainer" class="slot-grid-container">
+          <div class="subtext text-center" style="padding: 30px;">Loading airport runway slots...</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-secondary" data-close="slotBoardModal">Close Board</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
+

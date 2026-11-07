@@ -1,0 +1,93 @@
+{
+  "aerodrome": "Perth/Scone Airport (EGPT)",
+  "icao_code": "EGPT",
+  "arp_coordinates": {
+    "latitude": "562628N",
+    "longitude": "0032226W"
+  },
+  "elevation": "395 FT",
+  "magnetic_variation": "0.30°W",
+  "runways": [
+    {
+      "designation": "03",
+      "true_bearing": "028.34°",
+      "dimensions": "853 x 27"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "208.34°",
+      "dimensions": "853 x 27"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "088.29°",
+      "dimensions": "609 x 22"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "268.29°",
+      "dimensions": "609 x 22"
+    },
+    {
+      "designation": "15",
+      "true_bearing": "149.48°",
+      "dimensions": "622 x 36"
+    },
+    {
+      "designation": "33",
+      "true_bearing": "329.49°",
+      "dimensions": "622 x 36"
+    },
+    {
+      "designation": "03",
+      "true_bearing": "853",
+      "dimensions": "853"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "853",
+      "dimensions": "853"
+    },
+    {
+      "designation": "15",
+      "true_bearing": "622",
+      "dimensions": "622"
+    },
+    {
+      "designation": "33",
+      "true_bearing": "622",
+      "dimensions": "622"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "609",
+      "dimensions": "609"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "466",
+      "dimensions": "609"
+    },
+    {
+      "designation": "03",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    },
+    {
+      "designation": "09",
+      "true_bearing": "-",
+      "dimensions": "-"
+    },
+    {
+      "designation": "27",
+      "true_bearing": "-",
+      "dimensions": "-"
+    }
+  ],
+  "communication_frequencies": []
+}

@@ -1,0 +1,93 @@
+{
+  "aerodrome": "Manchester Barton Aerodrome (EGCB)",
+  "icao_code": "EGCB",
+  "arp_coordinates": {
+    "latitude": "532818N",
+    "longitude": "0022323W"
+  },
+  "elevation": "73 FT",
+  "magnetic_variation": "0.40°E",
+  "runways": [
+    {
+      "designation": "02",
+      "true_bearing": "014.61°",
+      "dimensions": "518 x 32"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "194.61°",
+      "dimensions": "518 x 32"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "082.81°",
+      "dimensions": "641 x 30"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "262.82°",
+      "dimensions": "641 x 30"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "082.83°",
+      "dimensions": "626 x 32"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "262.84°",
+      "dimensions": "626 x 32"
+    },
+    {
+      "designation": "13",
+      "true_bearing": "134.18°",
+      "dimensions": "398 x 32"
+    },
+    {
+      "designation": "31",
+      "true_bearing": "314.19°",
+      "dimensions": "398 x 32"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "641",
+      "dimensions": "641"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "641",
+      "dimensions": "641"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "626",
+      "dimensions": "626"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "626",
+      "dimensions": "626"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "518",
+      "dimensions": "518"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "518",
+      "dimensions": "518"
+    },
+    {
+      "designation": "13",
+      "true_bearing": "398",
+      "dimensions": "398"
+    },
+    {
+      "designation": "31",
+      "true_bearing": "398",
+      "dimensions": "398"
+    }
+  ],
+  "communication_frequencies": []
+}

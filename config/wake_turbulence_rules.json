@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "WakeTurbulenceSeparationRules",
+  "description": "ICAO Doc 4444 PANS-ATM wake vortex separation standards for runway departures and radar approach.",
+  "categories": {
+    "SUPER": { "code": "J", "description": "Airbus A380-800, Antonov An-225" },
+    "HEAVY": { "code": "H", "description": "Aircraft types of 136,000 kg (300,000 lbs) MTOW or more" },
+    "MEDIUM": { "code": "M", "description": "Aircraft types between 7,000 kg (15,500 lbs) and 136,000 kg MTOW" },
+    "LIGHT": { "code": "L", "description": "Aircraft types of 7,000 kg (15,500 lbs) MTOW or less" }
+  },
+  "departureWakeIntervalsSec": {
+    "H_H": 120,
+    "H_M": 120,
+    "H_L": 180,
+    "M_H": 90,
+    "M_M": 90,
+    "M_L": 120,
+    "L_H": 90,
+    "L_M": 90,
+    "L_L": 90,
+    "J_H": 120,
+    "J_M": 180,
+    "J_L": 240
+  },
+  "approachWakeSeparationNm": {
+    "H_H": 4.0,
+    "H_M": 5.0,
+    "H_L": 6.0,
+    "M_H": 3.0,
+    "M_M": 3.0,
+    "M_L": 5.0,
+    "L_H": 3.0,
+    "L_M": 3.0,
+    "L_L": 3.0,
+    "J_H": 6.0,
+    "J_M": 7.0,
+    "J_L": 8.0
+  },
+  "generalSeparationMinima": {
+    "enRouteHorizontalNm": 5.0,
+    "enRouteVerticalFt": 1000,
+    "approachHorizontalNm": 3.0,
+    "approachCeilingFt": 4000
+  }
+}
+

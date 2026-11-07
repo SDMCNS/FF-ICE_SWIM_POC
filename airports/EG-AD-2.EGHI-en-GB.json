@@ -1,0 +1,58 @@
+{
+  "aerodrome": "Southampton Airport (EGHI)",
+  "icao_code": "EGHI",
+  "arp_coordinates": {
+    "latitude": "505701N",
+    "longitude": "0012124W"
+  },
+  "elevation": "44 FT",
+  "magnetic_variation": "0.97°E",
+  "runways": [
+    {
+      "designation": "02",
+      "true_bearing": "019.39°",
+      "dimensions": "1887 x 36"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "199.39°",
+      "dimensions": "1887 x 36"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "1749",
+      "dimensions": "1809"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "1814",
+      "dimensions": "1874"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "1453",
+      "dimensions": "1513"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "916",
+      "dimensions": "976"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "781",
+      "dimensions": "841"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "Centre-line with one crossbar.TRWY_DIRECTION_ALS;ANNOTATION:31159.eng;36 426 Light intensity high",
+      "dimensions": "Green Light intensity high WingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31782.eng;756"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "Centre-line with two crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31158.eng;35 434 Light intensity high",
+      "dimensions": "Green Light intensity high WingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31783.eng;757"
+    }
+  ],
+  "communication_frequencies": []
+}

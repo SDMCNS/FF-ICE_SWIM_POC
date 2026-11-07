@@ -1,0 +1,78 @@
+{
+  "aerodrome": "Newcastle International Airport (EGNT)",
+  "icao_code": "EGNT",
+  "arp_coordinates": {
+    "latitude": "550217N",
+    "longitude": "0014123W"
+  },
+  "elevation": "266 FT",
+  "magnetic_variation": "0.50°E",
+  "runways": [
+    {
+      "designation": "07",
+      "true_bearing": "065.19°",
+      "dimensions": "2330 x 45"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "245.21°",
+      "dimensions": "2330 x 45"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "2330",
+      "dimensions": "2405"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "2262",
+      "dimensions": "2386"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "1799",
+      "dimensions": "1874"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "1773",
+      "dimensions": "1848"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "1559",
+      "dimensions": "1634"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "1407",
+      "dimensions": "1482"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "1548",
+      "dimensions": "1672"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "877",
+      "dimensions": "1001"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "717",
+      "dimensions": "840"
+    },
+    {
+      "designation": "07",
+      "true_bearing": "Coded centre-line with five crossbars.Supplementary lighting inner 300 M.Last approach light 30 M from displaced landing threshold.Lights are LED (except PAPI).TRWY_DIRECTION_ALS;ANNOTATION:31195.eng;72 914 Light intensity high",
+      "dimensions": "Green Light intensity high Flush uni-directional with elev green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31318.eng;144"
+    },
+    {
+      "designation": "25",
+      "true_bearing": "Coded centre-line with five crossbars.Supplementary lighting inner 300 M.Last approach light 30 M from displaced landing threshold.Lights are LED (except PAPI).TRWY_DIRECTION_ALS;ANNOTATION:31196.eng;73 914 Light intensity high",
+      "dimensions": "Green Light intensity high Flush uni-directional with elev green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31322.eng;148"
+    }
+  ],
+  "communication_frequencies": []
+}

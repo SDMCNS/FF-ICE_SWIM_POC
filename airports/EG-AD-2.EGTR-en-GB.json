@@ -1,0 +1,43 @@
+{
+  "aerodrome": "Elstree Airfield (EGTR)",
+  "icao_code": "EGTR",
+  "arp_coordinates": {
+    "latitude": "513921N",
+    "longitude": "0001933W"
+  },
+  "elevation": "332 FT",
+  "magnetic_variation": "1.26°E",
+  "runways": [
+    {
+      "designation": "08",
+      "true_bearing": "079.66°",
+      "dimensions": "651 x 20"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "259.67°",
+      "dimensions": "651 x 20"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "651",
+      "dimensions": "651"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "651",
+      "dimensions": "651"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "-",
+      "dimensions": "-"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "-",
+      "dimensions": "Light intensity low Green WingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31463.eng;351 TRWY_DIRECTION_LGT_SYS;ANNOTATION:31463.eng;351"
+    }
+  ],
+  "communication_frequencies": []
+}

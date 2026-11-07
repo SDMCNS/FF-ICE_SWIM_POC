@@ -1,0 +1,231 @@
+{
+  "gufi": "00000000-0000-0000-0000-000000000000",
+  "status": "PLANNED",
+  "messageType": "PRELIMINARY",
+  "filingTime": "2026-11-07T14:06:39.728Z",
+  "flightIdentification": {
+    "aircraftIdentification": "EIN157",
+    "aircraftRegistration": "EI-DVM"
+  },
+  "aircraft": {
+    "aircraftType": "A320",
+    "wakeTurbulence": "MEDIUM",
+    "capabilities": {
+      "standardEquipment": "SDFGIRW/LB1",
+      "navigation": [
+        "RNAV 1",
+        "RNAV 5",
+        "RNP 4"
+      ],
+      "communication": [
+        "VHF 8.33 kHz",
+        "CPDLC"
+      ],
+      "surveillance": [
+        "ADS-B Out",
+        "Mode S Transponder"
+      ]
+    }
+  },
+  "departure": {
+    "aerodrome": "EGLL",
+    "runway": "27R",
+    "elevationFeet": 83,
+    "estimatedOffBlockTime": "2026-11-07T14:35:00.000Z"
+  },
+  "arrival": {
+    "aerodrome": "EIDW",
+    "runway": "28L",
+    "elevationFeet": 243,
+    "estimatedTimeOfArrival": "2026-11-07T15:19:34.237550Z"
+  },
+  "enRoute": {
+    "cruisingLevel": "F280",
+    "cruisingSpeed": "N0450",
+    "routeString": "EGLL PEDIG SEMMU LIPGO EIDW",
+    "airspaceCrossings": []
+  },
+  "trajectory": {
+    "points4D": [
+      {
+        "pointType": "DEPARTURE",
+        "identifier": "EGLL",
+        "coordinates": {
+          "latitude": 51.4775,
+          "longitude": -0.4613888888888889
+        },
+        "altitudeFeet": 83,
+        "flightLevel": 1,
+        "cumulativeDistanceNm": 0,
+        "groundSpeedKnots": 250,
+        "cumulativeTimeSeconds": 0,
+        "estimatedTimestamp": "2026-11-07T14:35:00Z",
+        "pointSource": "CALCULATED",
+        "associatedAirspace": "EGTTFIR"
+      },
+      {
+        "pointType": "INITIAL_CLIMB",
+        "identifier": "RWY27R_5NM",
+        "coordinates": {
+          "latitude": 51.47700247816672,
+          "longitude": -0.595095241427269
+        },
+        "altitudeFeet": 2683,
+        "flightLevel": 27,
+        "cumulativeDistanceNm": 5,
+        "groundSpeedKnots": 250,
+        "cumulativeTimeSeconds": 72,
+        "estimatedTimestamp": "2026-11-07T14:36:12Z",
+        "pointSource": "CALCULATED",
+        "associatedAirspace": "EGTTFIR"
+      },
+      {
+        "pointType": "TOC",
+        "identifier": "TOC",
+        "coordinates": {
+          "latitude": 52.376139762528,
+          "longitude": -1.3837321387954091
+        },
+        "altitudeFeet": 28000,
+        "flightLevel": 280,
+        "cumulativeDistanceNm": 66.37,
+        "groundSpeedKnots": 450,
+        "cumulativeTimeSeconds": 703,
+        "estimatedTimestamp": "2026-11-07T14:46:43.281039Z",
+        "pointSource": "CALCULATED",
+        "associatedAirspace": "EGTTUIR"
+      },
+      {
+        "pointType": "WAYPOINT",
+        "identifier": "PEDIG",
+        "coordinates": {
+          "latitude": 52.74655277777778,
+          "longitude": -1.7194361111111112
+        },
+        "altitudeFeet": 28000,
+        "flightLevel": 280,
+        "cumulativeDistanceNm": 91.77,
+        "groundSpeedKnots": 450,
+        "cumulativeTimeSeconds": 906,
+        "estimatedTimestamp": "2026-11-07T14:50:06.414698Z",
+        "pointSource": "CALCULATED",
+        "associatedAirspace": "EGTTUIR"
+      },
+      {
+        "pointType": "WAYPOINT",
+        "identifier": "SEMMU",
+        "coordinates": {
+          "latitude": 52.778055555555554,
+          "longitude": -4.0393638888888885
+        },
+        "altitudeFeet": 28000,
+        "flightLevel": 280,
+        "cumulativeDistanceNm": 176.07,
+        "groundSpeedKnots": 450,
+        "cumulativeTimeSeconds": 1581,
+        "estimatedTimestamp": "2026-11-07T15:01:20.853650Z",
+        "pointSource": "CALCULATED",
+        "associatedAirspace": "EGTTUIR"
+      },
+      {
+        "pointType": "TOD",
+        "identifier": "TOD",
+        "coordinates": {
+          "latitude": 52.8143885962051,
+          "longitude": -4.2190096099190475
+        },
+        "altitudeFeet": 28000,
+        "flightLevel": 280,
+        "cumulativeDistanceNm": 182.95,
+        "groundSpeedKnots": 450,
+        "cumulativeTimeSeconds": 1636,
+        "estimatedTimestamp": "2026-11-07T15:02:15.869176Z",
+        "pointSource": "CALCULATED",
+        "associatedAirspace": "EGTTUIR"
+      },
+      {
+        "pointType": "WAYPOINT",
+        "identifier": "LIPGO",
+        "coordinates": {
+          "latitude": 53.063925,
+          "longitude": -5.5
+        },
+        "altitudeFeet": 12510,
+        "flightLevel": 125,
+        "cumulativeDistanceNm": 231.66,
+        "groundSpeedKnots": 290,
+        "cumulativeTimeSeconds": 2110,
+        "estimatedTimestamp": "2026-11-07T15:10:09.823531Z",
+        "pointSource": "CALCULATED",
+        "associatedAirspace": "EGTTFIR"
+      },
+      {
+        "pointType": "APPROACH_INTERCEPT",
+        "identifier": "ILS28L_17NM",
+        "coordinates": {
+          "latitude": 53.39444836060314,
+          "longitude": -5.7971736903317765
+        },
+        "altitudeFeet": 5343,
+        "flightLevel": 53,
+        "cumulativeDistanceNm": 254.2,
+        "groundSpeedKnots": 290,
+        "cumulativeTimeSeconds": 2390,
+        "estimatedTimestamp": "2026-11-07T15:14:49.586388Z",
+        "pointSource": "CALCULATED",
+        "associatedAirspace": "EISNFIR"
+      },
+      {
+        "pointType": "DESTINATION",
+        "identifier": "EIDW",
+        "coordinates": {
+          "latitude": 53.421388888888885,
+          "longitude": -6.27
+        },
+        "altitudeFeet": 243,
+        "flightLevel": 2,
+        "cumulativeDistanceNm": 271.2,
+        "groundSpeedKnots": 140,
+        "cumulativeTimeSeconds": 2674,
+        "estimatedTimestamp": "2026-11-07T15:19:34.237550Z",
+        "pointSource": "CALCULATED",
+        "associatedAirspace": "EISNFIR"
+      }
+    ],
+    "topOfClimb": {
+      "pointType": "TOC",
+      "identifier": "TOC",
+      "coordinates": {
+        "latitude": 52.376139762528,
+        "longitude": -1.3837321387954091
+      },
+      "altitudeFeet": 28000,
+      "flightLevel": 280,
+      "cumulativeDistanceNm": 66.37,
+      "groundSpeedKnots": 450,
+      "cumulativeTimeSeconds": 703,
+      "estimatedTimestamp": "2026-11-07T14:46:43.281039Z",
+      "pointSource": "CALCULATED",
+      "associatedAirspace": "EGTTUIR"
+    },
+    "topOfDescent": {
+      "pointType": "TOD",
+      "identifier": "TOD",
+      "coordinates": {
+        "latitude": 52.8143885962051,
+        "longitude": -4.2190096099190475
+      },
+      "altitudeFeet": 28000,
+      "flightLevel": 280,
+      "cumulativeDistanceNm": 182.95,
+      "groundSpeedKnots": 450,
+      "cumulativeTimeSeconds": 1636,
+      "estimatedTimestamp": "2026-11-07T15:02:15.869176Z",
+      "pointSource": "CALCULATED",
+      "associatedAirspace": "EGTTUIR"
+    },
+    "totalDistanceNm": 271.2,
+    "totalFlightTimeMinutes": 44.6
+  },
+  "remarks": "SWIM FF-ICE DEMO"
+}

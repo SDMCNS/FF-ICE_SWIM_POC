@@ -1,0 +1,83 @@
+{
+  "aerodrome": "Cotswold Airport (EGBP)",
+  "icao_code": "EGBP",
+  "arp_coordinates": {
+    "latitude": "514005N",
+    "longitude": "0020325W"
+  },
+  "elevation": "436 FT",
+  "magnetic_variation": "0.68°E",
+  "runways": [
+    {
+      "designation": "08",
+      "true_bearing": "080.41°",
+      "dimensions": "1972 x 43"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "260.43°",
+      "dimensions": "1972 x 43"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "080.37°",
+      "dimensions": "561 x 18"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "260.37°",
+      "dimensions": "561 x 18"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "1758",
+      "dimensions": "1758"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "1799",
+      "dimensions": "1799"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "1149",
+      "dimensions": "1149"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "975",
+      "dimensions": "975"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "1410",
+      "dimensions": "1410"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "637",
+      "dimensions": "637"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "561",
+      "dimensions": "561"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "561",
+      "dimensions": "561"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "-",
+      "dimensions": "Light intensity high Elevated green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31388.eng;238"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "-",
+      "dimensions": "Light intensity high Elevated green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31389.eng;239"
+    }
+  ],
+  "communication_frequencies": []
+}

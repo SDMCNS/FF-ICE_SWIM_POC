@@ -1,0 +1,33 @@
+{
+  "aerodrome": "Compton Abbas Aerodrome (EGHA)",
+  "icao_code": "EGHA",
+  "arp_coordinates": {
+    "latitude": "505802N",
+    "longitude": "0020913W"
+  },
+  "elevation": "811 FT",
+  "magnetic_variation": "0.71°E",
+  "runways": [
+    {
+      "designation": "08",
+      "true_bearing": "077.16°",
+      "dimensions": "799 x 30"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "257.16°",
+      "dimensions": "799 x 30"
+    },
+    {
+      "designation": "08",
+      "true_bearing": "799",
+      "dimensions": "799"
+    },
+    {
+      "designation": "26",
+      "true_bearing": "799",
+      "dimensions": "799"
+    }
+  ],
+  "communication_frequencies": []
+}

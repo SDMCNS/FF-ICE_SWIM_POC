@@ -1,0 +1,68 @@
+{
+  "aerodrome": "Cardiff International Airport (EGFF)",
+  "icao_code": "EGFF",
+  "arp_coordinates": {
+    "latitude": "512348N",
+    "longitude": "0032036W"
+  },
+  "elevation": "220 FT",
+  "magnetic_variation": "0.27°E",
+  "runways": [
+    {
+      "designation": "12",
+      "true_bearing": "116.76°",
+      "dimensions": "2354 x 45"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "296.78°",
+      "dimensions": "2354 x 45"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "2318",
+      "dimensions": "2503"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "2354",
+      "dimensions": "2506"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "2098",
+      "dimensions": "2283"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "1494",
+      "dimensions": "1679"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "2130",
+      "dimensions": "2282"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "1426",
+      "dimensions": "1578"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "1339",
+      "dimensions": "1491"
+    },
+    {
+      "designation": "12",
+      "true_bearing": "Coded centre-line with five crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31231.eng;108 747 Light intensity high",
+      "dimensions": "Green Light intensity high Flush uni-directional with green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31780.eng;750"
+    },
+    {
+      "designation": "30",
+      "true_bearing": "Coded centre-line with five crossbars.TRWY_DIRECTION_ALS;ANNOTATION:31232.eng;109 832 Light intensity high",
+      "dimensions": "Green Light intensity high Flush uni-directional with green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31779.eng;749"
+    }
+  ],
+  "communication_frequencies": []
+}

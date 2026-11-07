@@ -1,0 +1,53 @@
+{
+  "aerodrome": "Wickenby Aerodrome (EGNW)",
+  "icao_code": "EGNW",
+  "arp_coordinates": {
+    "latitude": "531901N",
+    "longitude": "0002056W"
+  },
+  "elevation": "84 FT",
+  "magnetic_variation": "1.13°E",
+  "runways": [
+    {
+      "designation": "03",
+      "true_bearing": "025.25°",
+      "dimensions": "530 x 18"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "205.25°",
+      "dimensions": "530 x 18"
+    },
+    {
+      "designation": "15",
+      "true_bearing": "150.23°",
+      "dimensions": "497 x 18"
+    },
+    {
+      "designation": "33",
+      "true_bearing": "330.23°",
+      "dimensions": "497 x 18"
+    },
+    {
+      "designation": "03",
+      "true_bearing": "530",
+      "dimensions": "530"
+    },
+    {
+      "designation": "21",
+      "true_bearing": "530",
+      "dimensions": "530"
+    },
+    {
+      "designation": "15",
+      "true_bearing": "497",
+      "dimensions": "497"
+    },
+    {
+      "designation": "33",
+      "true_bearing": "497",
+      "dimensions": "497"
+    }
+  ],
+  "communication_frequencies": []
+}

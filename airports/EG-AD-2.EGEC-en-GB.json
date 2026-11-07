@@ -1,0 +1,43 @@
+{
+  "aerodrome": "Campbeltown Airport (EGEC)",
+  "icao_code": "EGEC",
+  "arp_coordinates": {
+    "latitude": "552615N",
+    "longitude": "0054117W"
+  },
+  "elevation": "39 FT",
+  "magnetic_variation": "1.09°W",
+  "runways": [
+    {
+      "designation": "11",
+      "true_bearing": "106.07°",
+      "dimensions": "1412 x 30"
+    },
+    {
+      "designation": "29",
+      "true_bearing": "286.09°",
+      "dimensions": "1412 x 30"
+    },
+    {
+      "designation": "11",
+      "true_bearing": "1412",
+      "dimensions": "1412"
+    },
+    {
+      "designation": "29",
+      "true_bearing": "1412",
+      "dimensions": "1412"
+    },
+    {
+      "designation": "11",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low LEDTRWY_DIRECTION_LGT_SYS;ANNOTATION:100272.eng;619"
+    },
+    {
+      "designation": "29",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low LEDTRWY_DIRECTION_LGT_SYS;ANNOTATION:100273.eng;621"
+    }
+  ],
+  "communication_frequencies": []
+}

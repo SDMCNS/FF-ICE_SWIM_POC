@@ -1,0 +1,103 @@
+{
+  "aerodrome": "Sherburn-in-Elmet Airfield (EGCJ)",
+  "icao_code": "EGCJ",
+  "arp_coordinates": {
+    "latitude": "534703N",
+    "longitude": "0011304W"
+  },
+  "elevation": "26 FT",
+  "magnetic_variation": "0.79°E",
+  "runways": [
+    {
+      "designation": "01",
+      "true_bearing": "008.06°",
+      "dimensions": "581 x 21"
+    },
+    {
+      "designation": "19",
+      "true_bearing": "188.06°",
+      "dimensions": "581 x 21"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "058.46°",
+      "dimensions": "771 x 21"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "238.46°",
+      "dimensions": "771 x 21"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "103.23°",
+      "dimensions": "828 x 18"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "283.23°",
+      "dimensions": "828 x 18"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "103.25°",
+      "dimensions": "622 x 21"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "283.26°",
+      "dimensions": "622 x 21"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "612",
+      "dimensions": "612"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "799",
+      "dimensions": "799"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "723",
+      "dimensions": "723"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "696",
+      "dimensions": "696"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "622",
+      "dimensions": "622"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "622",
+      "dimensions": "622"
+    },
+    {
+      "designation": "01",
+      "true_bearing": "553",
+      "dimensions": "553"
+    },
+    {
+      "designation": "19",
+      "true_bearing": "553",
+      "dimensions": "553"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "-",
+      "dimensions": "Green With elev green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31626.eng;567"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "-",
+      "dimensions": "Green With elev green wingbarsTRWY_DIRECTION_LGT_SYS;ANNOTATION:31628.eng;569"
+    }
+  ],
+  "communication_frequencies": []
+}

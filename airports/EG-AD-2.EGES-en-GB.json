@@ -1,0 +1,93 @@
+{
+  "aerodrome": "Sanday Airport (EGES)",
+  "icao_code": "EGES",
+  "arp_coordinates": {
+    "latitude": "591501N",
+    "longitude": "0023430W"
+  },
+  "elevation": "62 FT",
+  "magnetic_variation": "0.31°W",
+  "runways": [
+    {
+      "designation": "02",
+      "true_bearing": "021.30°",
+      "dimensions": "527 x 18"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "201.30°",
+      "dimensions": "527 x 18"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "102.02°",
+      "dimensions": "410 x 30"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "282.03°",
+      "dimensions": "410 x 30"
+    },
+    {
+      "designation": "16",
+      "true_bearing": "158.73°",
+      "dimensions": "349 x 30"
+    },
+    {
+      "designation": "34",
+      "true_bearing": "338.73°",
+      "dimensions": "349 x 30"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "497",
+      "dimensions": "497"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "497",
+      "dimensions": "497"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "410",
+      "dimensions": "410"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "410",
+      "dimensions": "410"
+    },
+    {
+      "designation": "16",
+      "true_bearing": "349",
+      "dimensions": "349"
+    },
+    {
+      "designation": "34",
+      "true_bearing": "349",
+      "dimensions": "349"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "-",
+      "dimensions": "Green Light intensity low"
+    }
+  ],
+  "communication_frequencies": []
+}

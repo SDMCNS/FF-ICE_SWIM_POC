@@ -1,0 +1,108 @@
+{
+  "aerodrome": "Brighton City Airport (EGKA)",
+  "icao_code": "EGKA",
+  "arp_coordinates": {
+    "latitude": "505008N",
+    "longitude": "0001750W"
+  },
+  "elevation": "7 FT",
+  "magnetic_variation": "1.32°E",
+  "runways": [
+    {
+      "designation": "02",
+      "true_bearing": "021.61°",
+      "dimensions": "1031 x 18"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "201.61°",
+      "dimensions": "1031 x 18"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "021.49°",
+      "dimensions": "602 x 23"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "201.49°",
+      "dimensions": "602 x 23"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "063.35°",
+      "dimensions": "548 x 25"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "243.36°",
+      "dimensions": "548 x 25"
+    },
+    {
+      "designation": "13",
+      "true_bearing": "124.82°",
+      "dimensions": "536 x 18"
+    },
+    {
+      "designation": "31",
+      "true_bearing": "304.82°",
+      "dimensions": "536 x 18"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "1002",
+      "dimensions": "1031"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "872",
+      "dimensions": "901"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "908",
+      "dimensions": "971"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "602",
+      "dimensions": "602"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "602",
+      "dimensions": "602"
+    },
+    {
+      "designation": "06",
+      "true_bearing": "405",
+      "dimensions": "405"
+    },
+    {
+      "designation": "24",
+      "true_bearing": "548",
+      "dimensions": "548"
+    },
+    {
+      "designation": "13",
+      "true_bearing": "410",
+      "dimensions": "410"
+    },
+    {
+      "designation": "31",
+      "true_bearing": "536",
+      "dimensions": "536"
+    },
+    {
+      "designation": "02",
+      "true_bearing": "-",
+      "dimensions": "Green"
+    },
+    {
+      "designation": "20",
+      "true_bearing": "-",
+      "dimensions": "Green"
+    }
+  ],
+  "communication_frequencies": []
+}

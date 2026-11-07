@@ -1,0 +1,33 @@
+{
+  "aerodrome": "Colonsay Airstrip (EGEY)",
+  "icao_code": "EGEY",
+  "arp_coordinates": {
+    "latitude": "560327N",
+    "longitude": "0061435W"
+  },
+  "elevation": "44 FT",
+  "magnetic_variation": "1.40°W",
+  "runways": [
+    {
+      "designation": "10",
+      "true_bearing": "099.52°",
+      "dimensions": "502 x 18"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "279.52°",
+      "dimensions": "502 x 18"
+    },
+    {
+      "designation": "10",
+      "true_bearing": "502",
+      "dimensions": "502"
+    },
+    {
+      "designation": "28",
+      "true_bearing": "502",
+      "dimensions": "502"
+    }
+  ],
+  "communication_frequencies": []
+}
